@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Tony Kim | Blog &amp; Portfolio</title>
-    <link>http://tonykim.com/categories/</link>
+    <link>http://kyoungwhankim.github.io/tonykim/categories/</link>
     <description>Recent content in Categories on Tony Kim | Blog &amp; Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
     <lastBuildDate>Mon, 24 Sep 2018 11:07:10 +0600</lastBuildDate>
     
-	<atom:link href="http://tonykim.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://kyoungwhankim.github.io/tonykim/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Artificial Intelligence</title>
-      <link>http://tonykim.com/categories/artificial-intelligence/</link>
+      <link>http://kyoungwhankim.github.io/tonykim/categories/artificial-intelligence/</link>
       <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
       
-      <guid>http://tonykim.com/categories/artificial-intelligence/</guid>
+      <guid>http://kyoungwhankim.github.io/tonykim/categories/artificial-intelligence/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Company News</title>
-      <link>http://tonykim.com/categories/company-news/</link>
+      <link>http://kyoungwhankim.github.io/tonykim/categories/company-news/</link>
       <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
       
-      <guid>http://tonykim.com/categories/company-news/</guid>
+      <guid>http://kyoungwhankim.github.io/tonykim/categories/company-news/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Legacy Support</title>
-      <link>http://tonykim.com/categories/legacy-support/</link>
+      <link>http://kyoungwhankim.github.io/tonykim/categories/legacy-support/</link>
       <pubDate>Mon, 24 Sep 2018 11:07:10 +0600</pubDate>
       
-      <guid>http://tonykim.com/categories/legacy-support/</guid>
+      <guid>http://kyoungwhankim.github.io/tonykim/categories/legacy-support/</guid>
       <description></description>
     </item>
     
