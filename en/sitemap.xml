@@ -333,20 +333,6 @@
   </url>
   
   <url>
-    <loc>https://kyoungwhankim.github.io/tonykim/about/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://kyoungwhankim.github.io/tonykim/fr/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/tonykim/about/"
-                />
-  </url>
-  
-  <url>
     <loc>https://kyoungwhankim.github.io/tonykim/author/</loc>
     <xhtml:link
                 rel="alternate"
@@ -525,6 +511,20 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://kyoungwhankim.github.io/tonykim/service/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/tonykim/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://kyoungwhankim.github.io/tonykim/fr/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/tonykim/about/"
                 />
   </url>
   
