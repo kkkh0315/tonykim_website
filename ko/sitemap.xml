@@ -3,44 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kyoungwhankim.github.io/tonykim/ko/categories/</loc>
+    <loc>https://kyoungwhankim.github.io/ko/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kyoungwhankim.github.io/tonykim/categories/"
+                href="https://kyoungwhankim.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://kyoungwhankim.github.io/tonykim/ko/categories/"
+                href="https://kyoungwhankim.github.io/ko/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://kyoungwhankim.github.io/tonykim/ko/tags/</loc>
+    <loc>https://kyoungwhankim.github.io/ko/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kyoungwhankim.github.io/tonykim/tags/"
+                href="https://kyoungwhankim.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://kyoungwhankim.github.io/tonykim/ko/tags/"
+                href="https://kyoungwhankim.github.io/ko/tags/"
                 />
   </url>
   
   <url>
-    <loc>https://kyoungwhankim.github.io/tonykim/ko/</loc>
+    <loc>https://kyoungwhankim.github.io/ko/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kyoungwhankim.github.io/tonykim/"
+                href="https://kyoungwhankim.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://kyoungwhankim.github.io/tonykim/ko/"
+                href="https://kyoungwhankim.github.io/ko/"
                 />
   </url>
   
