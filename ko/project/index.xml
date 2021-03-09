@@ -17,8 +17,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kyoungwhankim.github.io/ko/project/prms/</guid>
-      <description>Phong Reflection Model Simulator(PRMS) Phong Reflection Model Simulator is a simple 3D graphics simulator written in C++ and OpenGL.
-It is a brief program that simulates how phong reflection models work.</description>
+      <description>Phong Reflection Model Simulator(PRMS) Phong Reflection Model Simulator는 C++과 OpenGL API로 작성된 간단한 3D 그래픽 시뮬레이터입니다.
+Phong reflection model을 시각화해주는 간단한 프로그램입니다.
+Phong reflection model은 물체의 표면을 표현하기 위해서 phong lighting model을 사용합니다.</description>
     </item>
     
   </channel>
