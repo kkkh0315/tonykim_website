@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko-ko"><head>
   <meta charset="utf-8">
-  <title>프로젝트</title>
+  <title>Phong Reflection Model Simulator(PRMS)</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="김경환">
+  <meta name="description" content="A 3D real-time simulator which simulates phong reflection model">
   <meta name="author" content="Tony Kim">
   <meta name="generator" content="Hugo 0.68.3" />
   
   
-  <meta property="og:title" content="프로젝트" />
-<meta property="og:description" content="김경환" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://kyoungwhankim.github.io/ko/project/" />
+  <meta property="og:image" content="https://kyoungwhankim.github.io/images/portfolio/prms.png" />
+  
+  <meta property="og:title" content="Phong Reflection Model Simulator(PRMS)" />
+<meta property="og:description" content="A 3D real-time simulator which simulates phong reflection model" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kyoungwhankim.github.io/ko/project/prms/" />
 
 
   
@@ -97,7 +99,7 @@
                   
                   
                   
-                  <option id="en" value="https://kyoungwhankim.github.io/project/">En
+                  <option id="en" value="https://kyoungwhankim.github.io/project/prms/">En
                   </option>
                   
                   
@@ -112,7 +114,7 @@
                   
                   
                   
-                  <option id="ko" value="https://kyoungwhankim.github.io/ko/project/" selected>
+                  <option id="ko" value="https://kyoungwhankim.github.io/ko/project/prms/" selected>
                     Ko
                   </option>
                   
@@ -130,13 +132,13 @@
   </div>
 </header>
 
-<section class="page-title bg-2" style="background-image: url('https://kyoungwhankim.github.io/images/portfolio/project_bg.jpg');">
+<section class="page-title bg-2" style="background-image: url('https://kyoungwhankim.github.io/images/default.png');">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>프로젝트</h1>
-          <p>김경환</p>
+          <h1>Phong Reflection Model Simulator(PRMS)</h1>
+          <p>A 3D real-time simulator which simulates phong reflection model</p>
         </div>
       </div>
     </div>
@@ -145,42 +147,59 @@
 
 
 
-
-<section class="portfolio-work">
+<section class="portfolio-single-page section-sm">
   <div class="container">
     <div class="row">
+      <div class="col-md-8">
+        <img class="img-responsive w-100" src="/images/portfolio/prms.png" alt="">
+      </div>
+      <div class="col-md-4">
+        <div class="project-details">
+          <h4>Project Details</h4>
+          <ul>
+            
+            <li><span>Project Name :</span> <strong><br>Phong Reflection Model Simulator(PRMS)</strong></li>
+            
+            <li><span>Type :</span> <strong><br>Open Source</strong></li>
+            
+            <li><span>Completed on :</span> <strong><br>6th March 2021</strong></li>
+            
+            <li><span>Tech Stack :</span> <strong><br>Visual Studio 2019, Modern C++, OpenGL 4.5</strong></li>
+            
+            <li><span>Libraries :</span> <strong><br>GLEW, GLFW, GLM, ASSIMP, STB, Dear ImGui</strong></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
       <div class="col-md-12">
-        <div class="block">
-          <div class="portfolio-menu">
-            <div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
-              <label class="btn btn-sm btn-primary active">
-                <input type="radio" name="shuffle-filter" value="all" checked="checked">All
-              </label>
-              
-              
-              
-              
-              
-              <label class="btn btn-sm btn-primary">
-                <input type="radio" name="shuffle-filter" value="computer-graphics">Computer graphics
-              </label>
-              
-            </div>
-          </div>
-          <div class="row shuffle-wrapper">
-            
-            <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;computer-graphics&quot;]">
-              <img src="/images/portfolio/prms.png" alt="Phong Reflection Model Simulator(PRMS)">
-              <div class="portfolio-hover">
-                <div class="portfolio-content">
-                  <a href="/images/portfolio/prms.png" class="portfolio-popup"><i class="icon ion-search"></i></a>
-                  <a class="h3" href="https://kyoungwhankim.github.io/ko/project/prms/">Phong Reflection Model Simulator(PRMS)</a>
-                  <p>A 3D real-time simulator which simulates phong reflection model</p>
-                </div>
-              </div>
-            </div>
-            
-          </div>
+        <div class="project-content mt-50">
+          <h2 id="phong-reflection-model-simulatorprms">Phong Reflection Model Simulator(PRMS)</h2>
+<p>Phong Reflection Model Simulator is a simple 3D graphics simulator written in C++ and OpenGL.<br>
+<br>
+It is a brief program that simulates how phong reflection models work.<br>
+Phong refelction model utilizes phong lighting model in order to create reflection on surface.<br>
+Phong lighting model consists of three components: ambient lighting, diffuse lighting, and specular lighting.<br>
+In this simulator, you can control ambient lighting and diffuse lighting by modifying ambient intensity and diffuse intensity of lights in the &quot;Light&quot; tab.<br>
+Furthermore, specular lighting can be controlled by modifying specular powers of materials that meshs have in the &quot;Material&quot; section under the &quot;Mesh&quot; tab.<br>
+Addtional features of lights and meshs as well as those of a camera and a skybox are available as well.<br></p>
+<h3 id="tech-stack">Tech Stack</h3>
+<p>The project was done on Windows 10, Visual Studio 2019 with Modern C++. OpenGL was used as a 3D graphics API.<br></p>
+<h3 id="libraries">Libraries</h3>
+<p>For OpenGL extension loading library, GLEW is used.<br>
+For OpenGL utility library, GLFW is used.<br>
+For mathematics library, GLM is used.<br>
+For asset importer, ASSIMP is used.<br>
+For image importer, STB(stb_image) is used.<br>
+For the graphical user interface, Dear ImGui is used.<br></p>
+<h3 id="future">Future</h3>
+<p>The work is on-going. I&rsquo;m planning to use the program as a viewport for my future graphics projects.<br></p>
+<h3 id="license">License</h3>
+<p>MIT License</p>
+<h3 id="source-code">Source Code</h3>
+<p><a href="https://github.com/kyoungwhankim/prms">Github repository</a></p>
+
         </div>
       </div>
     </div>

@@ -180,6 +180,20 @@
   </url>
   
   <url>
+    <loc>https://kyoungwhankim.github.io/project/prms/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/project/prms/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/project/prms/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kyoungwhankim.github.io/project/</loc>
     <xhtml:link
                 rel="alternate"
@@ -190,20 +204,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://kyoungwhankim.github.io/project/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/project/project1/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/project/project1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/project/project1/"
                 />
   </url>
   
