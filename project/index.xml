@@ -6,11 +6,7 @@
     <description>Recent content in Project on Tony Kim | Blog &amp; Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
-    
-	<atom:link href="https://kyoungwhankim.github.io/project/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright><atom:link href="https://kyoungwhankim.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Phong Reflection Model Simulator(PRMS)</title>
       <link>https://kyoungwhankim.github.io/project/prms/</link>

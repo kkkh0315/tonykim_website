@@ -1,8 +1,80 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
+    <loc>https://kyoungwhankim.github.io/ko/categories/</loc>
+    <lastmod>2021-03-10T20:16:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/categories/"
+                />
+  </url><url>
+    <loc>https://kyoungwhankim.github.io/ko/tags/computer-graphics/</loc>
+    <lastmod>2021-03-10T20:16:00+09:00</lastmod>
+  </url><url>
+    <loc>https://kyoungwhankim.github.io/ko/tags/glew/</loc>
+    <lastmod>2021-03-10T20:16:00+09:00</lastmod>
+  </url><url>
+    <loc>https://kyoungwhankim.github.io/ko/tags/glfw/</loc>
+    <lastmod>2021-03-10T20:16:00+09:00</lastmod>
+  </url><url>
+    <loc>https://kyoungwhankim.github.io/ko/tags/graphics-api/</loc>
+    <lastmod>2021-03-10T20:16:00+09:00</lastmod>
+  </url><url>
+    <loc>https://kyoungwhankim.github.io/ko/tags/opengl/</loc>
+    <lastmod>2021-03-10T20:16:00+09:00</lastmod>
+  </url><url>
+    <loc>https://kyoungwhankim.github.io/ko/categories/opengl/</loc>
+    <lastmod>2021-03-10T20:16:00+09:00</lastmod>
+  </url><url>
+    <loc>https://kyoungwhankim.github.io/ko/blog/opengl_intro/</loc>
+    <lastmod>2021-03-10T20:16:00+09:00</lastmod>
+  </url><url>
+    <loc>https://kyoungwhankim.github.io/ko/tags/</loc>
+    <lastmod>2021-03-10T20:16:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/tags/"
+                />
+  </url><url>
+    <loc>https://kyoungwhankim.github.io/ko/</loc>
+    <lastmod>2021-03-10T20:16:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/"
+                />
+  </url><url>
+    <loc>https://kyoungwhankim.github.io/ko/blog/</loc>
+    <lastmod>2021-03-10T20:16:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/blog/"
+                />
+  </url><url>
     <loc>https://kyoungwhankim.github.io/ko/faq/</loc>
     <lastmod>2020-03-23T13:05:29+06:00</lastmod>
     <xhtml:link
@@ -15,129 +87,7 @@
                 hreflang="ko"
                 href="https://kyoungwhankim.github.io/ko/faq/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/ko/</loc>
-    <lastmod>2020-03-23T13:05:29+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/ko/tags/advice/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/tags/advice/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/tags/advice/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/ko/categories/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/ko/categories/company-news/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/categories/company-news/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/categories/company-news/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/ko/blog/blog-post-1/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/blog/blog-post-1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/blog/blog-post-1/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/ko/tags/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/ko/tags/technology/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/tags/technology/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/tags/technology/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/ko/blog/</loc>
-    <lastmod>2018-09-24T11:07:10+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/blog/"
-                />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kyoungwhankim.github.io/ko/author/</loc>
     <xhtml:link
                 rel="alternate"
@@ -149,9 +99,7 @@
                 hreflang="ko"
                 href="https://kyoungwhankim.github.io/ko/author/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kyoungwhankim.github.io/ko/contact/</loc>
     <xhtml:link
                 rel="alternate"
@@ -163,9 +111,7 @@
                 hreflang="ko"
                 href="https://kyoungwhankim.github.io/ko/contact/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kyoungwhankim.github.io/ko/author/john-doe/</loc>
     <xhtml:link
                 rel="alternate"
@@ -177,9 +123,7 @@
                 hreflang="ko"
                 href="https://kyoungwhankim.github.io/ko/author/john-doe/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kyoungwhankim.github.io/ko/project/prms/</loc>
     <xhtml:link
                 rel="alternate"
@@ -191,9 +135,7 @@
                 hreflang="ko"
                 href="https://kyoungwhankim.github.io/ko/project/prms/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kyoungwhankim.github.io/ko/about/</loc>
     <xhtml:link
                 rel="alternate"
@@ -205,9 +147,7 @@
                 hreflang="ko"
                 href="https://kyoungwhankim.github.io/ko/about/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kyoungwhankim.github.io/ko/project/</loc>
     <xhtml:link
                 rel="alternate"
@@ -220,5 +160,4 @@
                 href="https://kyoungwhankim.github.io/ko/project/"
                 />
   </url>
-  
 </urlset>
