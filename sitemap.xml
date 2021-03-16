@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <sitemap>
-    <loc>https://kyoungwhankim.github.io/ko/sitemap.xml</loc>
-    
-      <lastmod>2021-03-10T20:16:00+09:00</lastmod>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>https://kyoungwhankim.github.io/en/sitemap.xml</loc>
-    
-      <lastmod>2021-03-10T20:16:00+09:00</lastmod>
-    
-  </sitemap>
-  
+	
+	<sitemap>
+	   	<loc>https://kyoungwhankim.github.io/ko/sitemap.xml</loc>
+		
+	   	<lastmod>2021-03-13T21:00:00+09:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://kyoungwhankim.github.io/en/sitemap.xml</loc>
+		
+	   	<lastmod>2021-03-13T21:00:00+09:00</lastmod>
+		
+	</sitemap>
+	
 </sitemapindex>

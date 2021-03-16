@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="ko-ko"><head>
   <meta charset="utf-8">
-  <title>OpenGL 소개</title>
+  <title>OpenGL 소개 [OpenGL E02]</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="OpenGL/GLEW/GLFW">
   <meta name="author" content="Tony Kim">
-  <meta name="generator" content="Hugo 0.81.0" />
+  <meta name="generator" content="Hugo 0.68.3" />
   
   
   <meta property="og:image" content="https://kyoungwhankim.github.io/images/blog/opengl.svg" />
   
-  <meta property="og:title" content="OpenGL 소개" />
+  <meta property="og:title" content="OpenGL 소개 [OpenGL E02]" />
 <meta property="og:description" content="OpenGL/GLEW/GLFW" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://kyoungwhankim.github.io/ko/blog/opengl_intro/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2021-03-10T20:16:00&#43;09:00" />
-<meta property="article:modified_time" content="2021-03-10T20:16:00&#43;09:00" />
-
+<meta property="og:url" content="https://kyoungwhankim.github.io/ko/blog/opengl_intro/" />
+<meta property="article:published_time" content="2021-03-10T20:16:00+09:00" />
+<meta property="article:modified_time" content="2021-03-10T20:16:00+09:00" />
 
   
 
@@ -139,7 +138,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>OpenGL 소개</h1>
+          <h1>OpenGL 소개 [OpenGL E02]</h1>
           <p>OpenGL/GLEW/GLFW</p>
         </div>
       </div>
@@ -152,7 +151,7 @@
 		<div class="row">
 			<div class="col-md-8">
 				<div class="post post-single">
-					<h2 class="post-title">OpenGL 소개</h2>
+					<h2 class="post-title">OpenGL 소개 [OpenGL E02]</h2>
 					<div class="post-meta">
 						<ul>
               <li><i class="ion-calendar"></i> March 10, 2021</li>
@@ -164,104 +163,63 @@
               </li>
               <li><i class="ion-pricetags"></i> 
                 
-                <a href="/ko/tags/opengl">Open gl</a>
+                <a href="/ko/tags/opengl">Open g l</a>
 								
-                , <a href="/ko/tags/glew">Glew</a>
+                , <a href="/ko/tags/glew">G l e w</a>
 								
-                , <a href="/ko/tags/glfw">Glfw</a>
+                , <a href="/ko/tags/glfw">G l f w</a>
 								
                 , <a href="/ko/tags/computer%20graphics">Computer graphics</a>
 								
-                , <a href="/ko/tags/graphics%20api">Graphics API</a>
+                , <a href="/ko/tags/graphics%20api">Graphics api</a>
 								
               </li>
             </ul>
 					</div>
 					<div class="post-thumb">
-						<img class="img-responsive" src="/images/blog/opengl.svg" alt="OpenGL 소개">
+						<img class="img-responsive" src="/images/blog/opengl.svg" alt="OpenGL 소개 [OpenGL E02]">
 					</div>
 					<div class="post-content post-excerpt">
 						<h2 id="opengl이란">OpenGL이란?</h2>
-<p>OpenGL이 정확히 무엇인지 알아보자.</p>
-OpenGL을 라이브러리라고 생각했습니다. 하지만 OpenGL은 설명서(Specification)와 같은 것입니다. 즉, 함수의 이름, 기능, 인자, 작동 방식 등이 설명된 API 규격입니다. <a href="https://www.khronos.org/registry/OpenGL/index_gl.php">OpenGL API 규격</a>을 직접 확인하실 수 도 있습니다.</p>
-API(Application Programming Interface)란 운영 프로그램에서 사용할 수 있도록 운영 체제나 프로그래밍 언어가 제공하는 기능을 제어할 수 있게 만드는 인터페이스입니다. API와 라이브러리의 차이점을 더 알고 싶으시다면 <a href="https://www.youtube.com/watch?v=We8JKbNQeLo">API vs Library vs Framework</a> 영상을 참고해주세요! </p>
-그렇다면 OpenGL API 규격에 작성된 내용을 누가 구현할까요?<br>
-바로 그래픽 처리 장치 제조업체입니다. 당연히 그래픽 처리 장치 제조업체는 엔비디아, AMD, 인텔 등 여러 곳이 있으며, 따라서 OpenGL의 구현도 하나가 아닙니다. 이렇게 구현된 OpenGL은 드라이버와 함께 그래픽 처리 장치, 즉 그래픽 카드에 탑재됩니다.</p>
-이렇게 작성된 코드들의 집합을 우리는 라이브러리처럼 사용하게 됩니다.</p>
-정리하자면</p>
+<p>OpenGL이 정확히 무엇인지 알아보자.<br>
+<br>
+OpenGL을 라이브러리라고 생각했습니다. 하지만 OpenGL은 **설명서(Specification)**와 같은 것입니다. 즉, <strong>함수의 이름, 기능, 인자, 작동 방식 등이 설명된 API 규격</strong>입니다. <a href="https://www.khronos.org/registry/OpenGL/index_gl.php">OpenGL API 규격</a>을 직접 확인하실 수 도 있습니다.<br>
+<br>
+<strong>API</strong>(Application Programming Interface)란 <strong>운영 프로그램에서 사용할 수 있도록 운영 체제나 프로그래밍 언어가 제공하는 기능을 제어할 수 있게 만드는 인터페이스</strong>입니다. API와 라이브러리의 차이점을 더 알고 싶으시다면 <a href="https://www.youtube.com/watch?v=We8JKbNQeLo">API vs Library vs Framework</a> 영상을 참고해주세요! <br>
+<br>
+그렇다면 OpenGL API 규격에 작성된 내용을 <strong>누가 구현</strong>할까요?<br>
+바로 <strong>그래픽 처리 장치 제조업체</strong>입니다. 당연히 그래픽 처리 장치 제조업체는 엔비디아, AMD, 인텔 등 여러 곳이 있으며, 따라서 <strong>OpenGL의 구현도 하나가 아닙니다</strong>. 이렇게 구현된 OpenGL은 드라이버와 함께 그래픽 처리 장치, 즉 <strong>그래픽 카드에 탑재</strong>됩니다.<br>
+<br>
+이렇게 작성된 코드들의 집합을 우리는 라이브러리처럼 사용하게 됩니다.<br></p>
 <ul>
 <li>OpenGL은 API 규격으로 라이브러리가 아닌 문서이다.</li>
 <li>OpenGL은 그래픽 처리 장치 제조업체에서 구현하여 드라이버와 함께 제공한다.</li>
 <li>우리는 이 구현된 코드들을 라이브러리처럼 가져다 사용한다.</li>
 </ul>
 <h2 id="glfwgraphics-library-framework란">GLFW(Graphics Library Framework)란?</h2>
-<p>GLFW란 무엇인지 알아보자.</p>
-GLFW(Graphics Library Framework)는 OpenGL과 함께 쓰는 유틸리티 라이브러리입니다. OpenGL 유틸리티 라이브러리는 GLFW 외에도 GLUT, FreeGLUT, GLU 등 다양하게 있습니다. 하지만 GLUT와 GLU는 1998년 이후로 업데이트 되지 않았습니다. GLUT를 대체하기 위해 오픈 소스로 작성된 FreeGLUT은 블로그 작성 날짜 기준 2019년 9월에 3.2.1 버전을 릴리스했습니다. 비교적 지속적인 업데이트가 진행되고 있다고 볼 수 있습니다. GLFW는 블로그 작성 날짜 기준 2021년 2월에 3.3.3 버전을 릴리스했습니다. 가장 활발히 업데이트 하고 있는 유틸리티 라이브러리입니다.</p>
+<p>GLFW란 무엇인지 알아보자.<br>
+<br>
+<strong>GLFW</strong>(Graphics Library Framework)는 OpenGL과 함께 쓰는 <strong>유틸리티 라이브러리</strong>입니다. OpenGL 유틸리티 라이브러리는 GLFW 외에도 GLUT, FreeGLUT, GLU 등 다양하게 있습니다. 하지만 GLUT와 GLU는 1998년 이후로 업데이트 되지 않았습니다. GLUT를 대체하기 위해 오픈 소스로 작성된 FreeGLUT은 블로그 작성 날짜 기준 2019년 9월에 3.2.1 버전을 릴리스했습니다. 비교적 지속적인 업데이트가 진행되고 있다고 볼 수 있습니다. GLFW는 블로그 작성 날짜 기준 2021년 2월에 3.3.3 버전을 릴리스했습니다. 가장 활발히 업데이트 하고 있는 유틸리티 라이브러리입니다.<br>
+<br>
 유틸리티 라이브러리 중 GLFW와 함께 가장 많이 쓰이는 라이브러리는 SDL/SDL2입니다. SDL/SDL2는 GLFW보다 더 광범위한 유틸리티를 제공하는 멀티미디어 라이브러리로 창 제어 뿐만 아니라 오디오 관리, 텍스트 삽입 등이 가능하기 때문에 혹시나 OpenGL로 게임을 만들고 싶으시다면 SDL/SDL2를 사용하시는 것을 추천합니다. 여기선 GLFW를 사용하도록 하겠습니다.
-유틸리티 라이브러리가 필요한 이유는 OpenGL이 그래픽스 API일 뿐 창을 생성하거나, 키 입력을 받는 등의 기능은 제공하지 않기 때문입니다. GLFW는 창을 생성, 제어할 수 있게 해주고, OpenGL context를 생성 및 관리할 수 있게 해줍니다. 더불어, 키 입력과 이벤트 생성 등도 할 수 있게 해줍니다.</p>
+유틸리티 라이브러리가 필요한 이유는 <strong>OpenGL이 그래픽스 API일 뿐 창을 생성하거나, 키 입력을 받는 등의 기능은 제공하지 않기 때문</strong>입니다. GLFW는 창을 생성, 제어할 수 있게 해주고, OpenGL context를 생성 및 관리할 수 있게 해줍니다. 더불어, 키 입력과 이벤트 생성 등도 할 수 있게 해줍니다.</p>
 <ul>
 <li>GLFW는 가장 활발히 업데이트되고 있는 유틸리티 라이브러리이다.</li>
 <li>창 생성, OpenGL context 생성 및 관리, 키 입력 관리, 이벤트 생성 등을 담당한다.</li>
 </ul>
 <h2 id="glewopengl-extension-wrangler란">GLEW(OpenGL Extension Wrangler)란?</h2>
-<p>GLEW란 무엇인지 알아보자.</p>
-GLEW(OpenGL Extension Wrangler)는 OpenGL 확장을 쿼리하고 로드하는 크로스플랫폼 라이브러리입니다.</p>
-OpenGL은 사용하기 편리한 라이브러리로 딱 구현되어 있지 않습니다. 게다가, 구현된 함수들의 함수 포인터를 불러오는 또 다른 함수들을 호출하여 사용해야하는 등 사용이 쉽지 않습니다. 더불어, 예컨대 OpenGL을 Windows 환경에서 사용할 때 opengl32.h 따위의 헤더 파일을 추가하는데, 이 헤더 파일은 Windows에서 만든 파일로 Windows 환경에 맞춰줘있을 뿐만 아니라, OpenGL 1.x 버전 이후로 업데이트 되지 않았습니다. 따라서 복잡한 OpenGL의 기본 + 확장 기능까지 사용하기 위해 필요한 라이브러리가 확장 라이브러리 GLEW입니다.</p>
-OpenGL의 최신 구현은 그래픽 카드에 탑재되어 있습니다. GLEW는 그래픽 카드 드라이버의 DLL(동적 라이브러리)에 탑재되어 있는 OpenGL 함수들의 포인터들을 불러와 자체적으로 정의한 OpenGL 함수들과 연결합니다. 즉, 우리는 OpenGL 함수들을 GLEW를 통하여 사용하게 됩니다.</p>
+<p>GLEW란 무엇인지 알아보자.<br>
+<br>
+<strong>GLEW</strong>(OpenGL Extension Wrangler)는 <strong>OpenGL 확장을 쿼리하고 로드하는 크로스플랫폼 라이브러리</strong>입니다.<br>
+<br>
+OpenGL은 사용하기 편리한 라이브러리로 딱 구현되어 있지 않습니다. 게다가, 구현된 함수들의 함수 포인터를 불러오는 또 다른 함수들을 호출하여 사용해야하는 등 사용이 쉽지 않습니다. 더불어, 예컨대 OpenGL을 Windows 환경에서 사용할 때 opengl32.h 따위의 헤더 파일을 추가하는데, 이 헤더 파일은 Windows에서 만든 파일로 Windows 환경에 맞춰줘있을 뿐만 아니라, OpenGL 1.x 버전 이후로 업데이트 되지 않았습니다. <strong>따라서 복잡한 OpenGL의 기본 + 확장 기능까지 사용하기 위해 필요한 라이브러리가 확장 라이브러리 GLEW</strong>입니다.<br>
+<br>
+OpenGL의 최신 구현은 그래픽 카드에 탑재되어 있습니다. <strong>GLEW는 그래픽 카드 드라이버의 DLL(동적 라이브러리)에 탑재되어 있는 OpenGL 함수들의 포인터들을 불러와 자체적으로 정의한 OpenGL 함수들과 연결</strong>합니다. 즉, 우리는 OpenGL 함수들을 GLEW를 통하여 사용하게 됩니다.</p>
 <ul>
 <li>GLEW는 플랫폼 마다 사용 방법이 다르고 복잡한 OpenGL을 손쉽게 사용할 수 있게 해주는 확장 라이브러리이다.</li>
 <li>GLEW를 사용하면 최신 OpenGL의 기본 + 확장 기능까지 사용할 수 있다.</li>
 </ul>
-<h2 id="visual-studio에서-glfw와-glew-그리고-opengl-사용하기">Visual Studio에서 GLFW와 GLEW, 그리고 OpenGL 사용하기</h2>
-<p>Visual Studio에서 OpenGL 작업 환경을 구축해보자.</p>
-Windows 환경에서 Visual Studio를 사용하여 OpenGL 함수들을 사용하기 위해선 준비 작업들이 있습니다.</p>
-우선, Visual Studio의 새 C++ 빈 프로젝트를 생성합니다.</p>
-다음으로, GLEW와 GLFW를 다운받습니다. <a href="https://www.glfw.org/download.html">GLFW</a> <a href="http://glew.sourceforge.net">GLEW</a><br>
-GLFW와 GLEW 모두 소스 파일을 받아 직접 빌드하거나, 자신의 운영 체제에 맞는 바이너리 파일을 받아 바로 사용할 수 있습니다. Windows의 경우 둘 다 pre-compile된 바이너리 파일 모음(라이브러리 파일, 헤더 파일 등)들이 있기 때문에 바이너리 파일들을 다운 받으시는 것을 추천드립니다.</p>
-GLFW 다운로드<br>
-<img width="1196" alt="glfw_download" src="https://user-images.githubusercontent.com/60923302/110604561-926ea100-81cb-11eb-9e8d-b3bed54879f3.png">
-<br>
-<br>
-GLEW 다운로드<br>
-<img width="1196" alt="glew_download" src="https://user-images.githubusercontent.com/60923302/110604925-f4c7a180-81cb-11eb-97e9-d040ccd71cc5.png">
-<br>
-<br>
-다운로드를 받으셨다면 라이브러리와 헤더 파일들을 사용하기 위해 Visual Studio 솔루션 디렉토리 기준 하위 폴더에 다운로드 받으신 파일들을 보관합니다. 파일들을 관리하는 방법은 개인에 따라 차이가 있기 때문에 저의 방법을 소개해드리는 것으로 설명을 대신하겠습니다.</p>
-Visual Studio 프로젝트는 솔루션 디렉토리(.sln 파일이 있는 디렉토리) 아래에 파일들을 관리하는 것을 추천합니다. 저의 경우 솔루션 디렉토리에 Dependencies 폴더를 생성하여 GLFW와 GLEW 파일들을 관리합니다. GLFW 3.3.3, GLEW 2.1.0 기준 다음과 같이 디렉토리를 구성합니다.
-<img width="1012" alt="directory" src="https://user-images.githubusercontent.com/60923302/110611081-38250e80-81d2-11eb-957a-7bc0e8aba878.png">
-<br>
-<br>
-저는 Windows 64bit 환경에서 작업을 하지만 프로젝트는 32bit 기준으로 진행하겠습니다. 그리고 동적 라이브러리보다는 정적 라이브러리를 사용하도록 하겠습니다. GLEW는 다운로드 받으신 파일 구성 그대로 사용하시면 됩니다. doc과 LICENSE.txt 파일은 딱히 필요하진 않으나 그냥 두도록 합니다. bin/Release와 lib/Release 아래에도 Win32 외에 x64 폴더가 있을텐데 프로젝트를 64bit 기반으로 진행하고자 한다면 x64 폴더 아래 라이브러리 파일들이 필요합니다..</p>
-GLFW의 경우 다운로드 받으면 Visuall Studio 버전에 따라 폴더들이 있을 것입니다. 저는 Visual Studio 2019로 작업하고 있기에 lib-vc2019 폴더만 들고와서 사용합니다. 그 외 헤더파일들을 가지고 옵니다.</p>
-이제 Visual Studio에서 위 디렉토리들을 참조할 수 있도록 설정해야합니다. 프로젝트 속성 페이지를 열고(프로젝트-&gt;속성) 다음 설명대로 진행합니다.</p>
-<pre><code>1. C/C++ 메뉴 아래 일반으로 들어갑니다. 최상단의 추가 포함 디렉터리를 편집하는데, 헤더 파일들이 포함되어 있는 디렉터리들을 추가합니다.
 
-$(SolutionDir)Dependencies₩GLFW₩include
-$(SolutionDir)Dependencies₩GLEW₩include
-
-
-2. 다음으로 링커 메뉴 아래 일반으로 들어갑니다. 추가 라이브러리 디렉터리를 편집하는데, 라이브러리 파일들이 포함되어 있는 디렉터리들을 추가합니다.
-
-$(SolutionDir)Dependencies₩GLFW₩lib-vc2019
-$(SolutionDir)Dependencies₩GLEW₩lib₩Release₩Win32
-
-
-3. 그리고 마지막으로 링커 메뉴 아래 입력으로 들어갑니다. 추가 종속성을 편집하는데, 다음을 추가합니다.
-
-glfw3.lib
-opengl32.lib
-glew32s.lib
-
-
-4. glew32s.lib는 정적라이브러리이고 이를 사용하기 위해선 전처리기 정의를 추가해야합니다. C/C++ 메뉴 아래 전처리기로 들어가 전처리기 정의를 추가합니다.
-
-GLEW_STATIC
-</code></pre></p>
-참고로, 동적 라이브러리를 사용하시고 싶으시다면 Dependencies₩GLFW₩lib-vc2019에 있는 glfw3.dll 파일과 Dependencies₩GLEW₩bin₩Release₩Win32에 있는 glew32.dll 파일을 프로젝트 폴더(보통 솔루션 파일과 같은 이름으로 솔루션 디렉토리에 생성됩니다)로 복사, 붙여넣기 해주시면 됩니다. 그리고 위 3번에서 추가 종속성을 편집할 때 glew32s.lib가 아닌 glew32.lib를 추가해주시고, 4번 과정을 생략하셔야 합니다.</p>
-이제 OpenGL을 사용할 수 있는 환경이 구축되었습니다. 주의할 점은 항상 GLEW의 헤더파일을 가장 우선적으로 include 하십시오. GLFW와 GLEW를 이용하여 OpenGL context를 생성하고 코드를 작성하는 법은 다음 글에서 다루도록 하겠습니다.</p>
-<pre><code>#include &lt;GL/glew.h&gt;
-#include &lt;GLFW/glfw3.h&gt;
-</code></pre>
 					</div>
 					<div class="post-comments">
 						
@@ -273,23 +231,44 @@ GLEW_STATIC
     <h4 class="widget-title">Latest Posts</h4>
     
     <div class="media">
-      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/opengl_intro/">
-        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 소개">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/opengl_version/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 버전 확인법">
       </a>
       <div class="media-body">
-        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/opengl_intro/">OpenGL 소개</a></h4>
-        <p>OpenGL이란? OpenGL이 정확히 무엇인지 알아보자.
-OpenGL을 라이브러리라고 생 …</p>
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/opengl_version/">OpenGL 버전 확인법</a></h4>
+        <p></p>
       </div>
     </div>
     
     <div class="media">
-      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/opengl_start/">
-        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 공부 시작">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/opengl_window/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 창 만들기">
       </a>
       <div class="media-body">
-        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/opengl_start/">OpenGL 공부 시작</a></h4>
-        <p>OpenGL 나의 첫 Graphics API, OpenGL …</p>
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/opengl_window/">OpenGL 창 만들기</a></h4>
+        <p>창(Window) 생성 GLFW
+우선, GLFW와 GLEW를 include 해야합니다. …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/opengl_install/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 설치 [OpenGL E03]">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/opengl_install/">OpenGL 설치 [OpenGL E03]</a></h4>
+        <p>Visual Studio에서 GLFW와 GLEW, 그리고 OpenGL 사용하기 Visual …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/opengl_intro/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 소개 [OpenGL E02]">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/opengl_intro/">OpenGL 소개 [OpenGL E02]</a></h4>
+        <p>OpenGL이란? OpenGL이 정확히 무엇인지 알아보자.
+OpenGL을 라이브러리라고 생 …</p>
       </div>
     </div>
     
@@ -304,7 +283,7 @@ OpenGL을 라이브러리라고 생 …</p>
       <li><a href="/ko/tags/computer-graphics">Computer graphics</a></li>
       <li><a href="/ko/tags/glew">Glew</a></li>
       <li><a href="/ko/tags/glfw">Glfw</a></li>
-      <li><a href="/ko/tags/graphics-api">Graphics API</a></li>
+      <li><a href="/ko/tags/graphics-api">Graphics api</a></li>
       <li><a href="/ko/tags/opengl">Opengl</a></li>
     </ul>
   </div></aside>

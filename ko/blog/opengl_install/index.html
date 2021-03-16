@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko-ko"><head>
+  <meta charset="utf-8">
+  <title>OpenGL 설치 [OpenGL E03]</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="OpenGL/GLEW/GLFW">
+  <meta name="author" content="Tony Kim">
+  <meta name="generator" content="Hugo 0.68.3" />
+  
+  
+  <meta property="og:image" content="https://kyoungwhankim.github.io/images/blog/opengl.svg" />
+  
+  <meta property="og:title" content="OpenGL 설치 [OpenGL E03]" />
+<meta property="og:description" content="OpenGL/GLEW/GLFW" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kyoungwhankim.github.io/ko/blog/opengl_install/" />
+<meta property="article:published_time" content="2021-03-11T20:16:00+09:00" />
+<meta property="article:modified_time" content="2021-03-11T20:16:00+09:00" />
+
+  
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/bootstrap/bootstrap.min.css" media='screen'>
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/Ionicons/css/ionicons.min.css" >
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/magnific-popup/magnific-popup.min.css" >
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/slick/slick.css" >
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://kyoungwhankim.github.io/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://kyoungwhankim.github.io/images/favicon.png" type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+
+<header class="navigation">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <nav class="navbar">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/ko">
+              <img src="https://kyoungwhankim.github.io/images/tonykim_logo.png" alt="Tony Kim | Blog &amp; Portfolio" width="150px" class="img-responsive">
+            </a>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/ko">홈</a></li>
+              
+              
+              
+              <li><a href="/ko/about">소개</a></li>
+              
+              
+              
+              <li><a href="/ko/project">프로젝트</a></li>
+              
+              
+              
+              <li><a href="/ko/blog">블로그</a></li>
+              
+              
+              
+              <li><a href="/ko/contact">문의</a></li>
+              
+              
+
+              
+              <li>
+                <select id="select-language" onchange="location = this.value;">
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <option id="ko" value="https://kyoungwhankim.github.io/ko/blog/opengl_install/" selected>
+                    Ko
+                  </option>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <option id="en" value="https://kyoungwhankim.github.io/blog/opengl_install/">En
+                  </option>
+                  
+                  
+                  
+                  
+                </select>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-title bg-2" style="background-image: url('https://kyoungwhankim.github.io/images/default.png');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>OpenGL 설치 [OpenGL E03]</h1>
+          <p>OpenGL/GLEW/GLFW</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="post post-single">
+					<h2 class="post-title">OpenGL 설치 [OpenGL E03]</h2>
+					<div class="post-meta">
+						<ul>
+              <li><i class="ion-calendar"></i> March 11, 2021</li>
+              <li><i class="ion-android-people"></i>
+                Posted By
+                
+                <a class="text-primary" href="/ko/author/%EA%B9%80%EA%B2%BD%ED%99%98">김경환</a>
+                
+              </li>
+              <li><i class="ion-pricetags"></i> 
+                
+                <a href="/ko/tags/opengl">Open g l</a>
+								
+                , <a href="/ko/tags/glew">G l e w</a>
+								
+                , <a href="/ko/tags/glfw">G l f w</a>
+								
+                , <a href="/ko/tags/computer%20graphics">Computer graphics</a>
+								
+                , <a href="/ko/tags/graphics%20api">Graphics api</a>
+								
+              </li>
+            </ul>
+					</div>
+					<div class="post-thumb">
+						<img class="img-responsive" src="/images/blog/opengl.svg" alt="OpenGL 설치 [OpenGL E03]">
+					</div>
+					<div class="post-content post-excerpt">
+						<h2 id="visual-studio에서-glfw와-glew-그리고-opengl-사용하기">Visual Studio에서 GLFW와 GLEW, 그리고 OpenGL 사용하기</h2>
+<p>Visual Studio에서 OpenGL 작업 환경을 구축해보자.<br>
+<br>
+Windows 환경에서 Visual Studio를 사용하여 OpenGL 함수들을 사용하기 위해선 준비 작업들이 있습니다.<br>
+<br></p>
+<h3 id="visual-studio-프로젝트-생성">Visual Studio 프로젝트 생성</h3>
+<p>우선, Visual Studio의 <strong>새 C++ 빈 프로젝트</strong>를 생성합니다. 그리고 main 함수가 위치할 cpp 파일을 생성합니다.<br>
+<br></p>
+<h3 id="glew와-glfw-다운로드">GLEW와 GLFW 다운로드</h3>
+<p>다음으로, <strong>GLEW</strong>와 <strong>GLFW</strong>를 다운받습니다. <a href="https://www.glfw.org/download.html">GLFW</a> <a href="http://glew.sourceforge.net">GLEW</a><br>
+GLFW와 GLEW 모두 소스 파일을 받아 직접 빌드하거나, 자신의 운영 체제에 맞는 바이너리 파일을 받아 바로 사용할 수 있습니다. Windows의 경우 둘 다 <strong>pre-compile된 바이너리 파일 모음(라이브러리 파일, 헤더 파일 등)들</strong>이 있기 때문에 바이너리 파일들을 다운 받으시는 것을 추천드립니다.</p>
+GLFW 다운로드<br>
+<img width="1196" alt="glfw_download" src="https://user-images.githubusercontent.com/60923302/110604561-926ea100-81cb-11eb-9e8d-b3bed54879f3.png">
+<br>
+<br>
+GLEW 다운로드<br>
+<img width="1196" alt="glew_download" src="https://user-images.githubusercontent.com/60923302/110604925-f4c7a180-81cb-11eb-97e9-d040ccd71cc5.png">
+<br>
+<br></p>
+<h3 id="솔루션-디렉토리-구성">솔루션 디렉토리 구성</h3>
+<p>다운로드를 받으셨다면 라이브러리와 헤더 파일들을 사용하기 위해 Visual Studio 솔루션 디렉토리 기준 하위 폴더에 다운로드 받으신 파일들을 보관합니다. 파일들을 관리하는 방법은 개인에 따라 차이가 있기 때문에 저의 방법을 소개해드리는 것으로 설명을 대신하겠습니다.<br>
+<br>
+<strong>Visual Studio 프로젝트는 솔루션 디렉토리(.sln 파일이 있는 디렉토리) 아래에 파일들을 관리하는 것을 추천합니다.</strong> 저의 경우 솔루션 디렉토리에 <strong>Dependencies 폴더</strong>를 생성하여 GLFW와 GLEW 파일들을 관리합니다. GLFW 3.3.3, GLEW 2.1.0 기준 다음과 같이 디렉토리를 구성합니다.
+<img width="1012" alt="directory" src="https://user-images.githubusercontent.com/60923302/110611081-38250e80-81d2-11eb-957a-7bc0e8aba878.png">
+<br></p>
+<p><br>저는 Windows 64bit 환경에서 작업을 하지만 프로젝트는 32bit 기준으로 진행하겠습니다. 그리고 동적 라이브러리보다는 <strong>정적 라이브러리</strong>를 사용하도록 하겠습니다. GLEW는 다운로드 받으신 파일 구성 그대로 사용하시면 됩니다. doc과 LICENSE.txt 파일은 딱히 필요하진 않으나 그냥 두도록 합니다. bin/Release와 lib/Release 아래에도 Win32 외에 x64 폴더가 있을텐데 프로젝트를 64bit 기반으로 진행하고자 한다면 x64 폴더 아래 라이브러리 파일들이 필요합니다.<br>
+<br>
+GLFW의 경우 다운로드 받으면 Visuall Studio 버전에 따라 폴더들이 있을 것입니다. 저는 Visual Studio 2019로 작업하고 있기에 <strong>lib-vc2019 폴더</strong>만 들고와서 사용합니다. 그 외 헤더파일들을 가지고 옵니다.<br>
+<br>
+이제 Visual Studio에서 위 디렉토리들을 참조할 수 있도록 설정해야합니다. <strong>프로젝트 속성 페이지</strong>(프로젝트-&gt;속성)를 열고 다음 설명대로 진행합니다.</p>
+<pre><code>1. C/C++ 메뉴 아래 일반으로 들어갑니다. 최상단의 추가 포함 디렉터리를 편집하는데, 헤더 파일들이 포함되어 있는 디렉터리들을 추가합니다.
+
+$(SolutionDir)Dependencies₩GLFW₩include
+$(SolutionDir)Dependencies₩GLEW₩include
+
+
+2. 다음으로 링커 메뉴 아래 일반으로 들어갑니다. 추가 라이브러리 디렉터리를 편집하는데, 라이브러리 파일들이 포함되어 있는 디렉터리들을 추가합니다.
+
+$(SolutionDir)Dependencies₩GLFW₩lib-vc2019
+$(SolutionDir)Dependencies₩GLEW₩lib₩Release₩Win32
+
+
+3. 그리고 마지막으로 링커 메뉴 아래 입력으로 들어갑니다. 추가 종속성을 편집하는데, 다음을 추가합니다.
+
+glfw3.lib
+opengl32.lib
+glew32s.lib
+
+
+4. glew32s.lib는 정적라이브러리이고 이를 사용하기 위해선 전처리기 정의를 추가해야합니다. C/C++ 메뉴 아래 전처리기로 들어가 전처리기 정의를 추가합니다.
+
+GLEW_STATIC
+</code></pre><br>
+<h3 id="동적-라이브러리-사용하기-optional">동적 라이브러리 사용하기 (Optional)</h3>
+<p>참고로, 동적 라이브러리를 사용하시고 싶으시다면 Dependencies₩GLFW₩lib-vc2019에 있는 glfw3.dll 파일과 Dependencies₩GLEW₩bin₩Release₩Win32에 있는 glew32.dll 파일을 프로젝트 폴더(보통 솔루션 파일과 같은 이름으로 솔루션 디렉토리에 생성됩니다)로 복사, 붙여넣기 해주시면 됩니다. 그리고 위 3번에서 추가 종속성을 편집할 때 glew32s.lib가 아닌 glew32.lib를 추가해주시고, 4번 과정을 생략하셔야 합니다.<br></p>
+<h3 id="마무리">마무리</h3>
+<p>이제 OpenGL을 사용할 수 있는 환경이 구축되었습니다. 주의할 점은 항상 GLEW의 헤더파일을 가장 우선적으로 include 하십시오. GLFW와 GLEW를 이용하여 OpenGL context를 생성하고 코드를 작성하는 법은 다음 글에서 다루도록 하겠습니다.<br></p>
+<pre><code>#include &lt;GL/glew.h&gt;
+#include &lt;GLFW/glfw3.h&gt;
+</code></pre>
+					</div>
+					<div class="post-comments">
+						
+					</div>
+				</div>
+			</div>
+      <div class="col-md-4">
+        <aside class="sidebar"><div class="widget widget-latest-post">
+    <h4 class="widget-title">Latest Posts</h4>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/opengl_version/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 버전 확인법">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/opengl_version/">OpenGL 버전 확인법</a></h4>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/opengl_window/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 창 만들기">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/opengl_window/">OpenGL 창 만들기</a></h4>
+        <p>창(Window) 생성 GLFW
+우선, GLFW와 GLEW를 include 해야합니다. …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/opengl_install/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 설치 [OpenGL E03]">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/opengl_install/">OpenGL 설치 [OpenGL E03]</a></h4>
+        <p>Visual Studio에서 GLFW와 GLEW, 그리고 OpenGL 사용하기 Visual …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/opengl_intro/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 소개 [OpenGL E02]">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/opengl_intro/">OpenGL 소개 [OpenGL E02]</a></h4>
+        <p>OpenGL이란? OpenGL이 정확히 무엇인지 알아보자.
+OpenGL을 라이브러리라고 생 …</p>
+      </div>
+    </div>
+    
+  </div><div class="widget widget-category">
+    <h4 class="widget-title">Categories</h4>
+    <ul class="widget-category-list">
+      <li><a href="/ko/categories/opengl">Opengl</a></li>
+    </ul>
+  </div><div class="widget widget-tag">
+    <h4 class="widget-title">Tags</h4>
+    <ul class="widget-tag-list">
+      <li><a href="/ko/tags/computer-graphics">Computer graphics</a></li>
+      <li><a href="/ko/tags/glew">Glew</a></li>
+      <li><a href="/ko/tags/glfw">Glfw</a></li>
+      <li><a href="/ko/tags/graphics-api">Graphics api</a></li>
+      <li><a href="/ko/tags/opengl">Opengl</a></li>
+    </ul>
+  </div></aside>
+
+      </div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer-manu">
+					<ul>
+            
+            <li><a href="https://kyoungwhankim.github.io/about">소개</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/project">프로젝트</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/blog">블로그</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/contact">문의</a></li>
+            
+					</ul>
+				</div>
+				<p class="copyright">Copyright © 2020 <a href="https://themefisher.com">Themefisher</a> All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+
+<script src="https://kyoungwhankim.github.io/plugins/jQuery/jquery.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/bootstrap/bootstrap.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/slick/slick.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/magnific-popup/magnific-popup.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/shuffle/shuffle.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/google-map/gmap.js" defer></script>
+
+
+
+
+<script src="https://kyoungwhankim.github.io/js/script.min.js"></script>
+
+
+</body>
+
+</html>
