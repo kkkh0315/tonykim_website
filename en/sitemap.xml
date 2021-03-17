@@ -257,6 +257,20 @@
   </url>
   
   <url>
+    <loc>https://kyoungwhankim.github.io/project/coke_bottle/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/project/coke_bottle/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/project/coke_bottle/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kyoungwhankim.github.io/contact/</loc>
     <xhtml:link
                 rel="alternate"
