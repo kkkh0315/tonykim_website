@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 13 Mar 2021 21:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 15 Mar 2021 20:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://kyoungwhankim.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rendering</title>
+      <link>https://kyoungwhankim.github.io/tags/rendering/</link>
+      <pubDate>Mon, 15 Mar 2021 20:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/tags/rendering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Renderman</title>
+      <link>https://kyoungwhankim.github.io/tags/renderman/</link>
+      <pubDate>Mon, 15 Mar 2021 20:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/tags/renderman/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Computer Graphics</title>
