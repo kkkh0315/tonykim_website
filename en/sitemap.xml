@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kyoungwhankim.github.io/blog/</loc>
+    <lastmod>2021-03-13T21:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/blog/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kyoungwhankim.github.io/categories/</loc>
     <lastmod>2021-03-13T21:00:00+09:00</lastmod>
     <xhtml:link
@@ -134,21 +149,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://kyoungwhankim.github.io/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/blog/</loc>
-    <lastmod>2021-03-13T21:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/blog/"
                 />
   </url>
   
