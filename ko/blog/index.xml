@@ -28,7 +28,8 @@ Maya와 Arnold만 쓰다가 다른 랜더링 프로그램으로 갈아타야겠�
       <pubDate>Sat, 13 Mar 2021 21:00:00 +0900</pubDate>
       
       <guid>https://kyoungwhankim.github.io/ko/blog/opengl_version/</guid>
-      <description></description>
+      <description>OpenGL 버전 확인법 NVIDIA 그래픽 카드 사용하기 OpenGL 버전을 확인하기 전에 내가 사용하고 있는 그래픽 카드를 확인해야 합니다. 그래픽 카드 별로 탑재된 OpenGL 버전이 상이하기 때문입니다.
+많은 컴퓨터들이 하나 이상의 그래픽 카드를 탑재하고 있습니다.</description>
     </item>
     
     <item>

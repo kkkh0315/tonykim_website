@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="OpenGL의 버전을 확인한다">
+  <meta name="description" content="What version is my OpenGL?">
   <meta name="author" content="Tony Kim">
   <meta name="generator" content="Hugo 0.68.3" />
   
@@ -13,7 +13,7 @@
   <meta property="og:image" content="https://kyoungwhankim.github.io/images/blog/opengl.svg" />
   
   <meta property="og:title" content="OpenGL 버전 확인법" />
-<meta property="og:description" content="OpenGL의 버전을 확인한다" />
+<meta property="og:description" content="What version is my OpenGL?" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kyoungwhankim.github.io/ko/blog/opengl_version/" />
 <meta property="article:published_time" content="2021-03-13T21:00:00+09:00" />
@@ -139,7 +139,7 @@
       <div class="col-md-12">
         <div class="block">
           <h1>OpenGL 버전 확인법</h1>
-          <p>OpenGL의 버전을 확인한다</p>
+          <p>What version is my OpenGL?</p>
         </div>
       </div>
     </div>
@@ -176,7 +176,34 @@
 						<img class="img-responsive" src="/images/blog/opengl.svg" alt="OpenGL 버전 확인법">
 					</div>
 					<div class="post-content post-excerpt">
-						
+						<h2 id="opengl-버전-확인법">OpenGL 버전 확인법</h2>
+<h3 id="nvidia-그래픽-카드-사용하기">NVIDIA 그래픽 카드 사용하기</h3>
+<p>OpenGL 버전을 확인하기 전에 <strong>내가 사용하고 있는 그래픽 카드</strong>를 확인해야 합니다. 그래픽 카드 별로 탑재된 OpenGL 버전이 상이하기 때문입니다.<br>
+<br>
+많은 컴퓨터들이 하나 이상의 그래픽 카드를 탑재하고 있습니다. 저의 경우 CPU 내장 그래픽 카드인 Intel HD Graphics 630과 외장 그래픽카드 NVIDIA GeForce GTX 1050이 노트북에 탑재 되어있습니다.
+<img src="https://user-images.githubusercontent.com/60923302/111499568-6e403080-8786-11eb-8d23-ea7a75a8962c.png" alt="graphic_cards">
+이런 경우 기본 그래픽 프로세서를 내장 그래픽 카드의 프로세서보다는 외장 그래픽 카드의 고성능 프로세서를 사용하고 싶은 게 당연합니다. 하지만 많은 컴퓨터들의 기본 그래픽 프로세서는 내장 그래픽 카드의 것으로 설정되어있을 것입니다.<br>
+<br>
+NVIDIA의 고성능 프로세서를 사용하고 싶다면 바탕화면에서 오른쪽 마우스 클릭을 한 후 <strong>NVIDIA 제어판</strong>으로 들어갑니다.
+<img src="https://user-images.githubusercontent.com/60923302/111500791-b6138780-8787-11eb-9916-b0bbaee13600.png" alt="nvidia_control">
+<br>
+<br>
+만약 오른쪽 마우스 클릭을 해도 NVIDIA 제어판이 없다면 Windows 검색에서 <strong>NVIDIA Control Panel</strong>을 찾으시면 됩니다.<br>
+<br>
+NVIDIA 제어판을 열었다면 <strong>[3D 설정 관리]</strong> 메뉴에서 <strong>[전역 설정]</strong> 탭 아래 [기본 그래픽 프로세서]를 <strong>NVIDIA 프로세서</strong>로 선택해주고 <strong>적용</strong>합니다. [프로그램 설정] 탭으로 진입하면 프로그램 별로 기본 그래픽 프로세서를 선택할 수도 있습니다. 모든 프로그램은 기본적으로 전역 설정을 따릅니다.<br>
+<br>
+이제 NVIDIA의 고성능 프로세서를 사용하게 되었습니다.</p>
+<h3 id="opengl-버전-확인하기">OpenGL 버전 확인하기</h3>
+<p>OpenGL 버전을 확인하기에 적합한 프로그램으로 OpenGL Extensions Viewer이 있습니다. 가벼운 프로그램이니 구글에 검색해서 다운로드 받습니다. <br>
+<a href="https://www.softpedia.com/get/Programming/Other-Programming-Files/OpenGL-Extension-Viewer.shtml">OpenGL Extension Viewer 다운로드</a><br>
+<br>
+다운로드 후 실행시키면 기본 그래픽 프로세서의 OpenGL 버전을 확인하실 수 있습니다.
+<img src="https://user-images.githubusercontent.com/60923302/111504162-bc573300-878a-11eb-9e6b-08a797f9d68b.png" alt="opengl_version">
+<br>
+<br>
+참고로 기본 그래픽 프로세서가 Intel 그래픽 카드의 프로세서로 설정되어 있을 땐 아래와 같은 창이 뜹니다.
+<img src="https://user-images.githubusercontent.com/60923302/111504656-3be50200-878b-11eb-8d2b-7edffc0ee0ce.png" alt="opengl_version2"></p>
+
 					</div>
 					<div class="post-comments">
 						
@@ -203,7 +230,7 @@
       </a>
       <div class="media-body">
         <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/opengl_version/">OpenGL 버전 확인법</a></h4>
-        <p></p>
+        <p>OpenGL 버전 확인법 NVIDIA 그래픽 카드 사용하기 OpenGL 버전을 확인하기 전 …</p>
       </div>
     </div>
     
