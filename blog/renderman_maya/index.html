@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="ko-ko"><head>
+<html lang="en-us"><head>
   <meta charset="utf-8">
-  <title>Graphics API</title>
+  <title>Maya에서 Renderman 사용하기</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This is meta description">
+  <meta name="description" content="Renderman in Maya">
   <meta name="author" content="Tony Kim">
   <meta name="generator" content="Hugo 0.68.3" />
   
   
-  <meta property="og:title" content="Graphics API" />
-<meta property="og:description" content="This is meta description" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://kyoungwhankim.github.io/ko/tags/graphics-api/" />
-<meta property="og:updated_time" content="2021-03-13T21:00:00+09:00" />
+  <meta property="og:image" content="https://kyoungwhankim.github.io/images/blog/renderman.png" />
+  
+  <meta property="og:title" content="Maya에서 Renderman 사용하기" />
+<meta property="og:description" content="Renderman in Maya" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kyoungwhankim.github.io/blog/renderman_maya/" />
+<meta property="article:published_time" content="2021-03-16T20:00:00+09:00" />
+<meta property="article:modified_time" content="2021-03-16T20:00:00+09:00" />
 
   
 
@@ -57,7 +60,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/ko">
+            <a class="navbar-brand" href="/">
               <img src="https://kyoungwhankim.github.io/images/tonykim_logo.png" alt="Tony Kim | Blog &amp; Portfolio" width="150px" class="img-responsive">
             </a>
           </div>
@@ -66,23 +69,23 @@
             <ul class="nav navbar-nav navbar-right">
               
               
-              <li><a href="/ko">홈</a></li>
+              <li><a href="/">Home</a></li>
               
               
               
-              <li><a href="/ko/about">소개</a></li>
+              <li><a href="/about">About</a></li>
               
               
               
-              <li><a href="/ko/project">프로젝트</a></li>
+              <li><a href="/project">Projects</a></li>
               
               
               
-              <li><a href="/ko/blog">블로그</a></li>
+              <li><a href="/blog">Blog</a></li>
               
               
               
-              <li><a href="/ko/contact">문의</a></li>
+              <li><a href="/contact">Contact</a></li>
               
               
 
@@ -97,8 +100,7 @@
                   
                   
                   
-                  <option id="ko" value="https://kyoungwhankim.github.io/ko/tags/graphics-api/" selected>
-                    Ko
+                  <option id="ko" value="https://kyoungwhankim.github.io/ko/blog/renderman_maya/">Ko
                   </option>
                   
                   
@@ -113,7 +115,8 @@
                   
                   
                   
-                  <option id="en" value="https://kyoungwhankim.github.io/tags/graphics-api/">En
+                  <option id="en" value="https://kyoungwhankim.github.io/blog/renderman_maya/" selected>
+                    En
                   </option>
                   
                   
@@ -130,152 +133,108 @@
   </div>
 </header>
 
-<section class="page-title bg-2" style="background-image: url('https://kyoungwhankim.github.io');">
+<section class="page-title bg-2" style="background-image: url('https://kyoungwhankim.github.io/images/default.png');">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>Graphics API</h1>
-          <p></p>
+          <h1>Maya에서 Renderman 사용하기</h1>
+          <p>Renderman in Maya</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="page-wrapper">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        
-        
-        <div class="post">
-          <div class="post-media post-thumb">
-            <a href="https://kyoungwhankim.github.io/ko/blog/opengl_start/">
-              <img src="/images/blog/opengl.svg" alt="OpenGL 공부 시작 [OpenGL E01]">
-            </a>
-          </div>
-          <h3 class="post-title"><a href="https://kyoungwhankim.github.io/ko/blog/opengl_start/">OpenGL 공부 시작 [OpenGL E01]</a></h3>
-          <div class="post-meta">
-            <ul>
-              <li><i class="ion-calendar"></i> March 7, 2021</li>
+<section class="page-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="post post-single">
+					<h2 class="post-title">Maya에서 Renderman 사용하기</h2>
+					<div class="post-meta">
+						<ul>
+              <li><i class="ion-calendar"></i> March 16, 2021</li>
               <li><i class="ion-android-people"></i>
                 Posted By
                 
-                <a class="text-primary" href="/ko/author/%EA%B9%80%EA%B2%BD%ED%99%98">김경환</a>
+                <a class="text-primary" href="/author/%EA%B9%80%EA%B2%BD%ED%99%98">김경환</a>
                 
               </li>
               <li><i class="ion-pricetags"></i> 
                 
-                <a href="/ko/tags/opengl">Open g l</a>
+                <a href="/tags/renderman">Renderman</a>
 								
-                , <a href="/ko/tags/computer%20graphics">Computer graphics</a>
-								
-                , <a href="/ko/tags/graphics%20api">Graphics api</a>
+                , <a href="/tags/rendering">Rendering</a>
 								
               </li>
             </ul>
-          </div>
-          <div class="post-content">
-            <p>OpenGL 나의 첫 Graphics API, OpenGL
-컴퓨터 그래픽스 공부를 시작하기 위해서 컴퓨터 공학 지식이 필요하다고 느꼈습니다.
-2020년 3월부터 공부한 C언어를 시작으로 5월부터 진행한 42SEOUL로 어느 정도 컴퓨터 언어와 친숙해졌다고 생각이 들어 2020년 12월 말부터 저의 첫 Graphics API인 OpenGL 공부를 시작했습니다.</p>
-            <a href="https://kyoungwhankim.github.io/ko/blog/opengl_start/" class="btn btn-main">Continue Reading</a>
-          </div>
-        </div>
-        
-        
-				
-				
-				
-				
-				
-				
-				
-				<nav class="text-center">
-					<ul class="pagination post-pagination">
+					</div>
+					<div class="post-thumb">
+						<img class="img-responsive" src="/images/blog/renderman.png" alt="Maya에서 Renderman 사용하기">
+					</div>
+					<div class="post-content post-excerpt">
+						<h2 id="maya에서-renderman-사용하는-법">Maya에서 Renderman 사용하는 법</h2>
+<p>Renderman을 설치했더라도 Maya에서 Renderman이 바로 보이지는 않는다. 플러그인 매니저에서 Renderman을 실행시켜보자.</p>
+<ol>
+<li>Windows -&gt; Settings/Preferences -&gt; Plug-in Manager 클릭</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/60923302/111756473-94c4af80-88dd-11eb-968f-028a86cf9202.png" alt="plugin_manager"></p>
+<ol start="2">
+<li>검색창에서 Renderman 검색 후 Renderman_for_Maya.py의 Loaded와 Auto Loaded 체크. Auto Loaded를 체크해 두면 Maya가 새로이 켜질 때마다 Renderman을 자동으로 실행시킵니다.</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/60923302/111757589-d3a73500-88de-11eb-9df7-c9b3a6a7ed3e.png" alt="load"></p>
+<ol start="3">
+<li>Renderman 메뉴가 나타나는지 확인합니다.</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/60923302/111757476-b5d9d000-88de-11eb-9c90-f328cdc55ee9.png" alt="renderman_menu"></p>
+
+					</div>
+					<div class="post-comments">
 						
-						
-						<li>
-							<a href="/ko/tags/graphics-api/" class="page-link">Prev</a>
-            </li>
-            
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						<li class="">
-							<a href="/ko/tags/graphics-api/">
-								1
-							</a>
-						</li>
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						<li class=" active ">
-							<a href="/ko/tags/graphics-api/page/2/">
-								2
-							</a>
-						</li>
-						
-						
-						
-						
-					</ul>
-				</nav>
-				
-      </div>
+					</div>
+				</div>
+			</div>
       <div class="col-md-4">
         <aside class="sidebar"><div class="widget widget-latest-post">
     <h4 class="widget-title">Latest Posts</h4>
     
     <div class="media">
-      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/renderman_maya/">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/renderman_maya/">
         <img class="media-object" src="/images/blog/renderman.png" alt="Maya에서 Renderman 사용하기">
       </a>
       <div class="media-body">
-        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/renderman_maya/">Maya에서 Renderman 사용하기</a></h4>
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/renderman_maya/">Maya에서 Renderman 사용하기</a></h4>
         <p>Maya에서 Renderman 사용하는 법 Renderman을 설치했더라도 Maya …</p>
       </div>
     </div>
     
     <div class="media">
-      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/renderman_install/">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/renderman_install/">
         <img class="media-object" src="/images/blog/renderman.png" alt="Renderman 설치">
       </a>
       <div class="media-body">
-        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/renderman_install/">Renderman 설치</a></h4>
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/renderman_install/">Renderman 설치</a></h4>
         <p>Renderman Non-commercial 버전 Pixar …</p>
       </div>
     </div>
     
     <div class="media">
-      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/renderman_start/">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/renderman_start/">
         <img class="media-object" src="/images/blog/renderman.png" alt="Renderman 공부 시작">
       </a>
       <div class="media-body">
-        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/renderman_start/">Renderman 공부 시작</a></h4>
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/renderman_start/">Renderman 공부 시작</a></h4>
         <p>Renderman Renderman은 Pixar Animation Studio(픽사 애니메 …</p>
       </div>
     </div>
     
     <div class="media">
-      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/opengl_version/">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/opengl_version/">
         <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 버전 확인법">
       </a>
       <div class="media-body">
-        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/opengl_version/">OpenGL 버전 확인법</a></h4>
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/opengl_version/">OpenGL 버전 확인법</a></h4>
         <p>OpenGL 버전 확인법 NVIDIA 그래픽 카드 사용하기 OpenGL 버전을 확인하기 전 …</p>
       </div>
     </div>
@@ -283,26 +242,26 @@
   </div><div class="widget widget-category">
     <h4 class="widget-title">Categories</h4>
     <ul class="widget-category-list">
-      <li><a href="/ko/categories/opengl">Opengl</a></li>
-      <li><a href="/ko/categories/renderman">Renderman</a></li>
+      <li><a href="/categories/opengl">Opengl</a></li>
+      <li><a href="/categories/renderman">Renderman</a></li>
     </ul>
   </div><div class="widget widget-tag">
     <h4 class="widget-title">Tags</h4>
     <ul class="widget-tag-list">
-      <li><a href="/ko/tags/computer-graphics">Computer graphics</a></li>
-      <li><a href="/ko/tags/glew">Glew</a></li>
-      <li><a href="/ko/tags/glfw">Glfw</a></li>
-      <li><a href="/ko/tags/graphics-api">Graphics api</a></li>
-      <li><a href="/ko/tags/opengl">Opengl</a></li>
-      <li><a href="/ko/tags/rendering">Rendering</a></li>
-      <li><a href="/ko/tags/renderman">Renderman</a></li>
+      <li><a href="/tags/computer-graphics">Computer graphics</a></li>
+      <li><a href="/tags/glew">Glew</a></li>
+      <li><a href="/tags/glfw">Glfw</a></li>
+      <li><a href="/tags/graphics-api">Graphics api</a></li>
+      <li><a href="/tags/opengl">Opengl</a></li>
+      <li><a href="/tags/rendering">Rendering</a></li>
+      <li><a href="/tags/renderman">Renderman</a></li>
     </ul>
   </div></aside>
 
       </div>
-    </div>
-  </div>
-</div>
+		</div>
+	</div>
+</section>
 
 <footer class="footer">
 	<div class="container">
@@ -311,13 +270,13 @@
 				<div class="footer-manu">
 					<ul>
             
-            <li><a href="https://kyoungwhankim.github.io/about">소개</a></li>
+            <li><a href="https://kyoungwhankim.github.io/about">About</a></li>
             
-            <li><a href="https://kyoungwhankim.github.io/project">프로젝트</a></li>
+            <li><a href="https://kyoungwhankim.github.io/project">Project</a></li>
             
-            <li><a href="https://kyoungwhankim.github.io/blog">블로그</a></li>
+            <li><a href="https://kyoungwhankim.github.io/blog">Blog</a></li>
             
-            <li><a href="https://kyoungwhankim.github.io/contact">문의</a></li>
+            <li><a href="https://kyoungwhankim.github.io/contact">Contact</a></li>
             
 					</ul>
 				</div>
