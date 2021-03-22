@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://kyoungwhankim.github.io/blog/</loc>
-    <lastmod>2021-03-16T20:00:00+09:00</lastmod>
+    <lastmod>2021-03-19T20:00:00+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -19,7 +19,7 @@
   
   <url>
     <loc>https://kyoungwhankim.github.io/categories/</loc>
-    <lastmod>2021-03-16T20:00:00+09:00</lastmod>
+    <lastmod>2021-03-19T20:00:00+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -29,6 +29,96 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://kyoungwhankim.github.io/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/tags/rendering/</loc>
+    <lastmod>2021-03-19T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/tags/rendering/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/tags/rendering/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/tags/renderman/</loc>
+    <lastmod>2021-03-19T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/tags/renderman/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/tags/renderman/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/categories/renderman/</loc>
+    <lastmod>2021-03-19T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/categories/renderman/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/categories/renderman/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/blog/renderman_metal/</loc>
+    <lastmod>2021-03-19T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/blog/renderman_metal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/blog/renderman_metal/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/tags/</loc>
+    <lastmod>2021-03-19T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/</loc>
+    <lastmod>2021-03-19T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/"
                 />
   </url>
   
@@ -48,51 +138,6 @@
   </url>
   
   <url>
-    <loc>https://kyoungwhankim.github.io/tags/rendering/</loc>
-    <lastmod>2021-03-16T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/tags/rendering/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/tags/rendering/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/tags/renderman/</loc>
-    <lastmod>2021-03-16T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/tags/renderman/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/tags/renderman/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/categories/renderman/</loc>
-    <lastmod>2021-03-16T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/categories/renderman/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/categories/renderman/"
-                />
-  </url>
-  
-  <url>
     <loc>https://kyoungwhankim.github.io/blog/renderman_install/</loc>
     <lastmod>2021-03-16T20:00:00+09:00</lastmod>
     <xhtml:link
@@ -104,36 +149,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://kyoungwhankim.github.io/blog/renderman_install/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/tags/</loc>
-    <lastmod>2021-03-16T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/</loc>
-    <lastmod>2021-03-16T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/"
                 />
   </url>
   

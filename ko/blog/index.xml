@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-ko</language>
     <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 16 Mar 2021 20:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 19 Mar 2021 20:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://kyoungwhankim.github.io/ko/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Renderman 스크래치 난 금속 만들기</title>
+      <link>https://kyoungwhankim.github.io/ko/blog/renderman_metal/</link>
+      <pubDate>Fri, 19 Mar 2021 20:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/ko/blog/renderman_metal/</guid>
+      <description>금속에 다양한 텍스쳐 맵 입히기 Renderman의 PxrSurface을 활용해서 기본 금속 재질을 만들어보고, 스크래치 자국을 텍스쳐 맵을 이용하여 표현해보도록 하겠습니다.
+PxrSurface의 Specular 우선 가장 기본적인 금속 재질은 PxrSurface의 Specular를 조정해서 만들 수 있습니다.</description>
+    </item>
     
     <item>
       <title>Maya에서 Renderman 사용하기</title>
@@ -31,16 +41,6 @@
       <description>Renderman Non-commercial 버전 Pixar는 비영리적인 목적으로 Renderman을 사용하고자 하는 고객들에게 프로그램을 무료로 제공합니다.
 Renderman non-commerical 버전을 설치하는 법을 알아보겠습니다.
  renderman.pixar.com 으로 들어갑니다. Renderman | Pixar Try/Buy 메뉴로 들어갑니다.  Non-Commercial 섹션 Try 아래 TRY FOR FREE을 누릅니다.</description>
-    </item>
-    
-    <item>
-      <title>Renderman 공부 시작</title>
-      <link>https://kyoungwhankim.github.io/ko/blog/renderman_start/</link>
-      <pubDate>Mon, 15 Mar 2021 20:00:00 +0900</pubDate>
-      
-      <guid>https://kyoungwhankim.github.io/ko/blog/renderman_start/</guid>
-      <description>Renderman Renderman은 Pixar Animation Studio(픽사 애니메이션 스튜디오)에서 제작한 3D 랜더링 프로그램입니다. 우리가 보는 디즈니 애니메이션 영화들이 Renderman으로 제작되는 대표적인 작품들입니다.
-Maya와 Arnold만 쓰다가 다른 랜더링 프로그램으로 갈아타야겠다는 생각을 오래했습니다. 컴퓨터 그래픽스에 빠져 컴퓨터 공학 공부를 하느라 한 동안 가까이 하지 못했던 Maya를 다시 만지기 시작한 이상 새로운 랜더링 프로그램을 공부하자고 다짐했습니다.</description>
     </item>
     
     <item>
@@ -93,6 +93,17 @@ OpenGL을 라이브러리라고 생각했습니다. 하지만 OpenGL은 설명�
       <pubDate>Sun, 07 Mar 2021 20:00:00 +0900</pubDate>
       
       <guid>https://kyoungwhankim.github.io/ko/blog/opengl_start/</guid>
+      <description>OpenGL 나의 첫 Graphics API, OpenGL
+컴퓨터 그래픽스 공부를 시작하기 위해서 컴퓨터 공학 지식이 필요하다고 느꼈습니다.
+2020년 3월부터 공부한 C언어를 시작으로 5월부터 진행한 42SEOUL로 어느 정도 컴퓨터 언어와 친숙해졌다고 생각이 들어 2020년 12월 말부터 저의 첫 Graphics API인 OpenGL 공부를 시작했습니다.</description>
+    </item>
+    
+    <item>
+      <title>OpenGL 공부 시작 [OpenGL E01]</title>
+      <link>https://kyoungwhankim.github.io/ko/blog/renderman_start/</link>
+      <pubDate>Sun, 07 Mar 2021 20:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/ko/blog/renderman_start/</guid>
       <description>OpenGL 나의 첫 Graphics API, OpenGL
 컴퓨터 그래픽스 공부를 시작하기 위해서 컴퓨터 공학 지식이 필요하다고 느꼈습니다.
 2020년 3월부터 공부한 C언어를 시작으로 5월부터 진행한 42SEOUL로 어느 정도 컴퓨터 언어와 친숙해졌다고 생각이 들어 2020년 12월 말부터 저의 첫 Graphics API인 OpenGL 공부를 시작했습니다.</description>
