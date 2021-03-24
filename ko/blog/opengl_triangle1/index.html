@@ -178,7 +178,7 @@
 					<div class="post-content post-excerpt">
 						<h2 id="opengl-그래픽스-파이프라인graphics-pipeline">OpenGL 그래픽스 파이프라인(Graphics Pipeline)</h2>
 <p>OpenGL로 표현하고자 하는 공간은 3차원이나 우리는 이를 2차원 화면을 통해 보게 됩니다.<br>
-따라서 3차원 좌표를 2차원 픽셀로 전환하는 과정이 필요하고 이를 <strong>그래픽스 파이프라인(Graphics Pipeline)</strong>, 또는 **렌더링 파이프라인(Rendering Pipeline)**이라고 합니다.<br></p>
+따라서 3차원 좌표를 2차원 픽셀로 전환하는 과정이 필요하고 이를 <strong>그래픽스 파이프라인(Graphics Pipeline)</strong>, 또는 렌더링 파이프라인(Rendering Pipeline)이라고 합니다.<br></p>
 <p>그래픽스 파이프라인을 간단하게 표현하면 아래와 같습니다.<br></p>
 <p><img src="https://user-images.githubusercontent.com/60923302/112174688-f36d8e80-8c39-11eb-9538-a3a3f3b139ff.png" alt="pipeline">
 <br></p>
@@ -195,7 +195,7 @@
 그래서 우리는 꼭지점 정보를 <strong>그래픽 카드의 메모리 공간에 저장</strong>하고, GPU가 이를 필요할 때마다 부르도록 설정할 것입니다.</p>
 <h3 id="vertex-buffer-objectvbo">Vertex Buffer Object(VBO)</h3>
 <p>그렇다면 꼭지점 정보를 어떻게 그래픽 카드에 저장할까요?
-바로 **Vertex Buffer Object(VBO)**란 OpenGL Object에 저장합니다.<br></p>
+바로 <strong>Vertex Buffer Object</strong>(VBO)란 OpenGL Object에 저장합니다.<br></p>
 <p>많은 튜토리얼들이 <strong>OpenGL Object</strong>에 대해 설명하지 않고 넘어갑니다. 하지만 OpenGL의 구동 방식을 이해하기 위해선 VBO와 같은 OpenGL Object에 대해 잘 알고 있어야합니다.<br></p>
 <h4 id="opengl-object와-state-machine">OpenGL Object와 State Machine</h4>
 <p>기본적으로 OpenGL은 <strong>State Machine</strong>(상태 기계)입니다. 간단하게 설명하자면, 우리가 일련의 과정들을 통해 OpenGL의 state를 설정하면, OpenGL 함수들은 현재 설정된 state에 따라서 작동합니다. 그리고 이 state를 바꾸지 않는 한 OpenGL 함수들은 그 경향을 계속 유지합니다. 물론 이 state를 우리는 계속해서 바꿀 것이고, OpenGL 함수들도 가장 최근 설정된 state에 따라 작동하겠지요.<br>
@@ -213,7 +213,7 @@
 };
 </code></pre><br>
 <p>vertices 배열이 담고 있는 정보는 <strong>세 꼭지점의 x, y, z 좌표</strong>입니다. 우리는 간단한 2차원 삼각형을 그릴 예정이기 때문에 z 좌표는 모두 0.0f으로 둡니다.<br></p>
-<p>한 가지 알아두어야 할 점은, 이 좌표들은 **Normalized Device Coordinates(NDC)**입니다. OpenGL은 모든 좌표들을 2D 화면에 그리지 않습니다. x, y, z 좌표 모두 오직 <strong>-1.0 에서 1.0 사이의 값</strong>을 갖는 좌표만 화면에 그립니다. 이런 좌표들을 NDC라고 합니다. 그림으로 보면 다음과 같습니다.
+<p>한 가지 알아두어야 할 점은, 이 좌표들은 <strong>Normalized Device Coordinates</strong>(NDC)입니다. OpenGL은 모든 좌표들을 2D 화면에 그리지 않습니다. x, y, z 좌표 모두 오직 <strong>-1.0 에서 1.0 사이의 값</strong>을 갖는 좌표만 화면에 그립니다. 이런 좌표들을 NDC라고 합니다. 그림으로 보면 다음과 같습니다.
 <br></p>
 <p><img src="https://user-images.githubusercontent.com/60923302/112196412-5bc66b00-8c4e-11eb-9b9a-9f4eac10a148.png" alt="NDC">
 <br></p>
