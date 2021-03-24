@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://kyoungwhankim.github.io/blog/</loc>
-    <lastmod>2021-03-19T20:00:00+09:00</lastmod>
+    <lastmod>2021-03-23T21:00:00+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -19,7 +19,7 @@
   
   <url>
     <loc>https://kyoungwhankim.github.io/categories/</loc>
-    <lastmod>2021-03-19T20:00:00+09:00</lastmod>
+    <lastmod>2021-03-23T21:00:00+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -29,6 +29,111 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://kyoungwhankim.github.io/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/tags/computer-graphics/</loc>
+    <lastmod>2021-03-23T21:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/tags/computer-graphics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/tags/computer-graphics/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/tags/graphics-api/</loc>
+    <lastmod>2021-03-23T21:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/tags/graphics-api/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/tags/graphics-api/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/tags/opengl/</loc>
+    <lastmod>2021-03-23T21:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/tags/opengl/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/tags/opengl/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/categories/opengl/</loc>
+    <lastmod>2021-03-23T21:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/categories/opengl/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/categories/opengl/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/blog/opengl_triangle1/</loc>
+    <lastmod>2021-03-23T21:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/blog/opengl_triangle1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/blog/opengl_triangle1/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/tags/</loc>
+    <lastmod>2021-03-23T21:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/</loc>
+    <lastmod>2021-03-23T21:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/"
                 />
   </url>
   
@@ -93,36 +198,6 @@
   </url>
   
   <url>
-    <loc>https://kyoungwhankim.github.io/tags/</loc>
-    <lastmod>2021-03-19T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/</loc>
-    <lastmod>2021-03-19T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/"
-                />
-  </url>
-  
-  <url>
     <loc>https://kyoungwhankim.github.io/blog/renderman_maya/</loc>
     <lastmod>2021-03-16T20:00:00+09:00</lastmod>
     <xhtml:link
@@ -164,66 +239,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://kyoungwhankim.github.io/blog/renderman_start/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/tags/computer-graphics/</loc>
-    <lastmod>2021-03-13T21:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/tags/computer-graphics/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/tags/computer-graphics/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/tags/graphics-api/</loc>
-    <lastmod>2021-03-13T21:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/tags/graphics-api/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/tags/graphics-api/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/tags/opengl/</loc>
-    <lastmod>2021-03-13T21:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/tags/opengl/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/tags/opengl/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/categories/opengl/</loc>
-    <lastmod>2021-03-13T21:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/categories/opengl/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/categories/opengl/"
                 />
   </url>
   

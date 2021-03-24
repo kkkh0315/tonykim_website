@@ -186,14 +186,25 @@
 <p><strong>API</strong>(Application Programming Interface)란 <strong>운영 프로그램에서 사용할 수 있도록 운영 체제나 프로그래밍 언어가 제공하는 기능을 제어할 수 있게 만드는 인터페이스</strong>입니다. API와 라이브러리의 차이점을 더 알고 싶으시다면 <a href="https://www.youtube.com/watch?v=We8JKbNQeLo">API vs Library vs Framework</a> 영상을 참고해주세요! <br>
 <br>
 그렇다면 OpenGL API 규격에 작성된 내용을 <strong>누가 구현</strong>할까요?<br>
-바로 <strong>그래픽 처리 장치 제조업체</strong>입니다. 당연히 그래픽 처리 장치 제조업체는 엔비디아, AMD, 인텔 등 여러 곳이 있으며, 따라서 <strong>OpenGL의 구현도 하나가 아닙니다</strong>. 이렇게 구현된 OpenGL은 드라이버와 함께 그래픽 처리 장치, 즉 <strong>그래픽 카드에 탑재</strong>됩니다.<br>
+바로 <strong>그래픽 처리 장치(GPU) 제조업체</strong>입니다. 당연히 그래픽 처리 장치 제조업체는 엔비디아, AMD, 인텔 등 여러 곳이 있으며, 따라서 <strong>OpenGL의 구현도 하나가 아닙니다</strong>. 이렇게 구현된 OpenGL은 드라이버와 함께 <strong>그래픽 카드에 탑재</strong>됩니다.<br>
 <br>
 이렇게 작성된 코드들의 집합을 우리는 라이브러리처럼 사용하게 됩니다.<br></p>
 <ul>
 <li>OpenGL은 API 규격으로 라이브러리가 아닌 문서이다.</li>
-<li>OpenGL은 그래픽 처리 장치 제조업체에서 구현하여 드라이버와 함께 제공한다.</li>
-<li>우리는 이 구현된 코드들을 라이브러리처럼 가져다 사용한다.</li>
+<li>OpenGL은 그래픽 처리 장치 제조업체에서 구현하여 그래픽 카드에 드라이버와 함께 제공한다.</li>
+<li>우리는 이 구현된 코드들을 라이브러리처럼 가져다 사용한다.
+<br>
+<br></li>
 </ul>
+<pre><code>GPU vs Graphics Card
+
+그래픽 처리 장치(GPU)와 그래픽 카드(Graphics Card)는 다릅니다.
+그래픽 처리 장치는 말 그대로 그래픽 연산을 처리하는 연산 장치입니다.
+그래픽 카드는 GPU, VRAM 등 그래픽 연산과 처리, 송출에 필요한 모든 기능을 한 데 모아둔 장치입니다.
+예전에는 그래픽 처리 장치와 그래픽 카드를 한 회사가 모두 제조하기도 하였습니다.
+하지만 요즘은 그래픽 처리 장치를 전문적으로 설계하는 엔비디아, AMD, 인텔 등의 회사가 존재하고
+이를 바탕으로 그래픽 카드를 제조하는 ASUS, GIGABYTE 등의 회사가 따로 존재합니다.
+</code></pre><br>
 <h2 id="glfwgraphics-library-framework란">GLFW(Graphics Library Framework)란?</h2>
 <p>GLFW란 무엇인지 알아보자.<br>
 <br>
@@ -229,6 +240,16 @@ OpenGL의 최신 구현은 그래픽 카드에 탑재되어 있습니다. <stron
     <h4 class="widget-title">Latest Posts</h4>
     
     <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/opengl_triangle1/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (1)VBO, VAO [OPENGL E05]">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/opengl_triangle1/">OpenGL 삼각형 그리기 (1)VBO, VAO [OPENGL E05]</a></h4>
+        <p>OpenGL 그래픽스 파이프라인(Graphics Pipeline) OpenGL …</p>
+      </div>
+    </div>
+    
+    <div class="media">
       <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/renderman_metal/">
         <img class="media-object" src="/images/blog/renderman.png" alt="Renderman 스크래치 난 금속 만들기">
       </a>
@@ -255,16 +276,6 @@ OpenGL의 최신 구현은 그래픽 카드에 탑재되어 있습니다. <stron
       <div class="media-body">
         <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/renderman_install/">Renderman 설치</a></h4>
         <p>Renderman Non-commercial 버전 Pixar …</p>
-      </div>
-    </div>
-    
-    <div class="media">
-      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/opengl_version/">
-        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 버전 확인법">
-      </a>
-      <div class="media-body">
-        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/opengl_version/">OpenGL 버전 확인법</a></h4>
-        <p>OpenGL 버전 확인법 NVIDIA 그래픽 카드 사용하기 OpenGL 버전을 확인하기 전 …</p>
       </div>
     </div>
     

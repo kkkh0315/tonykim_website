@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 13 Mar 2021 21:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 23 Mar 2021 21:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://kyoungwhankim.github.io/tags/computer-graphics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OpenGL 삼각형 그리기 (1)VBO, VAO [OPENGL E05]</title>
+      <link>https://kyoungwhankim.github.io/blog/opengl_triangle1/</link>
+      <pubDate>Tue, 23 Mar 2021 21:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/blog/opengl_triangle1/</guid>
+      <description>OpenGL 그래픽스 파이프라인(Graphics Pipeline) OpenGL로 표현하고자 하는 공간은 3차원이나 우리는 이를 2차원 화면을 통해 보게 됩니다.
+따라서 3차원 좌표를 2차원 픽셀로 전환하는 과정이 필요하고 이를 그래픽스 파이프라인(Graphics Pipeline), 또는 **렌더링 파이프라인(Rendering Pipeline)**이라고 합니다.</description>
+    </item>
     
     <item>
       <title>OpenGL 버전 확인법</title>
