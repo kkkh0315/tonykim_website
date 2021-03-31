@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko-ko"><head>
   <meta charset="utf-8">
-  <title>컴퓨터 그래픽스에서의 색 시리즈</title>
+  <title>색 관리(Color Management) 시리즈</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -12,7 +12,7 @@
   
   <meta property="og:image" content="https://kyoungwhankim.github.io/images/blog/rgb.png" />
   
-  <meta property="og:title" content="컴퓨터 그래픽스에서의 색 시리즈" />
+  <meta property="og:title" content="색 관리(Color Management) 시리즈" />
 <meta property="og:description" content="Color" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kyoungwhankim.github.io/ko/blog/color_start/" />
@@ -138,7 +138,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>컴퓨터 그래픽스에서의 색 시리즈</h1>
+          <h1>색 관리(Color Management) 시리즈</h1>
           <p>Color</p>
         </div>
       </div>
@@ -151,7 +151,7 @@
 		<div class="row">
 			<div class="col-md-8">
 				<div class="post post-single">
-					<h2 class="post-title">컴퓨터 그래픽스에서의 색 시리즈</h2>
+					<h2 class="post-title">색 관리(Color Management) 시리즈</h2>
 					<div class="post-meta">
 						<ul>
               <li><i class="ion-calendar"></i> March 30, 2021</li>
@@ -164,6 +164,8 @@
               <li><i class="ion-pricetags"></i> 
                 
                 <a href="/ko/tags/computer%20graphics">Computer graphics</a>
+								
+                , <a href="/ko/tags/color%20management">Color management</a>
 								
                 , <a href="/ko/tags/color%20system">Color system</a>
 								
@@ -179,13 +181,13 @@
             </ul>
 					</div>
 					<div class="post-thumb">
-						<img class="img-responsive" src="/images/blog/rgb.png" alt="컴퓨터 그래픽스에서의 색 시리즈">
+						<img class="img-responsive" src="/images/blog/rgb.png" alt="색 관리(Color Management) 시리즈">
 					</div>
 					<div class="post-content post-excerpt">
 						<h2 id="aces에서-시작된-색-공부">ACES에서 시작된 색 공부</h2>
 <p>Renderman 공부를 하면서 ACES라는 새로운 시스템을 접하게 되었습니다. 특히, ACEScg에 대해 공부를 하려는데 관련해서 검색을 해보니 컴퓨터 그래픽스에서의 색에 관한 생경한 용어들이 마구 등장했습니다. &lsquo;아 기초가 부족하구나'하고 느꼈습니다.</p>
 <p>그렇게 짧은 색 공부를 시작하게 되었습니다. 너무 오래 끌지는 않을 것이고, 그래도 컴퓨터 그래픽스에서 너무나도 중요한 지식이기 때문에 꼼꼼히 공부하고 넘어갈 예정입니다. 그와 더불어서 랜더링 파이프라인에 있어서 중요한 Linear Workflow와 이 모든 공부의 트리거가 된 ACES, ACEScg에 대해서도 공부할 예정입니다.</p>
-<p>컴퓨터 그래픽스에서의 색 시리즈는 다음과 같은 순서로 진행될 것입니다. 물론 공부하면서 순서나 내용이 바뀌게 된다면 그에 대한 안내를 추후 덧붙이도록 하겠습니다.</p>
+<p>색 관리(Color Management) 시리즈는 다음과 같은 순서로 진행될 것입니다. 물론 공부하면서 순서나 내용이 바뀌게 된다면 그에 대한 안내를 추후 덧붙이도록 하겠습니다.</p>
 <ol>
 <li>표색계(Color System)와 색도도(Chromaticity Diagram)</li>
 <li>색 공간(Color Space)</li>
@@ -194,7 +196,7 @@
 </ol>
 <br>
 <h2 id="기대">기대</h2>
-<p>빠르게, 하지만 꽤나 자세히 공부하고자 하기 때문에 완성된 시리즈를 읽어보신다면 컴퓨터 그래픽스에서의 색에 대한 기초는 잡으실 수 있으리라 기대합니다.</p>
+<p>빠르게, 하지만 꽤나 자세히 공부하고자 하기 때문에 완성된 시리즈를 읽어보신다면 컴퓨터 그래픽스에서의 색 관리에 대한 기초는 잡으실 수 있으리라 기대합니다.</p>
 <p>더불어서, 마야, 3DMax, Houdini 등 3D 그래픽 툴에서 외부 텍스쳐 파일을 가지고와 사용할 때 등장하는 이미지 관련 세팅들, 예컨대 감마 조정이나 Linearize 등과 같은 세팅들이 왜 필요하고 어떤 작용을 하는지 이해하실 수 있게 되실 것으로 기대합니다.</p>
 <p>마지막으로 랜더링 세팅 시 등장하는 색 공간 설정 등에 대한 이해에 도움이 될 것으로 기대합니다.</p>
 
@@ -210,20 +212,20 @@
     
     <div class="media">
       <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/color_system/">
-        <img class="media-object" src="/images/blog/rgb.png" alt="컴퓨터 그래픽스에서의 색 (1)표색계(Color System)와 색도도(Chromaticity Diagram)">
+        <img class="media-object" src="/images/blog/rgb.png" alt="색 관리 (1)표색계(Color System)와 색도도(Chromaticity Diagram)">
       </a>
       <div class="media-body">
-        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/color_system/">컴퓨터 그래픽스에서의 색 (1)표색계(Color System)와 색도도(Chromaticity Diagram)</a></h4>
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/color_system/">색 관리 (1)표색계(Color System)와 색도도(Chromaticity Diagram)</a></h4>
         <p>RGB 컴퓨터 모니터 상의 색에 관해서 우리에게 가장 자주 노출되는 용어는 RGB입니다.  …</p>
       </div>
     </div>
     
     <div class="media">
       <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/color_start/">
-        <img class="media-object" src="/images/blog/rgb.png" alt="컴퓨터 그래픽스에서의 색 시리즈">
+        <img class="media-object" src="/images/blog/rgb.png" alt="색 관리(Color Management) 시리즈">
       </a>
       <div class="media-body">
-        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/color_start/">컴퓨터 그래픽스에서의 색 시리즈</a></h4>
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/color_start/">색 관리(Color Management) 시리즈</a></h4>
         <p>ACES에서 시작된 색 공부 Renderman 공부를 하면서 ACES라는 새로운 시스템을  …</p>
       </div>
     </div>
@@ -251,7 +253,7 @@
   </div><div class="widget widget-category">
     <h4 class="widget-title">Categories</h4>
     <ul class="widget-category-list">
-      <li><a href="/ko/categories/color">Color</a></li>
+      <li><a href="/ko/categories/color-management">Color management</a></li>
       <li><a href="/ko/categories/opengl">Opengl</a></li>
       <li><a href="/ko/categories/renderman">Renderman</a></li>
     </ul>
@@ -260,6 +262,7 @@
     <ul class="widget-tag-list">
       <li><a href="/ko/tags/aces">Aces</a></li>
       <li><a href="/ko/tags/chromaticity-diagram">Chromaticity diagram</a></li>
+      <li><a href="/ko/tags/color-management">Color management</a></li>
       <li><a href="/ko/tags/color-space">Color space</a></li>
       <li><a href="/ko/tags/color-system">Color system</a></li>
       <li><a href="/ko/tags/computer-graphics">Computer graphics</a></li>

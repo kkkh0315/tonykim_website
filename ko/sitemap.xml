@@ -48,17 +48,32 @@
   </url>
   
   <url>
-    <loc>https://kyoungwhankim.github.io/ko/categories/color/</loc>
+    <loc>https://kyoungwhankim.github.io/ko/tags/color-management/</loc>
     <lastmod>2021-03-30T20:00:00+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://kyoungwhankim.github.io/categories/color/"
+                href="https://kyoungwhankim.github.io/tags/color-management/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/categories/color/"
+                href="https://kyoungwhankim.github.io/ko/tags/color-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/ko/categories/color-management/</loc>
+    <lastmod>2021-03-30T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/categories/color-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/categories/color-management/"
                 />
   </url>
   
