@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>컴퓨터 그래픽스에서의 색 (1)표색계(Color System)와 색도도(Chromaticity Diagram)</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Red Green Blue">
+  <meta name="author" content="Tony Kim">
+  <meta name="generator" content="Hugo 0.68.3" />
+  
+  
+  <meta property="og:image" content="https://kyoungwhankim.github.io/images/blog/rgb.png" />
+  
+  <meta property="og:title" content="컴퓨터 그래픽스에서의 색 (1)표색계(Color System)와 색도도(Chromaticity Diagram)" />
+<meta property="og:description" content="Red Green Blue" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kyoungwhankim.github.io/blog/color_space/" />
+<meta property="article:published_time" content="2021-03-30T20:00:00+09:00" />
+<meta property="article:modified_time" content="2021-03-30T20:00:00+09:00" />
+
+  
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/bootstrap/bootstrap.min.css" media='screen'>
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/Ionicons/css/ionicons.min.css" >
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/magnific-popup/magnific-popup.min.css" >
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/slick/slick.css" >
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://kyoungwhankim.github.io/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://kyoungwhankim.github.io/images/favicon.png" type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+
+<header class="navigation">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <nav class="navbar">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+              <img src="https://kyoungwhankim.github.io/images/tonykim_logo.png" alt="Tony Kim | Blog &amp; Portfolio" width="150px" class="img-responsive">
+            </a>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/">Home</a></li>
+              
+              
+              
+              <li><a href="/about">About</a></li>
+              
+              
+              
+              <li><a href="/project">Projects</a></li>
+              
+              
+              
+              <li><a href="/blog">Blog</a></li>
+              
+              
+              
+              <li><a href="/contact">Contact</a></li>
+              
+              
+
+              
+              <li>
+                <select id="select-language" onchange="location = this.value;">
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <option id="ko" value="https://kyoungwhankim.github.io/ko/blog/color_space/">Ko
+                  </option>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <option id="en" value="https://kyoungwhankim.github.io/blog/color_space/" selected>
+                    En
+                  </option>
+                  
+                  
+                  
+                  
+                </select>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-title bg-2" style="background-image: url('https://kyoungwhankim.github.io/images/default.png');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>컴퓨터 그래픽스에서의 색 (1)표색계(Color System)와 색도도(Chromaticity Diagram)</h1>
+          <p>Red Green Blue</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="post post-single">
+					<h2 class="post-title">컴퓨터 그래픽스에서의 색 (1)표색계(Color System)와 색도도(Chromaticity Diagram)</h2>
+					<div class="post-meta">
+						<ul>
+              <li><i class="ion-calendar"></i> March 30, 2021</li>
+              <li><i class="ion-android-people"></i>
+                Posted By
+                
+                <a class="text-primary" href="/author/%EA%B9%80%EA%B2%BD%ED%99%98">김경환</a>
+                
+              </li>
+              <li><i class="ion-pricetags"></i> 
+                
+                <a href="/tags/computer%20graphics">Computer graphics</a>
+								
+                , <a href="/tags/color%20system">Color system</a>
+								
+                , <a href="/tags/chromaticity%20diagram">Chromaticity diagram</a>
+								
+              </li>
+            </ul>
+					</div>
+					<div class="post-thumb">
+						<img class="img-responsive" src="/images/blog/rgb.png" alt="컴퓨터 그래픽스에서의 색 (1)표색계(Color System)와 색도도(Chromaticity Diagram)">
+					</div>
+					<div class="post-content post-excerpt">
+						<h2 id="rgb">RGB</h2>
+<p>컴퓨터 모니터 상의 색에 관해서 우리에게 가장 자주 노출되는 용어는 <strong>RGB</strong>입니다. 각각 Red, Green, Blue를 의미하는 RGB는 포토샵, Maya, 3DMax, 심지어 그림판에서도 볼 수 있습니다. 우리에게 당연히 빨간색은 RGB값이 (255, 0, 0)인 색입니다. 16진법으로 표현하자면 #FF0000.</p>
+<p><img src="https://user-images.githubusercontent.com/60923302/113091805-adab5a00-9227-11eb-9e23-e88d37f568b8.png" alt="photoshop_rgb">
+<br></p>
+<p>그렇다면 이 <strong>RGB</strong>란 무엇일까요? RGB는 <strong>컬러 코드</strong>입니다. 단순히 말해, 색의 <strong>이름</strong>을 숫자로 표현한 것입니다. 이는 컬러 시스템의 비트 수에 따라 달라지는데, R, G, B를 각각 0~255로 표현하는 시스템은 8비트 시스템입니다.</p>
+<p>문제는 환경이 바뀌면 이름이 나타내는 대상에 미묘한 차이가 생길 수 있다는 것입니다. 예컨대, 한국에서 말하는 짜장면과, 중국에서 말하는 짜장면은 이름은 같지만 다소 차이가 있습니다. RGB도 마찬가지입니다. <strong>내 컴퓨터 모니터 상에서의 (255, 0, 0)와 TV 모니터 상의 (255, 0, 0)와 핸드폰 디스플레이 상의 (255, 0, 0)는 같은 &lsquo;빨간색'이지만 실제로 측색기로 측정해보면 조금씩 다른 색일 수 있습니다</strong>.</p>
+<p><img src="https://user-images.githubusercontent.com/60923302/113092765-9b322000-9229-11eb-86e5-6fd522656b3a.png" alt="different_reds">
+<br></p>
+<p>왜 이럴까요? 왜냐면 디스플레이마다 서로 다른 <strong>색 공간</strong>을 사용하기 때문입니다. 더 엄밀히 말하자면, 서로 다른 <strong>색역</strong>을 사용합니다.</p>
+<h2 id="rgb-색-공간">RGB 색 공간</h2>
+<p><strong>색 공간</strong>이란 <strong>표색계를 3차원으로 표현한 공간 개념</strong>입니다. 이에 대해선 다음 글에서 더 자세히 다루겠습니다.</p>
+<p>위에서 말한 RGB(컬러 코드)는 <strong>RGB 색 모델</strong>(Color Model)에 근거하여 빨간색, 초록색, 파란색을 혼합할수록 밝기가 올라가는 <strong>가산 혼합 방식</strong>으로 색을 정의했습니다. 이렇듯 디지털 공간에서의 색 공간은 대부분 이 RGB 색 모델을 기반으로 색을 표현합니다. 이러한 색 공간을 <strong>RGB 색 공간</strong>이라고 합니다. 앞에서 말했듯이, 서로 다른 RGB 색 공간에서는 같은 (255, 0, 0)이더라도 다르게 보일 수 있습니다.</p>
+<p><strong>컬러 코드 RGB와 RGB 색 공간은 다른 것</strong>입니다. 착각하기 쉬우니 조심해야합니다. 특정한 RGB 색 공간에서 색을 표현하기 위해 쓰는 컬러 코드(즉, 색의 이름)가 우리가 각종 프로그램에서 보는 RGB입니다. 이 단락 이후 나오는 모든 RGB는 컬러 코드 RGB와 다른 것이므로 주의하시길 바랍니다.</p>
+<h2 id="표색계color-system-색-표시계">표색계(Color System, 색 표시계)</h2>
+<p><strong>색을 표시하는 체계</strong>를 <strong>표색계</strong>, 또는 <strong>색 표시계</strong>라고 합니다. 일종의 시스템입니다. 표색계는 크게 혼색계(Color Mixing System)와 현색계(Color Appearance System)로 나뉩니다. 디지털 공간에서의 빛의 색을 표시하는 표색계는 혼색계입니다. 대표적인, 그리고 여기서 살펴 볼 표색계는 바로 CIE(Commission Internationale de l'éclairage)가 1931년 제정한 <strong>CIEXYZ 표색계</strong>입니다.</p>
+<p>CIEXYZ 표색계는 같은 해 CIE가 제정한 <strong>CIERGB 표색계를 수학적으로 보완한 표색계</strong>입니다. 따라서 CIERGB에 대해서 간단히 알아보고 갑시다.</p>
+<h3 id="ciergb-표색계">CIERGB 표색계</h3>
+<p><strong>CIERGB 표색계</strong>는 실제 우리 눈이 색을 감지하는 방식을 바탕으로 설계되었습니다. 우리 눈은 <strong>단파장, 중파장, 장파장</strong>을 각각 감지하는 세 종류의 원추세포가 존재하기 때문에 이론적으로 인간의 색 감각은 <strong>세 변수</strong>로 나타낼 수 있습니다. 즉, <strong>단파장, 중파장, 장파장의 빛을 적절히 혼합시켜 하나의 색을 정의</strong>할 수 있습니다. 이를 수학적으로 나타낼 수 있는 방정식을 도출하기 위해 CIE에서 &lsquo;등색 실험'이라는 것을 하였고, 결과적으로 <strong>색 대응 함수</strong>(Color Matching Function) 세 개를 정의했습니다. 즉, 일련의 색들을 나타내기 위해 단파장의 빛이 필요한 양, 중파장의 빛이 필요한 양, 장파장의 빛이 필요한 양을 그래프로 그릴 수 있게 된 것입니다.</p>
+<p>장파장 빛은 빨간색에 가까운 빛이고, 중파장 빛은 초록색에 가까운 빛이며, 단파장 빛은 파란색에 가까운 빛입니다. <strong>어떤 색의 빛을 표현하기 위해 필요한 각 장파장, 중파장, 단파장의 값</strong>을 조금 어려운 말로 <strong>삼색 자극값</strong>(Tristimulus Values)이라고하고 <strong>R, G, B</strong>라고 표현합니다.</p>
+<p><img src="https://user-images.githubusercontent.com/60923302/113119423-62a33e00-924b-11eb-803c-990594b91954.png" alt="CIERGB_CMFs">
+<br></p>
+<p>예를 들어, 아래에서 x(nm) 파장의 색 E를 표현할 때, 그리고 장파장(700nm), 중파장(546.1nm), 단파장(435.8nm)의 빛의 고정된 자극값을 a, b, c라고 할 때, E = aR + bG + cB가 성립합니다. 쉽게 설명하자면, 미리 정의한 빨간색을 R만큼, 초록색을 G만큼, 파란색을 B만큼 혼합하면 E라는 색의 빛을 만들어 낼 수 있습니다.</p>
+<p><img src="https://user-images.githubusercontent.com/60923302/113140321-3d222e80-9263-11eb-8baa-ada52f696fbc.png" alt="CIERGB_CMF_ex">
+<br></p>
+<h4 id="참고-등색-실험이란">참고: 등색 실험이란?</h4>
+<p>등색 실험은 아래의 그림과 같은 방식으로 진행되었습니다. 한 쪽에는 700nm, 546.1nm, 그리고 435.8nm의 빛을 적절하게 쏘고, 다른 한 쪽에는 380nm ~ 780nm 이내의 파장을 가지는 단색을 쏘아서 관찰자 입장에서 둘이 일치할 때까지 단파장, 중파장, 장파장의 색도는 유지하되 밝기를 조절했습니다. 1931년 최초의 실험은 시야각을 2도로 제한했습니다. 이는 원추세포가 황반의 중심와 기준 2도 이내에 분포되어있기 때문이었습니다. 이후 1964년 실험에서는 이를 10도로 늘리기도 하였습니다.</p>
+<p><img src="https://user-images.githubusercontent.com/60923302/113116008-fd9a1900-9247-11eb-8fc1-5397be878197.png" alt="color_match_ex">
+<br></p>
+<h3 id="ciexyz-표색계">CIEXYZ 표색계</h3>
+<p>CIERGB 표색계에서의 색 대응 함수와 삼색 자극값 등에 대해서 살펴보았습니다. CIE는 CIERGB를 수학적으로 보완하여 <strong>CIEXYZ 표색계</strong>를 제정합니다. (수학적으로 어떻게 보완했는지 궁금하시다면 <a href="https://en.wikipedia.org/wiki/CIE_1931_color_space">CIE 1931 color space 영문 위키피디아</a>의 5.3 항목, 또는 <a href="https://ko.wikipedia.org/wiki/CIE_1931_%EC%83%89_%EA%B3%B5%EA%B0%84">CIE 1931 색 공간 한글 위키피디아</a>의 4.3 항목을 참고해주세요.)</p>
+<p>CIEXYZ 표색계 역시 색 대응 함수(Color Matching Functions)와 삼색 자극값 X, Y, Z를 가집니다.</p>
+<p><img src="https://user-images.githubusercontent.com/60923302/113138186-6ab9a880-9260-11eb-88df-7d9b81f1301c.png" alt="CIEXYZ_CMFs">
+<br></p>
+<p>CIEXYZ에서의 삼색 자극값 X, Y, Z는 더 이상 어떤 단색을 표현하기 위해 필요한 단파장, 중파장, 장파장의 크기와 일 대 일로 대응되지 않습니다. 특히, CIEXYZ 표색계에서의 <strong>Y값은 색도와 상관이 없고, 빛의 밝기만을 나타냅니다</strong>. 이렇게 설계한 이유는 색을 색도와 밝기로 나누어 표현하기 위해서입니다.</p>
+<p>밝기를 Y로 표현한다면, <strong>색도</strong>는 X, Y, Z를 사용하여 새로이 정의하는 새로운 변수 x, y, z 중 <strong>x, y로 표현</strong>합니다.</p>
+<p><img src="https://user-images.githubusercontent.com/60923302/113149936-84fa8300-926e-11eb-9695-8e4629680e5a.png" alt="xyz"></p>
+<p>x와 y의 값이 결정된다면 z값은 자동으로 결정됩니다. 따라서 z값은 특정할 필요가 없습니다.</p>
+<h4 id="cie-1931-색도도cie-1931-chromaticity-diagram">CIE 1931 색도도(CIE 1931 Chromaticity Diagram)</h4>
+<p>위에서 색 공간이란 표색계를 3차원 공간 개념으로 표현한 것이라고 했습니다. 이렇게 색도를 표현하기 위한 x, y값, 그리고 밝기를 표현하기 위한 Y값을 사용하여 CIEXYZ 표색계를 3차원 공간 개념으로 표현한 것을 <strong>CIExyY 색 공간</strong>(CIExyY Color Space)이라고 합니다.</p>
+<p>그리고 CIExyY에서 <strong>색도를 나타내는 x, y값을 직교좌표계로 나타낸 것을 CIE 1931 색도도</strong>(CIE 1931 Chromaticity Diagram), 혹은 CIE xy 색도도(CIE xy Chromaticity Diagram), 혹은 CIE 1931 색공간 색도도(CIE 1931 Color Space Chromaticity Diagram)이라고 합니다. 이런 <strong>색도도</strong>(chromaticity diagram)는 결국 <strong>3차원 색 공간을 색도를 기준으로 2차원으로 표현한 도표</strong>입니다.</p>
+<p><img src="https://user-images.githubusercontent.com/60923302/113151947-917fdb00-9270-11eb-9b72-c64f7ce4a43c.png" alt="chromaticity_diagram"></p>
+<p>CIE 1931 색도도는 다음과 같은 특징과 한계를 가집니다.</p>
+<ol>
+<li>상단 외곽의 곡선은 spectral locus라고 부르며 단색광을 나타내고, 각 단색광의 파장이 나노미터 단위로 표시되어 있다.</li>
+<li>곡선을 제외한 아래의 직선은 line of purples라고 부르며 단색광으로 나타낼 수 없다.</li>
+<li>이론적으로 인간의 눈에 보이는 모든 색도를 담았다.</li>
+<li>흰색은 x가 1/3, y가 1/3인 지점이다.</li>
+<li>CIExyY 색 공간은 유니폼한 공간이 아니다. 따라서 색상을 나타내는 선이 직선이 아니고, 색상각도 균등하지 않으며, 채도를 나타내는 원들도 동심원을 그리지 않고 등간격도 아니다. 따라서, 색차 계산에 적합하지 않다. 이는 사실 엄청난 한계이다.
+<br>
+<br></li>
+</ol>
+<p>CIE 1931 색도도는 매우 중요합니다. 다음에 살펴볼 수많은 RGB 색 공간들의 색역을 이 색도도 위에 그리고 비교할 것이기 때문입니다.</p>
+
+					</div>
+					<div class="post-comments">
+						
+					</div>
+				</div>
+			</div>
+      <div class="col-md-4">
+        <aside class="sidebar"><div class="widget widget-latest-post">
+    <h4 class="widget-title">Latest Posts</h4>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/color_space/">
+        <img class="media-object" src="/images/blog/rgb.png" alt="컴퓨터 그래픽스에서의 색 (1)표색계(Color System)와 색도도(Chromaticity Diagram)">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/color_space/">컴퓨터 그래픽스에서의 색 (1)표색계(Color System)와 색도도(Chromaticity Diagram)</a></h4>
+        <p>RGB 컴퓨터 모니터 상의 색에 관해서 우리에게 가장 자주 노출되는 용어는 RGB입니다.  …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/opengl_triangle1/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (1)VBO, VAO [OPENGL E05]">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/opengl_triangle1/">OpenGL 삼각형 그리기 (1)VBO, VAO [OPENGL E05]</a></h4>
+        <p>OpenGL 그래픽스 파이프라인(Graphics Pipeline) OpenGL …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/renderman_metal/">
+        <img class="media-object" src="/images/blog/renderman.png" alt="Renderman 스크래치 난 금속 만들기">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/renderman_metal/">Renderman 스크래치 난 금속 만들기</a></h4>
+        <p>금속에 다양한 텍스쳐 맵 입히기 Renderman의 PxrSurface을 활용해서 기본 금 …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/renderman_maya/">
+        <img class="media-object" src="/images/blog/renderman.png" alt="Maya에서 Renderman 사용하기">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/renderman_maya/">Maya에서 Renderman 사용하기</a></h4>
+        <p>Maya에서 Renderman 사용하는 법 Renderman을 설치했더라도 Maya …</p>
+      </div>
+    </div>
+    
+  </div><div class="widget widget-category">
+    <h4 class="widget-title">Categories</h4>
+    <ul class="widget-category-list">
+      <li><a href="/categories/computer-graphics">Computer graphics</a></li>
+      <li><a href="/categories/opengl">Opengl</a></li>
+      <li><a href="/categories/renderman">Renderman</a></li>
+    </ul>
+  </div><div class="widget widget-tag">
+    <h4 class="widget-title">Tags</h4>
+    <ul class="widget-tag-list">
+      <li><a href="/tags/chromaticity-diagram">Chromaticity diagram</a></li>
+      <li><a href="/tags/color-system">Color system</a></li>
+      <li><a href="/tags/computer-graphics">Computer graphics</a></li>
+      <li><a href="/tags/glew">Glew</a></li>
+      <li><a href="/tags/glfw">Glfw</a></li>
+      <li><a href="/tags/graphics-api">Graphics api</a></li>
+      <li><a href="/tags/opengl">Opengl</a></li>
+      <li><a href="/tags/rendering">Rendering</a></li>
+      <li><a href="/tags/renderman">Renderman</a></li>
+    </ul>
+  </div></aside>
+
+      </div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer-manu">
+					<ul>
+            
+            <li><a href="https://kyoungwhankim.github.io/about">About</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/project">Project</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/blog">Blog</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/contact">Contact</a></li>
+            
+					</ul>
+				</div>
+				<p class="copyright">Copyright © 2020 <a href="https://themefisher.com">Themefisher</a> All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+
+<script src="https://kyoungwhankim.github.io/plugins/jQuery/jquery.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/bootstrap/bootstrap.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/slick/slick.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/magnific-popup/magnific-popup.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/shuffle/shuffle.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/google-map/gmap.js" defer></script>
+
+
+
+
+<script src="https://kyoungwhankim.github.io/js/script.min.js"></script>
+
+
+</body>
+
+</html>
