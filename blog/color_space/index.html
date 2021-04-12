@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-us"><head>
   <meta charset="utf-8">
-  <title>컴퓨터 그래픽스에서의 색 (1)표색계(Color System)와 색도도(Chromaticity Diagram)</title>
+  <title>색 관리 (2)색 공간(Color Space)</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Red Green Blue">
+  <meta name="description" content="CIERGB, sRGB, DCI-P3, Rec. 709, etc">
   <meta name="author" content="Tony Kim">
   <meta name="generator" content="Hugo 0.68.3" />
   
   
   <meta property="og:image" content="https://kyoungwhankim.github.io/images/blog/rgb.png" />
   
-  <meta property="og:title" content="컴퓨터 그래픽스에서의 색 (1)표색계(Color System)와 색도도(Chromaticity Diagram)" />
-<meta property="og:description" content="Red Green Blue" />
+  <meta property="og:title" content="색 관리 (2)색 공간(Color Space)" />
+<meta property="og:description" content="CIERGB, sRGB, DCI-P3, Rec. 709, etc" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kyoungwhankim.github.io/blog/color_space/" />
-<meta property="article:published_time" content="2021-03-30T20:00:00+09:00" />
-<meta property="article:modified_time" content="2021-03-30T20:00:00+09:00" />
+<meta property="article:published_time" content="2021-04-10T20:00:00+09:00" />
+<meta property="article:modified_time" content="2021-04-10T20:00:00+09:00" />
 
   
 
@@ -138,8 +138,8 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>컴퓨터 그래픽스에서의 색 (1)표색계(Color System)와 색도도(Chromaticity Diagram)</h1>
-          <p>Red Green Blue</p>
+          <h1>색 관리 (2)색 공간(Color Space)</h1>
+          <p>CIERGB, sRGB, DCI-P3, Rec. 709, etc</p>
         </div>
       </div>
     </div>
@@ -151,10 +151,10 @@
 		<div class="row">
 			<div class="col-md-8">
 				<div class="post post-single">
-					<h2 class="post-title">컴퓨터 그래픽스에서의 색 (1)표색계(Color System)와 색도도(Chromaticity Diagram)</h2>
+					<h2 class="post-title">색 관리 (2)색 공간(Color Space)</h2>
 					<div class="post-meta">
 						<ul>
-              <li><i class="ion-calendar"></i> March 30, 2021</li>
+              <li><i class="ion-calendar"></i> April 10, 2021</li>
               <li><i class="ion-android-people"></i>
                 Posted By
                 
@@ -165,69 +165,84 @@
                 
                 <a href="/tags/computer%20graphics">Computer graphics</a>
 								
-                , <a href="/tags/color%20system">Color system</a>
+                , <a href="/tags/color%20management">Color management</a>
 								
-                , <a href="/tags/chromaticity%20diagram">Chromaticity diagram</a>
+                , <a href="/tags/color%20space">Color space</a>
 								
               </li>
             </ul>
 					</div>
 					<div class="post-thumb">
-						<img class="img-responsive" src="/images/blog/rgb.png" alt="컴퓨터 그래픽스에서의 색 (1)표색계(Color System)와 색도도(Chromaticity Diagram)">
+						<img class="img-responsive" src="/images/blog/rgb.png" alt="색 관리 (2)색 공간(Color Space)">
 					</div>
 					<div class="post-content post-excerpt">
-						<h2 id="rgb">RGB</h2>
-<p>컴퓨터 모니터 상의 색에 관해서 우리에게 가장 자주 노출되는 용어는 <strong>RGB</strong>입니다. 각각 Red, Green, Blue를 의미하는 RGB는 포토샵, Maya, 3DMax, 심지어 그림판에서도 볼 수 있습니다. 우리에게 당연히 빨간색은 RGB값이 (255, 0, 0)인 색입니다. 16진법으로 표현하자면 #FF0000.</p>
-<p><img src="https://user-images.githubusercontent.com/60923302/113091805-adab5a00-9227-11eb-9e23-e88d37f568b8.png" alt="photoshop_rgb">
-<br></p>
-<p>그렇다면 이 <strong>RGB</strong>란 무엇일까요? RGB는 <strong>컬러 코드</strong>입니다. 단순히 말해, 색의 <strong>이름</strong>을 숫자로 표현한 것입니다. 이는 컬러 시스템의 비트 수에 따라 달라지는데, R, G, B를 각각 0~255로 표현하는 시스템은 8비트 시스템입니다.</p>
-<p>문제는 환경이 바뀌면 이름이 나타내는 대상에 미묘한 차이가 생길 수 있다는 것입니다. 예컨대, 한국에서 말하는 짜장면과, 중국에서 말하는 짜장면은 이름은 같지만 다소 차이가 있습니다. RGB도 마찬가지입니다. <strong>내 컴퓨터 모니터 상에서의 (255, 0, 0)와 TV 모니터 상의 (255, 0, 0)와 핸드폰 디스플레이 상의 (255, 0, 0)는 같은 &lsquo;빨간색'이지만 실제로 측색기로 측정해보면 조금씩 다른 색일 수 있습니다</strong>.</p>
-<p><img src="https://user-images.githubusercontent.com/60923302/113092765-9b322000-9229-11eb-86e5-6fd522656b3a.png" alt="different_reds">
-<br></p>
-<p>왜 이럴까요? 왜냐면 디스플레이마다 서로 다른 <strong>색 공간</strong>을 사용하기 때문입니다. 더 엄밀히 말하자면, 서로 다른 <strong>색역</strong>을 사용합니다.</p>
-<h2 id="rgb-색-공간">RGB 색 공간</h2>
-<p><strong>색 공간</strong>이란 <strong>표색계를 3차원으로 표현한 공간 개념</strong>입니다. 이에 대해선 다음 글에서 더 자세히 다루겠습니다.</p>
-<p>위에서 말한 RGB(컬러 코드)는 <strong>RGB 색 모델</strong>(Color Model)에 근거하여 빨간색, 초록색, 파란색을 혼합할수록 밝기가 올라가는 <strong>가산 혼합 방식</strong>으로 색을 정의했습니다. 이렇듯 디지털 공간에서의 색 공간은 대부분 이 RGB 색 모델을 기반으로 색을 표현합니다. 이러한 색 공간을 <strong>RGB 색 공간</strong>이라고 합니다. 앞에서 말했듯이, 서로 다른 RGB 색 공간에서는 같은 (255, 0, 0)이더라도 다르게 보일 수 있습니다.</p>
-<p><strong>컬러 코드 RGB와 RGB 색 공간은 다른 것</strong>입니다. 착각하기 쉬우니 조심해야합니다. 특정한 RGB 색 공간에서 색을 표현하기 위해 쓰는 컬러 코드(즉, 색의 이름)가 우리가 각종 프로그램에서 보는 RGB입니다. 이 단락 이후 나오는 모든 RGB는 컬러 코드 RGB와 다른 것이므로 주의하시길 바랍니다.</p>
-<h2 id="표색계color-system-색-표시계">표색계(Color System, 색 표시계)</h2>
-<p><strong>색을 표시하는 체계</strong>를 <strong>표색계</strong>, 또는 <strong>색 표시계</strong>라고 합니다. 일종의 시스템입니다. 표색계는 크게 혼색계(Color Mixing System)와 현색계(Color Appearance System)로 나뉩니다. 디지털 공간에서의 빛의 색을 표시하는 표색계는 혼색계입니다. 대표적인, 그리고 여기서 살펴 볼 표색계는 바로 CIE(Commission Internationale de l'éclairage)가 1931년 제정한 <strong>CIEXYZ 표색계</strong>입니다.</p>
-<p>CIEXYZ 표색계는 같은 해 CIE가 제정한 <strong>CIERGB 표색계를 수학적으로 보완한 표색계</strong>입니다. 따라서 CIERGB에 대해서 간단히 알아보고 갑시다.</p>
-<h3 id="ciergb-표색계">CIERGB 표색계</h3>
-<p><strong>CIERGB 표색계</strong>는 실제 우리 눈이 색을 감지하는 방식을 바탕으로 설계되었습니다. 우리 눈은 <strong>단파장, 중파장, 장파장</strong>을 각각 감지하는 세 종류의 원추세포가 존재하기 때문에 이론적으로 인간의 색 감각은 <strong>세 변수</strong>로 나타낼 수 있습니다. 즉, <strong>단파장, 중파장, 장파장의 빛을 적절히 혼합시켜 하나의 색을 정의</strong>할 수 있습니다. 이를 수학적으로 나타낼 수 있는 방정식을 도출하기 위해 CIE에서 &lsquo;등색 실험'이라는 것을 하였고, 결과적으로 <strong>색 대응 함수</strong>(Color Matching Function) 세 개를 정의했습니다. 즉, 일련의 색들을 나타내기 위해 단파장의 빛이 필요한 양, 중파장의 빛이 필요한 양, 장파장의 빛이 필요한 양을 그래프로 그릴 수 있게 된 것입니다.</p>
-<p>장파장 빛은 빨간색에 가까운 빛이고, 중파장 빛은 초록색에 가까운 빛이며, 단파장 빛은 파란색에 가까운 빛입니다. <strong>어떤 색의 빛을 표현하기 위해 필요한 각 장파장, 중파장, 단파장의 값</strong>을 조금 어려운 말로 <strong>삼색 자극값</strong>(Tristimulus Values)이라고하고 <strong>R, G, B</strong>라고 표현합니다.</p>
-<p><img src="https://user-images.githubusercontent.com/60923302/113119423-62a33e00-924b-11eb-803c-990594b91954.png" alt="CIERGB_CMFs">
-<br></p>
-<p>예를 들어, 아래에서 x(nm) 파장의 색 E를 표현할 때, 그리고 장파장(700nm), 중파장(546.1nm), 단파장(435.8nm)의 빛의 고정된 자극값을 a, b, c라고 할 때, E = aR + bG + cB가 성립합니다. 쉽게 설명하자면, 미리 정의한 빨간색을 R만큼, 초록색을 G만큼, 파란색을 B만큼 혼합하면 E라는 색의 빛을 만들어 낼 수 있습니다.</p>
-<p><img src="https://user-images.githubusercontent.com/60923302/113140321-3d222e80-9263-11eb-8baa-ada52f696fbc.png" alt="CIERGB_CMF_ex">
-<br></p>
-<h4 id="참고-등색-실험이란">참고: 등색 실험이란?</h4>
-<p>등색 실험은 아래의 그림과 같은 방식으로 진행되었습니다. 한 쪽에는 700nm, 546.1nm, 그리고 435.8nm의 빛을 적절하게 쏘고, 다른 한 쪽에는 380nm ~ 780nm 이내의 파장을 가지는 단색을 쏘아서 관찰자 입장에서 둘이 일치할 때까지 단파장, 중파장, 장파장의 색도는 유지하되 밝기를 조절했습니다. 1931년 최초의 실험은 시야각을 2도로 제한했습니다. 이는 원추세포가 황반의 중심와 기준 2도 이내에 분포되어있기 때문이었습니다. 이후 1964년 실험에서는 이를 10도로 늘리기도 하였습니다.</p>
-<p><img src="https://user-images.githubusercontent.com/60923302/113116008-fd9a1900-9247-11eb-8fc1-5397be878197.png" alt="color_match_ex">
-<br></p>
-<h3 id="ciexyz-표색계">CIEXYZ 표색계</h3>
-<p>CIERGB 표색계에서의 색 대응 함수와 삼색 자극값 등에 대해서 살펴보았습니다. CIE는 CIERGB를 수학적으로 보완하여 <strong>CIEXYZ 표색계</strong>를 제정합니다. (수학적으로 어떻게 보완했는지 궁금하시다면 <a href="https://en.wikipedia.org/wiki/CIE_1931_color_space">CIE 1931 color space 영문 위키피디아</a>의 5.3 항목, 또는 <a href="https://ko.wikipedia.org/wiki/CIE_1931_%EC%83%89_%EA%B3%B5%EA%B0%84">CIE 1931 색 공간 한글 위키피디아</a>의 4.3 항목을 참고해주세요.)</p>
-<p>CIEXYZ 표색계 역시 색 대응 함수(Color Matching Functions)와 삼색 자극값 X, Y, Z를 가집니다.</p>
-<p><img src="https://user-images.githubusercontent.com/60923302/113138186-6ab9a880-9260-11eb-88df-7d9b81f1301c.png" alt="CIEXYZ_CMFs">
-<br></p>
-<p>CIEXYZ에서의 삼색 자극값 X, Y, Z는 더 이상 어떤 단색을 표현하기 위해 필요한 단파장, 중파장, 장파장의 크기와 일 대 일로 대응되지 않습니다. 특히, CIEXYZ 표색계에서의 <strong>Y값은 색도와 상관이 없고, 빛의 밝기만을 나타냅니다</strong>. 이렇게 설계한 이유는 색을 색도와 밝기로 나누어 표현하기 위해서입니다.</p>
-<p>밝기를 Y로 표현한다면, <strong>색도</strong>는 X, Y, Z를 사용하여 새로이 정의하는 새로운 변수 x, y, z 중 <strong>x, y로 표현</strong>합니다.</p>
-<p><img src="https://user-images.githubusercontent.com/60923302/113149936-84fa8300-926e-11eb-9695-8e4629680e5a.png" alt="xyz"></p>
-<p>x와 y의 값이 결정된다면 z값은 자동으로 결정됩니다. 따라서 z값은 특정할 필요가 없습니다.</p>
-<h4 id="cie-1931-색도도cie-1931-chromaticity-diagram">CIE 1931 색도도(CIE 1931 Chromaticity Diagram)</h4>
-<p>위에서 색 공간이란 표색계를 3차원 공간 개념으로 표현한 것이라고 했습니다. 이렇게 색도를 표현하기 위한 x, y값, 그리고 밝기를 표현하기 위한 Y값을 사용하여 CIEXYZ 표색계를 3차원 공간 개념으로 표현한 것을 <strong>CIExyY 색 공간</strong>(CIExyY Color Space)이라고 합니다.</p>
-<p>그리고 CIExyY에서 <strong>색도를 나타내는 x, y값을 직교좌표계로 나타낸 것을 CIE 1931 색도도</strong>(CIE 1931 Chromaticity Diagram), 혹은 CIE xy 색도도(CIE xy Chromaticity Diagram), 혹은 CIE 1931 색공간 색도도(CIE 1931 Color Space Chromaticity Diagram)이라고 합니다. 이런 <strong>색도도</strong>(chromaticity diagram)는 결국 <strong>3차원 색 공간을 색도를 기준으로 2차원으로 표현한 도표</strong>입니다.</p>
-<p><img src="https://user-images.githubusercontent.com/60923302/113151947-917fdb00-9270-11eb-9b72-c64f7ce4a43c.png" alt="chromaticity_diagram"></p>
-<p>CIE 1931 색도도는 다음과 같은 특징과 한계를 가집니다.</p>
-<ol>
-<li>상단 외곽의 곡선은 spectral locus라고 부르며 단색광을 나타내고, 각 단색광의 파장이 나노미터 단위로 표시되어 있다.</li>
-<li>곡선을 제외한 아래의 직선은 line of purples라고 부르며 단색광으로 나타낼 수 없다.</li>
-<li>이론적으로 인간의 눈에 보이는 모든 색도를 담았다.</li>
-<li>흰색은 x가 1/3, y가 1/3인 지점이다.</li>
-<li>CIExyY 색 공간은 유니폼한 공간이 아니다. 따라서 색상을 나타내는 선이 직선이 아니고, 색상각도 균등하지 않으며, 채도를 나타내는 원들도 동심원을 그리지 않고 등간격도 아니다. 따라서, 색차 계산에 적합하지 않다. 이는 사실 엄청난 한계이다.
+						<h2 id="색-공간color-space">색 공간(Color Space)</h2>
+<p><strong>색 공간</strong>(Color Space)은 <strong>색을 일정한 규칙으로 정리해둔 가상의 공간</strong>입니다. 색 마다 이름을 붙여서 정리할 수도 있고, 수학적 공간에 숫자로 정리할 수도 있습니다. 예컨대, 앞에서 살펴본 CIEXYZ 표색계에서 색을 X, Y, Z값으로 표현하면 CIEXYZ 색 공간이 됩니다. 더 나아가, X, Y, Z값을 잘 조절하여 색도를 나타내는 x, y값, 그리고 밝기를 나타내는 Y값의 조합으로 색을 표현하면 CIExyY 색 공간이 되는 것입니다.</p>
+<p>색 공간은 어떤 색 모델을 활용하는지에 따라 그 종류가 다양합니다. 이 글에서 모든 색 공간을 다 살펴볼 순 없습니다. 우리가 살펴볼 색 공간은 다음과 같습니다.</p>
+<p>우리가 살펴볼 색 공간은 <strong>가산 혼합 모델</strong>을 사용하는 <strong>RGB 색 모델</strong>이 적용된 <strong>RGB 색 공간</strong>입니다. 왜냐면 우리는 디지털 공간에서의 색에 대해 다루고 있고, 디지털 공간에서의 색은 대부분 <strong>RGB 색 공간</strong>에서 정의됩니다.</p>
+<h2 id="rgb-색-공간rgb-color-space">RGB 색 공간(RGB Color Space)</h2>
+<p>RGB 색 공간은 RGB 색 모델을 따르며 그 종류가 다양합니다. RGB 색 모델이란 Red, Green, Blue를 적절히 가산 혼합하여 하나의 색을 표현하는 방식입니다. 앞에서 살펴본 CIERGB, CIEXYZ 표색계도 RGB 색 모델을 따르는 표색계였으며, 따라서 CIERGB 색 공간, CIEXYZ 색 공간, CIExyY 색 공간 모두 RGB 색 공간이라고 할 수 있습니다.</p>
+<p>그 중에서도 CIE 1931 색도도의 바탕이 되는 CIExyY 색 공간은 다른 RGB 색 공간들을 서로 비교하기 위한 레퍼런스 색 공간으로 자주 사용됩니다. 이는 CIExyY가 이론적으로 우리 눈이 보는 모든 색을 담고 있고, x, y값으로 색도를 표현하여 2차원 공간에서 색의 영역을 삼각형으로 표현할 수 있게 해주기 때문입니다.</p>
+<pre><code>CIEXYZ의 한계와 CIELAB
+
+CIEXYZ 색 공간, 혹은 이에서 파생된 CIExyY 색 공간은 유니폼한 공간이 아닙니다. 유니폼한 공간이 아니라는 말에는 많은 의미가 내포되어 있지만 그 한계는 '색차 계산과 같은 공학 계산에 활용될 수 없다'라고 정리할 수 있습니다.
+
+색차 계산은 다양한 색들을 수학적으로 정확히 비교 분석하기 위해 필요한 계산입니다. 컬러 영상 분할 등과 같은 작업을 할 때 필요한 계산입니다. CIEXYZ의 한계를 극복하기 위해 유니폼한 색 공간인 CIELUV, CIELAB 등과 같은 색 공간들이 등장했습니다.
+
+그럼에도 불구하고 CIEXYZ 색 공간이 아직까지도 많이 활용되는 이유는 관성 때문이라고 생각합니다. 즉, 오래 사용하던 색 공간이고 CIE가 제정한 대표적인 색 공간이기 때문에, 색차 계산과 같은 공학 계산을 하는 경우가 아닌 이상 아직까지도 명맥을 유지하는 것이 아닌가 생각합니다.
+</code></pre><br>
+<p>실제로 디스플레이에 이미지를 표현하기 위해 사용되는 색 공간들은 우리가 볼 수 있는 모든 색을 다 포함하지는 않습니다. 예컨대, 컴퓨터 디스플레이에서 가장 많이 쓰이는 색 공간인 sRGB 색 공간은 CIExyY 색 공간(혹은 그의 부모격인 CIEXYZ 색 공간)의 35.9%밖에 표현할 수 없습니다.</p>
+<p>자, 그럼 컴퓨터로 이미지 작업을 할 때 자주 보게 될 다양한 RGB 색 공간들이 각기 어떻게 다른지, 무엇 때문에 다른 건지 확인해봅시다. 즉, RGB 색 공간을 정의하는 3가지 요소를 살펴봅시다.</p>
+<h2 id="rgb-색-공간의-3가지-요소">RGB 색 공간의 3가지 요소</h2>
+<p>RGB 색 공간은 사실 단순히 &lsquo;표현할 수 있는 색의 영역'만이 아닙니다. RGB 색 공간은 3가지 구성 요소를 가집니다.</p>
+<h3 id="첫번째-primaries">첫번째, Primaries</h3>
+<p>Primaries의 알맞은 번역을 찾기 힘들어 그냥 영어로 쓰겠습니다. 아마 나머지 3가지 구성 요소도 마찬가지가 될 것 같습니다.</p>
+<p><strong>Primaries</strong>는 <strong>색역(gamut)의 꼭지점</strong>입니다. 색역은 색 공간이 재현할 수 있는 색의 영역, 혹은 부분입니다. RGB 색 공간의 색역은 CIE 1931 색도도에서 <strong>삼각형</strong>으로 표현됩니다.</p>
+<p><strong>어떠한 RGB 색 공간은 그 공간이 재현할 수 있는 색역으로 정의될 수 있으며, 색역을 수치적으로 표현할 때 그의 꼭지점들인 Primaries로 표현</strong>합니다.</p>
+<p><img src="https://user-images.githubusercontent.com/60923302/113402377-dd9d5d80-93df-11eb-84c5-0e6e045f4025.png" alt="gamuts_of_different_colorspaces"></p>
+<p>위의 그림은 CIE 1931 색도도 위에 그려진 다양한 RGB 색 공간들의 색역입니다(SWOP CMYK 제외). 각각의 색역은 서로 다른 x, y값의 조합을 가지는 Primaries로 표현될 수 있습니다. 예컨대, sRGB 색 공간의 Primaries는 CIE 1931 색도도 위에서 다음과 같습니다.<br></p>
+<p><em><strong>Red</strong></em> = (0.64, 0.33)<br>
+<em><strong>Green</strong></em> = (0.30, 0.60)<br>
+<em><strong>Blue</strong></em> = (0.15, 0.06)U<br></p>
+<p>반면, ProPhotoRGB 색 공간의 Primaries는 다음과 같습니다.<br></p>
+<p><em><strong>Red</strong></em> = (0.7347, 0.2653)<br>
+<em><strong>Green</strong></em> = (0.1596, 0.8404)<br>
+<em><strong>Blue</strong></em> = 0.0366, 0.0001)<br></p>
+<p>Primaries를 가지고 색역을 표시해보면 ProPhotoRGB의 색역이 sRGB보다 크다는 것을 알 수 있습니다. 더불어 <strong>같은 Red이더라도 서로 다른 x, y 좌표를 가진다</strong>는 것을 알 수 있습니다. 이를 다시 말하면, <em><strong>똑같은 컬러 코드 (255, 0, 0)이더라도 색 공간에 따라 다른 빨간색이 나타날 수 있습니다</strong></em>.</p>
 <br>
-<br></li>
-</ol>
-<p>CIE 1931 색도도는 매우 중요합니다. 다음에 살펴볼 수많은 RGB 색 공간들의 색역을 이 색도도 위에 그리고 비교할 것이기 때문입니다.</p>
+<h3 id="두번째-whitepoint">두번째, Whitepoint</h3>
+<p><strong>Whitepoint</strong>는 <strong>표준 광원(Standard Illuminant)을 삼색 자극값으로 치환한 것</strong>입니다. CIEXYZ에서 삼색 자극값 X, Y, Z는 CIExyY 색 공간에서의 x, y, Y 값으로 바꿀 수 있고, 따라서 표준 광원 또한 x, y, Y 값으로 표현될 수 있습니다. 즉, CIE 1931 색도도 위에 x, y 좌표로 표현될 수 있습니다.</p>
+<p>위와 같은 설명은 너무 어렵습니다. 따라서, Whitepoint를 쉽게 말하자면 <strong>하얀색</strong>에 대한 정의입니다. 우리가 정오에 야외에서 찍은 사진과 실내 백열등 아래에서 찍은 사진은 같은 하얀색도 다르게 나타납니다. 마찬가지로, Whitepoint가 서로 다른 색 공간에서는 같은 하얀색도 다르게 나타납니다.</p>
+<p>하얀색을 어떻게 정의하느냐에 따라 이미지의 전체적인 온도가 결정됩니다. 따라서, Whitepoint는 하얀색 뿐만 아니라 색 공간의 모든 색들에 영향을 미칩니다.</p>
+<pre><code>표준 광원(Standard Illuminant)
+
+물체의 색은 조명 종류 및 빛의 세기에 따라 달라지므로 이를 표준화하기 위한 광원을 표준 광원이라고 한다. 다른 조건의 조명 환경에서 촬영된 이미지를 비교하기 위해 사용한다.
+
+표준 광원은 알파벳과 숫자의 조합으로 표시합니다. 가장 많이 사용되는 표준 광원은 D50, D55, D65, D75 등입니다. D65가 보통 정오의 햇빛을 표현하는 표준 광원입니다. 
+</code></pre><br>
+<p>RGB 색 공간들은 저마다 Whitepoint를 정의합니다. 그리고 이 Whitepoint들은 CIE 1931 색도도 위에서 Planckian locus에 가까이 분포합니다.</p>
+<p><img src="https://user-images.githubusercontent.com/60923302/113410087-93bb7400-93ed-11eb-818d-25e9e6e8a4c1.png" alt="planckian_locus"></p>
+<p>예컨대, sRGB의 Whitepoint는 D65이며 이는 색 온도 6504K에 근사합니다.</p>
+<br>
+<h3 id="세번째-transfer-function">세번째, Transfer Function</h3>
+<p><strong>Transfer Function</strong>은 <strong>광학 신호와 전기 신호 간의 상호 변환 관계를 정의한 변환 함수</strong>입니다. Transfer Function은 EOTF(Electro-Optical Transfer Function)와 OETF(Optical-Electro Transfer Function)로 나뉘는데, 전자는 전기 신호를 광학 신호로 변환(전광변환)하는 함수이고, 후자는 그 반대(광전변환)입니다. 즉, EOTF는 이미지 파일을 디코딩하여 출력 장치로 출력할 때, OETF는 카메라가 빛 정보를 받아 디지털 파일로 인코딩할 때 사용되는 함수입니다. 그 외에도 카메라에 포착된 빛과 디스플레이 장치에 출력할 빛의 차이를 보완해주는 OOTF(Opto-Optic Transfer Function)가 있습니다.</p>
+<p>Transfer Function을 공부하면서 깨달은 바는 &lsquo;Transfer Function만으로도 한 시리즈의 글을 쓸 수 있겠다'였습니다. 즉, 그 내용이 너무 많고, 어려웠습니다. 그래서 여기선 <strong>RGB 색 공간에서 Transfer Function이 가지는 주요한 기능만 소개</strong>하고 넘어가도록 하겠습니다. Transfer Function에 대해선 추후 다른 글에서 자세히 설명드릴 수 있기를 바랍니다.</p>
+<p>RGB 색 공간의 Transfer Function은 대표적으로 <strong>감마 보정</strong>(Gamma Correction)과 같은 작업을 수행합니다.
+<strong>감마 보정</strong>은 다음 글에서 다룰 <em>선형 워크플로우</em>(Linear Workflow)에서 매우 중요하게 다뤄질 것이기 때문에 여기선 간단히 언급만 하고 가겠습니다.</p>
+<p>CRT 모니터가 갖던 특성과 색에 대한 우리 눈의 특성(두 특성들에 대해서도 다음 글에서 자세히 다루겠습니다) 때문에 <strong>대부분의 모니터들은 이미지를 원래 이미지보다 조금 어둡게 보여줍니다</strong>. 따라서, 카메라가 이미지를 촬영하고 이를 디지털 파일로 저장할 때 <strong>이미지를 보다 밝게 저장합니다</strong>(물론 이미지를 어떤 파일로 저장하느냐에 따라 다릅니다). 그럼 두 효과가 상쇄되어 모니터가 원래 이미지를 원래 밝기대로 보여줄 수 있는 것입니다. 이렇게 이미지를 보다 밝게 저장하게 해주는 것이 바로 <strong>이미지 파일의 RGB 색 공간이 갖는 Transfer Function</strong>입니다. 각각의 RGB 색 공간은 저마다의 계산법으로 이미지를 밝게 만듭니다.</p>
+<pre><code>JPEG vs RAW
+
+DSLR이나 미러리스 카메라를 조금 다루실 줄 안다면 카메라 설정에서 이미지 파일의 형식을 지정할 수 있다는 것을 알고 계실 것입니다. 흔히 JPEG 파일이나 RAW 파일 등의 옵션이 제공됩니다. 그리고 색 공간 역시 지정할 수 있는 카메라들이 있습니다. 보통 sRGB나 AdobeRGB 등이 제공되곤 합니다.
+
+JPEG 파일은 위에서 설명한대로 사진을 다소 밝게 만든 채 저장공간에 저장됩니다. 나중에 컴퓨터에서 JPEG 파일을 열면 컴퓨터 모니터가 밝게 만들어진 사진 파일을 어둡게 조정하여 비로소 원래 우리가 원하던 밝기의 사진을 볼 수 있게 되는 것입니다.
+
+하지만 RAW 파일은 찍은 그대로 저장 공간에 저장됩니다. 따라서, RAW 파일을 컴퓨터에서 열면 모니터가 이를 어둡게 만들어 결국 우리 눈에는 다소 어두운 모습으로 사진이 보여집니다.
+
+이는 카메라가 JPEG와 RAW 파일을 생성할 때, 다른 색 공간을 적용하기 때문입니다. JPEG 파일의 경우 위에서 말한 색 공간 설정에서 선택한 색 공간이 적용된 채 파일이 저장됩니다. 그리고 sRGB나 AdobeRGB 등은 이미지를 밝게 저장하는 Transfer Function을 갖고 있습니다. 반면, RAW 파일은 위 설정을 무시한 채 색 공간을 공백으로 둡니다. 따라서 이미지를 밝게 저장하지 않습니다.
+</code></pre><br>
+<h2 id="정리">정리</h2>
+<p>RGB 색 공간은 Primaries, Whitepoint, Transfer Function으로 구성되어 있습니다. 디지털 디바이스에서 우리가 보는 이미지들은 대부분 이런 RGB 색 공간에서 특정한 의도에 맞게 &lsquo;조작'된 이미지이며 이를 <strong>display-referred</strong> 이미지라고 부릅니다. 반대로, 아무런 조작이 가해지지 않았고 카메라에서 포착된 실제 밝기 신호에 비례하여 생성된 밝기 신호로 저장된 이미지를 <strong>scene-referred</strong> 이미지라고 부릅니다. 그리고 display-referred와 scene-referred 등을 묶어서 <strong>Image State</strong>라고 합니다.</p>
+<p>마지막으로 <strong>Viewing Environment</strong>, 혹은 <strong>Viewing Condition</strong>이란 개념이 있습니다. 이는 쉽게 말해 우리가 이미지를 보는 환경, 또는 조건입니다. 예컨대, 맑은 대낮의 야외에서 보는 이미지와 암막 커튼을 친 방에서 보는 똑같은 이미지는 서로 다르게 보일 수밖에 없습니다. 백열등 아래에서 본 이미지와 형광등 아래에서 본 똑같은 이미지 역시 서로 다르게 보이겠죠. 이런 차이들을 극복하고 제작자의 의도에 맞게 이미지를 상영하기 위해선 톤 매핑(Tone Mapping)이나 CAT(Chromatic Adaptation Transform)과 같은 과정을 거칩니다.</p>
 
 					</div>
 					<div class="post-comments">
@@ -241,11 +256,31 @@
     
     <div class="media">
       <a class="pull-left" href="https://kyoungwhankim.github.io/blog/color_space/">
-        <img class="media-object" src="/images/blog/rgb.png" alt="컴퓨터 그래픽스에서의 색 (1)표색계(Color System)와 색도도(Chromaticity Diagram)">
+        <img class="media-object" src="/images/blog/rgb.png" alt="색 관리 (2)색 공간(Color Space)">
       </a>
       <div class="media-body">
-        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/color_space/">컴퓨터 그래픽스에서의 색 (1)표색계(Color System)와 색도도(Chromaticity Diagram)</a></h4>
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/color_space/">색 관리 (2)색 공간(Color Space)</a></h4>
+        <p>색 공간(Color Space) 색 공간(Color Space)은 색을 일정한 규칙으로 정 …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/color_system/">
+        <img class="media-object" src="/images/blog/rgb.png" alt="색 관리 (1)표색계(Color System)와 색도도(Chromaticity Diagram)">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/color_system/">색 관리 (1)표색계(Color System)와 색도도(Chromaticity Diagram)</a></h4>
         <p>RGB 컴퓨터 모니터 상의 색에 관해서 우리에게 가장 자주 노출되는 용어는 RGB입니다.  …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/color_start/">
+        <img class="media-object" src="/images/blog/rgb.png" alt="색 관리(Color Management) 시리즈">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/color_start/">색 관리(Color Management) 시리즈</a></h4>
+        <p>ACES에서 시작된 색 공부 Renderman 공부를 하면서 ACES라는 새로운 시스템을  …</p>
       </div>
     </div>
     
@@ -259,42 +294,26 @@
       </div>
     </div>
     
-    <div class="media">
-      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/renderman_metal/">
-        <img class="media-object" src="/images/blog/renderman.png" alt="Renderman 스크래치 난 금속 만들기">
-      </a>
-      <div class="media-body">
-        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/renderman_metal/">Renderman 스크래치 난 금속 만들기</a></h4>
-        <p>금속에 다양한 텍스쳐 맵 입히기 Renderman의 PxrSurface을 활용해서 기본 금 …</p>
-      </div>
-    </div>
-    
-    <div class="media">
-      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/renderman_maya/">
-        <img class="media-object" src="/images/blog/renderman.png" alt="Maya에서 Renderman 사용하기">
-      </a>
-      <div class="media-body">
-        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/renderman_maya/">Maya에서 Renderman 사용하기</a></h4>
-        <p>Maya에서 Renderman 사용하는 법 Renderman을 설치했더라도 Maya …</p>
-      </div>
-    </div>
-    
   </div><div class="widget widget-category">
     <h4 class="widget-title">Categories</h4>
     <ul class="widget-category-list">
-      <li><a href="/categories/computer-graphics">Computer graphics</a></li>
+      <li><a href="/categories/color-management">Color management</a></li>
       <li><a href="/categories/opengl">Opengl</a></li>
       <li><a href="/categories/renderman">Renderman</a></li>
     </ul>
   </div><div class="widget widget-tag">
     <h4 class="widget-title">Tags</h4>
     <ul class="widget-tag-list">
+      <li><a href="/tags/aces">Aces</a></li>
       <li><a href="/tags/chromaticity-diagram">Chromaticity diagram</a></li>
+      <li><a href="/tags/color-management">Color management</a></li>
+      <li><a href="/tags/color-space">Color space</a></li>
       <li><a href="/tags/color-system">Color system</a></li>
       <li><a href="/tags/computer-graphics">Computer graphics</a></li>
       <li><a href="/tags/glew">Glew</a></li>
       <li><a href="/tags/glfw">Glfw</a></li>
       <li><a href="/tags/graphics-api">Graphics api</a></li>
+      <li><a href="/tags/linear-worflow">Linear worflow</a></li>
       <li><a href="/tags/opengl">Opengl</a></li>
       <li><a href="/tags/rendering">Rendering</a></li>
       <li><a href="/tags/renderman">Renderman</a></li>

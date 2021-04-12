@@ -3,6 +3,141 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kyoungwhankim.github.io/ko/categories/</loc>
+    <lastmod>2021-04-10T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/ko/tags/color-management/</loc>
+    <lastmod>2021-04-10T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/tags/color-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/tags/color-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/ko/categories/color-management/</loc>
+    <lastmod>2021-04-10T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/categories/color-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/categories/color-management/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/ko/tags/color-space/</loc>
+    <lastmod>2021-04-10T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/tags/color-space/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/tags/color-space/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/ko/tags/computer-graphics/</loc>
+    <lastmod>2021-04-10T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/tags/computer-graphics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/tags/computer-graphics/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/ko/tags/</loc>
+    <lastmod>2021-04-10T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/ko/</loc>
+    <lastmod>2021-04-10T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/ko/blog/</loc>
+    <lastmod>2021-04-10T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/blog/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/ko/blog/color_space/</loc>
+    <lastmod>2021-04-10T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/blog/color_space/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/blog/color_space/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kyoungwhankim.github.io/ko/tags/aces/</loc>
     <lastmod>2021-03-30T20:00:00+09:00</lastmod>
     <xhtml:link
@@ -14,21 +149,6 @@
                 rel="alternate"
                 hreflang="ko"
                 href="https://kyoungwhankim.github.io/ko/tags/aces/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/ko/categories/</loc>
-    <lastmod>2021-03-30T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/categories/"
                 />
   </url>
   
@@ -48,51 +168,6 @@
   </url>
   
   <url>
-    <loc>https://kyoungwhankim.github.io/ko/tags/color-management/</loc>
-    <lastmod>2021-03-30T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/tags/color-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/tags/color-management/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/ko/categories/color-management/</loc>
-    <lastmod>2021-03-30T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/categories/color-management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/categories/color-management/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/ko/tags/color-space/</loc>
-    <lastmod>2021-03-30T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/tags/color-space/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/tags/color-space/"
-                />
-  </url>
-  
-  <url>
     <loc>https://kyoungwhankim.github.io/ko/tags/color-system/</loc>
     <lastmod>2021-03-30T20:00:00+09:00</lastmod>
     <xhtml:link
@@ -108,21 +183,6 @@
   </url>
   
   <url>
-    <loc>https://kyoungwhankim.github.io/ko/tags/computer-graphics/</loc>
-    <lastmod>2021-03-30T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/tags/computer-graphics/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/tags/computer-graphics/"
-                />
-  </url>
-  
-  <url>
     <loc>https://kyoungwhankim.github.io/ko/tags/linear-worflow/</loc>
     <lastmod>2021-03-30T20:00:00+09:00</lastmod>
     <xhtml:link
@@ -134,51 +194,6 @@
                 rel="alternate"
                 hreflang="ko"
                 href="https://kyoungwhankim.github.io/ko/tags/linear-worflow/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/ko/tags/</loc>
-    <lastmod>2021-03-30T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/ko/</loc>
-    <lastmod>2021-03-30T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/ko/blog/</loc>
-    <lastmod>2021-03-30T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/blog/"
                 />
   </url>
   

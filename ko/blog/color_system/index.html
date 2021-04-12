@@ -188,7 +188,6 @@
 <br></p>
 <p>왜 이럴까요? 왜냐면 디스플레이마다 서로 다른 <strong>색 공간</strong>을 사용하기 때문입니다. 더 엄밀히 말하자면, 서로 다른 <strong>색역</strong>을 사용합니다.</p>
 <h2 id="rgb-색-공간">RGB 색 공간</h2>
-<p><strong>색 공간</strong>이란 <strong>표색계를 3차원으로 표현한 공간 개념</strong>입니다. 이에 대해선 다음 글에서 더 자세히 다루겠습니다.</p>
 <p>위에서 말한 RGB(컬러 코드)는 <strong>RGB 색 모델</strong>(Color Model)에 근거하여 빨간색, 초록색, 파란색을 혼합할수록 밝기가 올라가는 <strong>가산 혼합 방식</strong>으로 색을 정의했습니다. 이렇듯 디지털 공간에서의 색 공간은 대부분 이 RGB 색 모델을 기반으로 색을 표현합니다. 이러한 색 공간을 <strong>RGB 색 공간</strong>이라고 합니다. 앞에서 말했듯이, 서로 다른 RGB 색 공간에서는 같은 (255, 0, 0)이더라도 다르게 보일 수 있습니다.</p>
 <p><strong>컬러 코드 RGB와 RGB 색 공간은 다른 것</strong>입니다. 착각하기 쉬우니 조심해야합니다. 특정한 RGB 색 공간에서 색을 표현하기 위해 쓰는 컬러 코드(즉, 색의 이름)가 우리가 각종 프로그램에서 보는 RGB입니다. 이 단락 이후 나오는 모든 RGB는 컬러 코드 RGB와 다른 것이므로 주의하시길 바랍니다.</p>
 <h2 id="표색계color-system-색-표시계">표색계(Color System, 색 표시계)</h2>
@@ -216,7 +215,7 @@
 <p><img src="https://user-images.githubusercontent.com/60923302/113149936-84fa8300-926e-11eb-9695-8e4629680e5a.png" alt="xyz"></p>
 <p>x와 y의 값이 결정된다면 z값은 자동으로 결정됩니다. 따라서 z값은 특정할 필요가 없습니다.</p>
 <h4 id="cie-1931-색도도cie-1931-chromaticity-diagram">CIE 1931 색도도(CIE 1931 Chromaticity Diagram)</h4>
-<p>위에서 색 공간이란 표색계를 3차원 공간 개념으로 표현한 것이라고 했습니다. 이렇게 색도를 표현하기 위한 x, y값, 그리고 밝기를 표현하기 위한 Y값을 사용하여 CIEXYZ 표색계를 3차원 공간 개념으로 표현한 것을 <strong>CIExyY 색 공간</strong>(CIExyY Color Space)이라고 합니다.</p>
+<p>이렇게 색도를 표현하기 위한 x, y값, 그리고 밝기를 표현하기 위한 Y값을 사용하여 CIEXYZ 표색계를 3차원 공간 개념으로 표현한 것을 <strong>CIExyY 색 공간</strong>(CIExyY Color Space)이라고 합니다.</p>
 <p>그리고 CIExyY에서 <strong>색도를 나타내는 x, y값을 직교좌표계로 나타낸 것을 CIE 1931 색도도</strong>(CIE 1931 Chromaticity Diagram), 혹은 CIE xy 색도도(CIE xy Chromaticity Diagram), 혹은 CIE 1931 색공간 색도도(CIE 1931 Color Space Chromaticity Diagram)이라고 합니다. 이런 <strong>색도도</strong>(chromaticity diagram)는 결국 <strong>3차원 색 공간을 색도를 기준으로 2차원으로 표현한 도표</strong>입니다.</p>
 <p><img src="https://user-images.githubusercontent.com/60923302/113151947-917fdb00-9270-11eb-9b72-c64f7ce4a43c.png" alt="chromaticity_diagram"></p>
 <p>CIE 1931 색도도는 다음과 같은 특징과 한계를 가집니다.</p>
@@ -240,6 +239,16 @@
       <div class="col-md-4">
         <aside class="sidebar"><div class="widget widget-latest-post">
     <h4 class="widget-title">Latest Posts</h4>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/color_space/">
+        <img class="media-object" src="/images/blog/rgb.png" alt="색 관리 (2)색 공간(Color Space)">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/color_space/">색 관리 (2)색 공간(Color Space)</a></h4>
+        <p>색 공간(Color Space) 색 공간(Color Space)은 색을 일정한 규칙으로 정 …</p>
+      </div>
+    </div>
     
     <div class="media">
       <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/color_system/">
@@ -268,16 +277,6 @@
       <div class="media-body">
         <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/opengl_triangle1/">OpenGL 삼각형 그리기 (1)VBO, VAO [OPENGL E05]</a></h4>
         <p>OpenGL 그래픽스 파이프라인(Graphics Pipeline) OpenGL …</p>
-      </div>
-    </div>
-    
-    <div class="media">
-      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/renderman_metal/">
-        <img class="media-object" src="/images/blog/renderman.png" alt="Renderman 스크래치 난 금속 만들기">
-      </a>
-      <div class="media-body">
-        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/renderman_metal/">Renderman 스크래치 난 금속 만들기</a></h4>
-        <p>금속에 다양한 텍스쳐 맵 입히기 Renderman의 PxrSurface을 활용해서 기본 금 …</p>
       </div>
     </div>
     

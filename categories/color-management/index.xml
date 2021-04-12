@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 30 Mar 2021 20:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 10 Apr 2021 20:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://kyoungwhankim.github.io/categories/color-management/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>색 관리 (2)색 공간(Color Space)</title>
+      <link>https://kyoungwhankim.github.io/blog/color_space/</link>
+      <pubDate>Sat, 10 Apr 2021 20:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/blog/color_space/</guid>
+      <description>색 공간(Color Space) 색 공간(Color Space)은 색을 일정한 규칙으로 정리해둔 가상의 공간입니다. 색 마다 이름을 붙여서 정리할 수도 있고, 수학적 공간에 숫자로 정리할 수도 있습니다. 예컨대, 앞에서 살펴본 CIEXYZ 표색계에서 색을 X, Y, Z값으로 표현하면 CIEXYZ 색 공간이 됩니다.</description>
+    </item>
     
     <item>
       <title>색 관리 (1)표색계(Color System)와 색도도(Chromaticity Diagram)</title>
