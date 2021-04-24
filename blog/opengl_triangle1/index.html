@@ -315,6 +315,79 @@ while (!glfwWindowShouldClose(window))
 </code></pre><br>
 <p>이제 다소 복잡한 과정이 반복문 밖으로 빠졌습니다. 덕분에 훨씬 OpenGL스러운 코드로 바뀌었고 효율도 높아졌습니다.</p>
 <p>한 가지 짚고 넘어갈 점은, OpenGL context는 순간 순간 필요에 따라 다른 OpenGL Object와 연결됩니다. 따라서 <strong>OpenGL Object를 OpenGL context에 연결(bind)하는 것도 중요하지만 이를 적절하게 끊어주는 것(unbind)도 중요</strong>합니다. 연결(bind)할 때 사용했던 함수들에 인자로 <strong>OpenGL Object의 ID 대신 0</strong>을 전달하면 현재 OpenGL context와 그에 연결(bind)되어 있는 OpenGL Object의 연결고리가 끊어집니다.</p>
+<h3 id="전체-코드">전체 코드</h3>
+<pre><code>#include &lt;GL/glew.h&gt;
+#include &lt;GLFW/glfw3.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main(void)
+{
+	if (!glfwInit())
+		exit(EXIT_FAILURE);
+
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 5);
+	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+
+	GLFWwindow* window = glfwCreateWindow(1080, 720, &quot;title&quot;, NULL, NULL);
+	if (!window)
+	{
+		glfwTerminate();
+		exit(EXIT_FAILURE);
+	}
+	
+	glfwMakeContextCurrent(window);
+
+	int framebuf_width, framebuf_height;
+	glfwGetFramebufferSize(window, &amp;framebuf_width, &amp;framebuf_height);
+	glViewport(0, 0, framebuf_width, framebuf_height);
+
+	if (glewInit() != GLEW_OK)
+	{
+		glfwTerminate();
+		exit(EXIT_FAILURE);
+	}
+
+	float vertices[] = {
+	-0.5f, -0.5f, 0.0f,
+	 0.5f, -0.5f, 0.0f,
+	 0.0f,  0.5f, 0.0f
+	};
+
+	GLuint VAO;
+	GLuint VBO;
+
+	glGenVertexArrays(1, &amp;VAO); // VAO 생성
+	glBindVertexArray(VAO); // VAO를 OpenGL context에 연결(bind)
+
+	glGenBuffers(1, &amp;VBO);
+	glBindBuffer(GL_ARRAY_BUFFER, VBO);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GL_FLOAT), (void*)0);
+	glEnableVertexAttribArray(0);
+
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+	glBindVertexArray(0);
+	
+
+	while (!glfwWindowShouldClose(window))
+	{
+		glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
+		glClear(GL_COLOR_BUFFER_BIT);
+		glUseProgram(ShaderProgramThatWeWillMakeLater); // 아직 모르셔도 됩니다
+		glBindVertexArray(VAO);	// 한 줄로 끝!
+		glDrawArrays(GL_TRIANGLES, 0, 3); // 아직 모르셔도 됩니다
+		glfwSwapBuffers(window);
+		glfwPollEvents();
+	}
+
+	glfwTerminate();
+
+	return 0;
+}
+</code></pre><br>
 <h3 id="다음편-예고">다음편 예고</h3>
 <p>이제 삼각형을 그릴 준비가 다 되었습니다. 다만 아직 셰이더를 작성하지 않았습니다. 위 코드에서 glUseProgram을 호출하기 위해서는 셰이더 프로그램을 만들어야합니다. 이 작업은 다음 글에서 진행하도록 하겠습니다.</p>
 <p>더불어 Index Buffer Object(IBO) 또는 Element Buffer Object(EBO)이라는 OpenGL Object 하나를 더 배울 것입니다. 지금은 삼각형의 꼭지점 하나 하나를 지정해서 삼각형을 그려내지만, 이는 삼각형 여러개로 구성된 복잡한 물체를 그릴 때 매우 비효율적입니다. 겹치는 꼭지점들이 있을텐데 그런 꼭지점들도 매번 새로운 삼각형의 꼭지점으로 새로이 지정해야하기 때문입니다. 따라서 Indexed Drawing 방식을 사용해야하고, 이 때 IBO 또는 EBO가 필요합니다.</p>
