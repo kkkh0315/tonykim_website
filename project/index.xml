@@ -25,6 +25,40 @@ coke.obj</description>
     </item>
     
     <item>
+      <title>Imaginary Dagger</title>
+      <link>https://kyoungwhankim.github.io/project/dagger/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/project/dagger/</guid>
+      <description>Imaginery Dagger This is an imaginary dagger. I referred to a product presented below.
+Product Info: link
+Tools Modeling: Maya 2019
+Texturing: Substance Painter 7.1.1
+Rendering: Iray (Substance Painter builtin renderer)</description>
+    </item>
+    
+    <item>
+      <title>Medieval Stall</title>
+      <link>https://kyoungwhankim.github.io/project/medieval_stall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/project/medieval_stall/</guid>
+      <description>Medieval Stall A medieval stall with some fruit boxes.
+ The roof cloth is created via nCloth in Maya. The apples and pears in the boxes are created via MASH library.</description>
+    </item>
+    
+    <item>
+      <title>PCDTBT</title>
+      <link>https://kyoungwhankim.github.io/project/pcdtbt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/project/pcdtbt/</guid>
+      <description>PCDTBT These are virtual 3D models of PCDTBT and the other compositions. The images are to be printed on a journal article as visual materials.
+Tools Modeling: Maya 2019
+Rendering: Arnold for Maya 3.</description>
+    </item>
+    
+    <item>
       <title>Phong Reflection Model Simulator(PRMS)</title>
       <link>https://kyoungwhankim.github.io/project/prms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -32,6 +66,18 @@ coke.obj</description>
       <guid>https://kyoungwhankim.github.io/project/prms/</guid>
       <description>Phong Reflection Model Simulator(PRMS) Phong Reflection Model Simulator is a simple 3D graphics simulator written in C++ and OpenGL.
 It is a brief program that simulates how phong reflection models work.</description>
+    </item>
+    
+    <item>
+      <title>Viking Helmet</title>
+      <link>https://kyoungwhankim.github.io/project/viking_helmet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/project/viking_helmet/</guid>
+      <description>Viking Helmet This is viking helmet.
+ The fur under the horns is created via XGen library.  Tools Modeling: Maya 2019
+Texturing: Substance Painter 7.1.1
+Rendering: Iray (Substance Painter builtin renderer)</description>
     </item>
     
   </channel>

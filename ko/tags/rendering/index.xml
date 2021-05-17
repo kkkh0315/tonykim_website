@@ -43,5 +43,15 @@ Renderman non-commerical 버전을 설치하는 법을 알아보겠습니다.
  renderman.pixar.com 으로 들어갑니다. Renderman | Pixar Try/Buy 메뉴로 들어갑니다.  Non-Commercial 섹션 Try 아래 TRY FOR FREE을 누릅니다.</description>
     </item>
     
+    <item>
+      <title>Renderman 공부 시작</title>
+      <link>https://kyoungwhankim.github.io/ko/blog/renderman_start/</link>
+      <pubDate>Mon, 15 Mar 2021 20:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/ko/blog/renderman_start/</guid>
+      <description>Renderman Renderman은 Pixar Animation Studio(픽사 애니메이션 스튜디오)에서 제작한 3D 랜더링 프로그램입니다. 우리가 보는 디즈니 애니메이션 영화들이 Renderman으로 제작되는 대표적인 작품들입니다.
+Maya와 Arnold만 쓰다가 다른 랜더링 프로그램으로 갈아타야겠다는 생각을 오래했습니다. 컴퓨터 그래픽스에 빠져 컴퓨터 공학 공부를 하느라 한 동안 가까이 하지 못했던 Maya를 다시 만지기 시작한 이상 새로운 랜더링 프로그램을 공부하자고 다짐했습니다.</description>
+    </item>
+    
   </channel>
 </rss>

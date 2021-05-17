@@ -378,6 +378,21 @@
   </url>
   
   <url>
+    <loc>https://kyoungwhankim.github.io/ko/blog/renderman_start/</loc>
+    <lastmod>2021-03-15T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/blog/renderman_start/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/blog/renderman_start/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kyoungwhankim.github.io/ko/blog/opengl_version/</loc>
     <lastmod>2021-03-13T21:00:00+09:00</lastmod>
     <xhtml:link
@@ -483,18 +498,8 @@
   </url>
   
   <url>
-    <loc>https://kyoungwhankim.github.io/ko/blog/renderman_start/</loc>
+    <loc>https://kyoungwhankim.github.io/ko/blog/substancepainter_start/</loc>
     <lastmod>2021-03-07T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/blog/renderman_start/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/blog/renderman_start/"
-                />
   </url>
   
   <url>
@@ -555,6 +560,20 @@
   </url>
   
   <url>
+    <loc>https://kyoungwhankim.github.io/ko/project/dagger/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/project/dagger/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/project/dagger/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kyoungwhankim.github.io/ko/author/john-doe/</loc>
     <xhtml:link
                 rel="alternate"
@@ -569,6 +588,34 @@
   </url>
   
   <url>
+    <loc>https://kyoungwhankim.github.io/ko/project/medieval_stall/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/project/medieval_stall/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/project/medieval_stall/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/ko/project/pcdtbt/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/project/pcdtbt/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/project/pcdtbt/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kyoungwhankim.github.io/ko/project/prms/</loc>
     <xhtml:link
                 rel="alternate"
@@ -579,6 +626,20 @@
                 rel="alternate"
                 hreflang="ko"
                 href="https://kyoungwhankim.github.io/ko/project/prms/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/ko/project/viking_helmet/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/project/viking_helmet/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/project/viking_helmet/"
                 />
   </url>
   

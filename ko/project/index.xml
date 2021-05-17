@@ -25,6 +25,42 @@ coke.obj</description>
     </item>
     
     <item>
+      <title>Imaginary Dagger</title>
+      <link>https://kyoungwhankim.github.io/ko/project/dagger/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/ko/project/dagger/</guid>
+      <description>Imaginery Dagger 아래 상품을 참고하여 모델링한 상상 속의 단검입니다.
+제품 정보: 링크
+Tools 모델링: Maya 2019
+텍스쳐링: Substance Painter 7.1.1
+랜더링: Iray (Substance Painter builtin renderer)
+Rendered Shots Main Shots Different Angles Close-ups </description>
+    </item>
+    
+    <item>
+      <title>Medieval Stall</title>
+      <link>https://kyoungwhankim.github.io/ko/project/medieval_stall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/ko/project/medieval_stall/</guid>
+      <description>Medieval Stall 과일 상자와 중세 시장의 작은 가게입니다.
+ 가게의 지붕은 Maya의 nCloth를 이용하여 제작하였습니다. 상자 안의 쌓여있는 과일은 MASH 라이브러리를 이용하여 제작하였습니다.  Tools 모델링: Maya 2019
+텍스쳐링: Substance Painter7.</description>
+    </item>
+    
+    <item>
+      <title>PCDTBT</title>
+      <link>https://kyoungwhankim.github.io/ko/project/pcdtbt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/ko/project/pcdtbt/</guid>
+      <description>PCDTBT PCDTBT를 포함한 주위 구성 요소들을 가상의 3D 모델로 제작한 결과물입니다. 학술지 논문의 시각 자료로 활용될 목적으로 외주 제작되었습니다.
+Tools 모델링: Maya 2019
+랜더링: Arnold for Maya 3.1.2 (aka MtoA 3.</description>
+    </item>
+    
+    <item>
       <title>Phong Reflection Model Simulator(PRMS)</title>
       <link>https://kyoungwhankim.github.io/ko/project/prms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -33,6 +69,19 @@ coke.obj</description>
       <description>Phong Reflection Model Simulator(PRMS) Phong Reflection Model Simulator는 C++과 OpenGL API로 작성된 간단한 3D 그래픽 시뮬레이터입니다.
 Phong reflection model을 시각화해주는 간단한 프로그램입니다.
 Phong reflection model은 물체의 표면을 표현하기 위해서 phong lighting model을 사용합니다.</description>
+    </item>
+    
+    <item>
+      <title>Viking Helmet</title>
+      <link>https://kyoungwhankim.github.io/ko/project/viking_helmet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/ko/project/viking_helmet/</guid>
+      <description>Viking Helmet 바이킹 투구입니다.
+ 뿔 아래 털은 XGen 라이브러리를 이용하여 제작하였습니다.  Tools 모델링: Maya 2019
+텍스쳐링: Substance Painter 7.1.1
+랜더링: Iray (Substance Painter builtin renderer)
+Rendered Shots Main Shots Different Angles Close-ups </description>
     </item>
     
   </channel>

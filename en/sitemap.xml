@@ -555,6 +555,20 @@
   </url>
   
   <url>
+    <loc>https://kyoungwhankim.github.io/project/dagger/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/project/dagger/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/project/dagger/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kyoungwhankim.github.io/author/john-doe/</loc>
     <xhtml:link
                 rel="alternate"
@@ -565,6 +579,34 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://kyoungwhankim.github.io/author/john-doe/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/project/medieval_stall/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/project/medieval_stall/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/project/medieval_stall/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/project/pcdtbt/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/project/pcdtbt/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/project/pcdtbt/"
                 />
   </url>
   
@@ -607,6 +649,20 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://kyoungwhankim.github.io/about/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/project/viking_helmet/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/project/viking_helmet/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/project/viking_helmet/"
                 />
   </url>
   
