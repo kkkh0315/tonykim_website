@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maya on Tony Kim | Blog &amp; Portfolio</title>
+    <link>https://kyoungwhankim.github.io/ko/tags/maya/</link>
+    <description>Recent content in Maya on Tony Kim | Blog &amp; Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-ko</language>
+    <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 01 May 2021 20:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://kyoungwhankim.github.io/ko/tags/maya/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Maya에서 UV 여러 오브젝트로 한번에 복사하기</title>
+      <link>https://kyoungwhankim.github.io/ko/blog/maya_uvcopy/</link>
+      <pubDate>Sat, 01 May 2021 20:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/ko/blog/maya_uvcopy/</guid>
+      <description>Maya에서 Python 스크립트로 UV 여러 복제된 오브젝트로 한번에 복사하는 방법 모델링을 하다보면 오브젝트를 복제해서 여러 군데에 사용하고는
+&amp;lsquo;아 UV를 안 펼쳐놨구나!&#39; 하고 깨달을 때가 있습니다.
+오브젝트간 UV 복사는 [Mesh &amp;gt; Transfer Attributes] 기능을 사용하여 가능합니다.</description>
+    </item>
+    
+  </channel>
+</rss>

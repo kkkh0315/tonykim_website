@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UV Mapping on Tony Kim | Blog &amp; Portfolio</title>
+    <link>https://kyoungwhankim.github.io/tags/uv-mapping/</link>
+    <description>Recent content in UV Mapping on Tony Kim | Blog &amp; Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 01 May 2021 20:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://kyoungwhankim.github.io/tags/uv-mapping/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Copying a UV map to multiple objects in Maya</title>
+      <link>https://kyoungwhankim.github.io/blog/maya_uvcopy/</link>
+      <pubDate>Sat, 01 May 2021 20:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/blog/maya_uvcopy/</guid>
+      <description>How to copy a UV map to multiple duplicated objects at once with Python script in Maya When modeling objects, we duplicate an object multiple times and realize
+&amp;lsquo;Oh, I forgot to unwrap the UV!</description>
+    </item>
+    
+  </channel>
+</rss>

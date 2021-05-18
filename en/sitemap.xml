@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://kyoungwhankim.github.io/blog/</loc>
-    <lastmod>2021-04-10T20:00:00+09:00</lastmod>
+    <lastmod>2021-05-01T20:00:00+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -19,7 +19,7 @@
   
   <url>
     <loc>https://kyoungwhankim.github.io/categories/</loc>
-    <lastmod>2021-04-10T20:00:00+09:00</lastmod>
+    <lastmod>2021-05-01T20:00:00+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
@@ -29,6 +29,96 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://kyoungwhankim.github.io/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/blog/maya_uvcopy/</loc>
+    <lastmod>2021-05-01T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/blog/maya_uvcopy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/blog/maya_uvcopy/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/tags/maya/</loc>
+    <lastmod>2021-05-01T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/tags/maya/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/tags/maya/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/categories/maya/</loc>
+    <lastmod>2021-05-01T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/categories/maya/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/categories/maya/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/tags/</loc>
+    <lastmod>2021-05-01T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/</loc>
+    <lastmod>2021-05-01T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/tags/uv-mapping/</loc>
+    <lastmod>2021-05-01T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/tags/uv-mapping/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/tags/uv-mapping/"
                 />
   </url>
   
@@ -89,36 +179,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://kyoungwhankim.github.io/tags/computer-graphics/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/tags/</loc>
-    <lastmod>2021-04-10T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/</loc>
-    <lastmod>2021-04-10T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/"
                 />
   </url>
   
