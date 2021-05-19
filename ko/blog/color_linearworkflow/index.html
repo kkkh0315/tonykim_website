@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko-ko"><head>
+  <meta charset="utf-8">
+  <title>색 관리 (3)선형 워크플로우(Linear Workflow) 완벽 이해</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="선형 워크플로우란">
+  <meta name="author" content="Tony Kim">
+  <meta name="generator" content="Hugo 0.68.3" />
+  
+  
+  <meta property="og:image" content="https://kyoungwhankim.github.io/images/blog/rgb.png" />
+  
+  <meta property="og:title" content="색 관리 (3)선형 워크플로우(Linear Workflow) 완벽 이해" />
+<meta property="og:description" content="선형 워크플로우란" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kyoungwhankim.github.io/ko/blog/color_linearworkflow/" />
+<meta property="article:published_time" content="2021-05-19T10:00:00+09:00" />
+<meta property="article:modified_time" content="2021-05-19T10:00:00+09:00" />
+
+  
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/bootstrap/bootstrap.min.css" media='screen'>
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/Ionicons/css/ionicons.min.css" >
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/magnific-popup/magnific-popup.min.css" >
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/slick/slick.css" >
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://kyoungwhankim.github.io/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://kyoungwhankim.github.io/images/favicon.png" type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+  <img src="https://kyoungwhankim.github.io/images/preloader.gif " alt="preloader">
+  
+</div>
+<!-- preloader end -->
+
+<header class="navigation">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <nav class="navbar">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/ko">
+              <img src="https://kyoungwhankim.github.io/images/tonykim_logo.png" alt="Tony Kim | Blog &amp; Portfolio" width="150px" class="img-responsive">
+            </a>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/ko">홈</a></li>
+              
+              
+              
+              <li><a href="/ko/about">소개</a></li>
+              
+              
+              
+              <li><a href="/ko/project">프로젝트</a></li>
+              
+              
+              
+              <li><a href="/ko/blog">블로그</a></li>
+              
+              
+              
+              <li><a href="/ko/contact">문의</a></li>
+              
+              
+
+              
+              <li>
+                <select id="select-language" onchange="location = this.value;">
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <option id="ko" value="https://kyoungwhankim.github.io/ko/blog/color_linearworkflow/" selected>
+                    Ko
+                  </option>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <option id="en" value="https://kyoungwhankim.github.io/blog/color_linearworkflow/">En
+                  </option>
+                  
+                  
+                  
+                  
+                </select>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-title bg-2" style="background-image: url('https://kyoungwhankim.github.io/images/default.png');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>색 관리 (3)선형 워크플로우(Linear Workflow) 완벽 이해</h1>
+          <p>선형 워크플로우란</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="post post-single">
+					<h2 class="post-title">색 관리 (3)선형 워크플로우(Linear Workflow) 완벽 이해</h2>
+					<div class="post-meta">
+						<ul>
+              <li><i class="ion-calendar"></i> May 19, 2021</li>
+              <li><i class="ion-android-people"></i>
+                Posted By
+                
+                <a class="text-primary" href="/ko/author/%EA%B9%80%EA%B2%BD%ED%99%98">김경환</a>
+                
+              </li>
+              <li><i class="ion-pricetags"></i> 
+                
+                <a href="/ko/tags/computer%20graphics">Computer graphics</a>
+								
+                , <a href="/ko/tags/color%20management">Color management</a>
+								
+                , <a href="/ko/tags/linear%20workflow">Linear workflow</a>
+								
+              </li>
+            </ul>
+					</div>
+					<div class="post-thumb">
+						<img class="img-responsive" src="/images/blog/rgb.png" alt="색 관리 (3)선형 워크플로우(Linear Workflow) 완벽 이해">
+					</div>
+					<div class="post-content post-excerpt">
+						<h2 id="선형-워크플로우linear-workflow">선형 워크플로우(Linear Workflow)</h2>
+<p><strong>선형 워크플로우(Linear Workflow), 혹은 리니어 워크플로우</strong>는 그래픽 작업 시 매우 중요한 개념입니다. 선형 워크플로우란 <strong>모든 그래픽 작업이 선형 색 공간(Linear Color Space)에서 이루어지는 방식</strong>을 말합니다.</p>
+<h3 id="그게-무슨-뜻">그게 무슨 뜻?</h3>
+<p>선형 색 공간(Linear Color Space)을 논하려면 감마 색 공간(Gamma Color Space)를 알아야 합니다.</p>
+<p>사람의 눈은 베버의 법칙 때문에 밝은 색보다 <strong>어두운 색에 훨씬 민감</strong>합니다. 베버의 법칙이란 &lsquo;감각기는 약한 자극이 있는 상황에선 자극의 변화가 적어도 자극을 느낄 수 있으나 강한 자극이 있는 상황에선 자극의 변화가 커야 자극을 느낄 수 있는 법칙'입니다. 즉 어두운 환경에선 조금의 빛만 주어져도 감지할 수 있지만, 밝은 환경에선 조금의 빛은 느낄 수가 없다는 것입니다.</p>
+<p>이를 직접 확인할 수 있는 방법이 있습니다. 아래 두 그라데이션 중 어떤 게 더 자연스러운 그라데이션 같나요?</p>
+<p><img src="https://user-images.githubusercontent.com/60923302/118788622-ecc46600-b8ce-11eb-843c-c985eb6be98e.png" alt="gradients"></p>
+<p>사람의 눈은 어두운 색에 민감하기 때문에 감마 색 공간(Gamma Color Space)의 그라데이션이 더 자연스럽다고 느낍니다. 하지만 실제 수학적으로 정확한 그라데이션은 선형 색 공간(Linear Color Space)의 그라데이션입니다. 즉, 색이 밝아지는 정도를 어두운 색이 밀집해있는 왼쪽에서 더 민감하게 느끼기 때문에 선형 색 공간의 그라데이션은 뭔가 검정색이 급하게 밝아지는 것만 같은 느낌이 드는 것입니다.</p>
+<p>선형 색 공간의 그라데이션을 감마 색 공간의 그라데이션처럼 우리 눈에 자연스럽게 만드려면 감마값(Gamma)을 조정해야합니다. 아주 쉽게 말하자면, 중간색을 다소 어둡게 만들어주면 됩니다. 이를 그래프로 그리면 다음과 같습니다.</p>
+<p><img src="https://user-images.githubusercontent.com/60923302/118791046-4b8adf00-b8d1-11eb-9356-6708af7bb7da.png" alt="gamma2 2"></p>
+<p>이렇게 감마값을 보정한 이미지는 감마 색 공간에 있다고 합니다. 감마값을 보정하지 않은, 원래 이 세상에 존재하는 색 분포 그대로의 이미지는 선형 색 공간에 있다고 합니다.</p>
+<h3 id="디스플레이-장치의-감마-보정">디스플레이 장치의 감마 보정</h3>
+<p>많은 디스플레이 장치들은 감마 보정을 한 채 이미지를 출력합니다. 특히, 위와 같은 이유로 이미지를 다소 어둡게 만들어 출력합니다.<br>
+하지만 감마 보정을 하면 이미지는 왜곡되어 출력됩니다. 아래의 그림을 살펴봅시다.</p>
+<p><img src="https://user-images.githubusercontent.com/60923302/118792515-af61d780-b8d2-11eb-83fc-acc6de68c077.png" alt="gamma_example"></p>
+<p>감마값을 2.2로 조정할 시 이미지가 어두어집니다. 우리 눈이 아무리 어두운 색에 민감하더라도 이미지를 의도와 다르게 어둡게 만들어 사용할 순 없습니다. 그래서 <strong>jpeg와 같은 이미지 파일들은 자체적으로 감마 보정이 된 채 저장됩니다</strong>. 즉, 이미지를 원래보다 더 밝게 만들어 저장합니다. 그럼 디스플레이 장치는 이렇게 밝게 저장된 이미지를 다시 감마 보정을 하여 어둡게 만들어 결과적으로 우리가 원하는 원본 이미지를 출력할 수 있게 되는 것입니다.<br>
+위의 이미지로 따지면, 이미지 파일은 왼쪽 이미지처럼 밝게 저장되어있는데, 디스플레이 장치는 이를 오른쪽 이미지처럼 만드려고 하다보니 두 효과가 서로 상쇄되어 가운데 이미지가 출력되는 것입니다. 마치 어떤 양의 값을 제곱했다가 다시 루트를 씌우면 원래의 값으로 돌아오는 것처럼 말입니다.</p>
+<p>원래는 CRT 모니터의 출력이 감마 보정을 한 것마냥 비선형 특성을 가지고 있었습니다. 그래서 이미지를 감마 보정을 통해 다소 밝게 저장하여 CRT 모니터로 출력하면 원하던 원본 밝기의 이미지가 출력되었습니다.</p>
+<p>요즘의 디스플레이 장치는 출력이 비선형 특성을 가지고 있지는 않습니다. 그럼에도 불구하고 두 번의 감마 보정 과정을 거치는 이유는 위에서 말했듯이 우리 눈이 어두운 색에 더 민감하기 때문입니다. 즉, 이미지를 저장할 때 어두운 색 쪽에 더 많은 메모리를 할당하여 이미지를 수정하거나 어떤 효과를 부여할 때 어두운 부분이 디테일하게 표현될 수 있도록 하기 위함입니다.</p>
+<h3 id="다시-선형-워크플로우로">다시 선형 워크플로우로</h3>
+<p>자 그럼 다시 선형 워크플로우로 돌아오겠습니다. 우리가 2D, 3D 그래픽 툴을 사용할 때 jpeg와 같은 이미지 파일을 쓰기 마련입니다. 근데 이 이미지 파일들은 이미 감마 보정을 통해 한 번 밝게 만들어진 이미지들입니다. <strong>이런 이미지 파일들을 임의로 수정하거나 임의의 효과를 적용하면 왜곡된 결과가 나올 수 있습니다</strong>.</p>
+<p><img src="https://user-images.githubusercontent.com/60923302/118798092-3a919c00-b8d8-11eb-95de-4dfd46ec7526.png" alt="blend">
+<em>이미지 출처: <a href="https://docs.unity3d.com/Manual/LinearRendering-LinearOrGammaWorkflow.html">Unity Documentation</a></em></p>
+<p>예컨대, 위와 같이 색의 블랜딩을 할 경우, 선형 색 공간에서의 블랜딩은 밝은 부분이 자연스럽게 합쳐지지만, 감마 색 공간에서의 블랜딩은 밝은 부분이 지나치게 진하고 경계가 생기는 모습이 보입니다. 그 이유는 감마 색 공간에서의 이미지들은 위에서 말한 것처럼 한 번 밝아진 상태의 이미지들이며, 선형 색 공간에서의 이미지들은 밝아진 이미지에 역으로 감마 보정을 가하여 원래 색상과 밝기로 되돌린  이미지들이기 때문입니다. 때문에 선형 색 공간에서 작업을 하는 것이 권장되며 이를 선형 워크플로우, 또는 리니어 워크플로우라고 하는 것입니다.</p>
+<p>선형 워크플로우에서 작업된 이미지들은 마지막 랜더링 시 다시 감마 보정을 통해 밝게 만들어지고, 이렇게 저장된 이미지들은 디스플레이 장치에서 다시금 어둡게 조정되어 우리가 기대하는 이미지로 출력되게 됩니다.</p>
+<h3 id="더-나아가">더 나아가</h3>
+<p>모든 이미지 파일들이 감마 보정이 된 채 저장되지는 않습니다. png, gif, jpeg 따위의 이미지 파일들은 감마 보정으로 원래보다 밝게 저장되지만, raw, exr 등과 같은 이미지 파일들은 감마 보정이 없습니다. 따라서 이들을 모니터에서 보면 다소 어둡게 나타나는 것입니다.</p>
+<p>선형 워크플로우를 적용하는 방법은 그래픽 소프트웨어마다 다릅니다. 자신이 사용하는 소프트웨어의 선형 워크플로우 지원 방식을 알아보고 참고하여 사용하면 됩니다.</p>
+
+					</div>
+					<div class="post-comments">
+						<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-kyoungwhankim-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+					</div>
+				</div>
+			</div>
+      <div class="col-md-4">
+        <aside class="sidebar"><div class="widget widget-latest-post">
+    <h4 class="widget-title">Latest Posts</h4>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/color_linearworkflow/">
+        <img class="media-object" src="/images/blog/rgb.png" alt="색 관리 (3)선형 워크플로우(Linear Workflow) 완벽 이해">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/color_linearworkflow/">색 관리 (3)선형 워크플로우(Linear Workflow) 완벽 이해</a></h4>
+        <p>선형 워크플로우(Linear Workflow) 선형 워크플로우(Linear …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/opengl_triangle3/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (3)Shader Program [OPENGL E08]">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/opengl_triangle3/">OpenGL 삼각형 그리기 (3)Shader Program [OPENGL E08]</a></h4>
+        <p>Shader Program .cpp 파일들을 작성하여 프로그램을 만들고자 한다면 이 소스  …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/opengl_triangle2/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (2)Shaders [OPENGL E07]">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/opengl_triangle2/">OpenGL 삼각형 그리기 (2)Shaders [OPENGL E07]</a></h4>
+        <p>Shader(셰이더) 영어 발음 상 셰이더가 더 근접한데 쉐이더라고도 많이들 쓰는 것 같습 …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/opengl_triangle1_2/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (1)-2 코드 중간 정리 [OPENGL E06]">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/opengl_triangle1_2/">OpenGL 삼각형 그리기 (1)-2 코드 중간 정리 [OPENGL E06]</a></h4>
+        <p>지금까지의 전체 코드 #include &lt;GL/glew.h&gt; #include …</p>
+      </div>
+    </div>
+    
+  </div><div class="widget widget-category">
+    <h4 class="widget-title">Categories</h4>
+    <ul class="widget-category-list">
+      <li><a href="/ko/categories/color-management">Color management</a></li>
+      <li><a href="/ko/categories/maya">Maya</a></li>
+      <li><a href="/ko/categories/opengl">Opengl</a></li>
+      <li><a href="/ko/categories/renderman">Renderman</a></li>
+    </ul>
+  </div><div class="widget widget-tag">
+    <h4 class="widget-title">Tags</h4>
+    <ul class="widget-tag-list">
+      <li><a href="/ko/tags/aces">Aces</a></li>
+      <li><a href="/ko/tags/chromaticity-diagram">Chromaticity diagram</a></li>
+      <li><a href="/ko/tags/color-management">Color management</a></li>
+      <li><a href="/ko/tags/color-space">Color space</a></li>
+      <li><a href="/ko/tags/color-system">Color system</a></li>
+      <li><a href="/ko/tags/computer-graphics">Computer graphics</a></li>
+      <li><a href="/ko/tags/glew">Glew</a></li>
+      <li><a href="/ko/tags/glfw">Glfw</a></li>
+      <li><a href="/ko/tags/graphics-api">Graphics api</a></li>
+      <li><a href="/ko/tags/linear-worflow">Linear worflow</a></li>
+      <li><a href="/ko/tags/linear-workflow">Linear workflow</a></li>
+      <li><a href="/ko/tags/maya">Maya</a></li>
+      <li><a href="/ko/tags/opengl">Opengl</a></li>
+      <li><a href="/ko/tags/rendering">Rendering</a></li>
+      <li><a href="/ko/tags/renderman">Renderman</a></li>
+      <li><a href="/ko/tags/uv-mapping">Uv mapping</a></li>
+    </ul>
+  </div></aside>
+
+      </div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer-manu">
+					<ul>
+            
+            <li><a href="https://kyoungwhankim.github.io/about">소개</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/project">프로젝트</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/blog">블로그</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/contact">문의</a></li>
+            
+					</ul>
+				</div>
+				<p class="copyright">Copyright © 2020 <a href="https://themefisher.com">Themefisher</a> All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+
+<script src="https://kyoungwhankim.github.io/plugins/jQuery/jquery.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/bootstrap/bootstrap.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/slick/slick.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/magnific-popup/magnific-popup.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/shuffle/shuffle.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/google-map/gmap.js" defer></script>
+
+
+
+
+<script src="https://kyoungwhankim.github.io/js/script.min.js"></script>
+
+
+</body>
+
+</html>

@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-ko</language>
     <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 18 May 2021 21:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 19 May 2021 10:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://kyoungwhankim.github.io/ko/tags/computer-graphics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>색 관리 (3)선형 워크플로우(Linear Workflow) 완벽 이해</title>
+      <link>https://kyoungwhankim.github.io/ko/blog/color_linearworkflow/</link>
+      <pubDate>Wed, 19 May 2021 10:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/ko/blog/color_linearworkflow/</guid>
+      <description>선형 워크플로우(Linear Workflow) 선형 워크플로우(Linear Workflow), 혹은 리니어 워크플로우는 그래픽 작업 시 매우 중요한 개념입니다. 선형 워크플로우란 모든 그래픽 작업이 선형 색 공간(Linear Color Space)에서 이루어지는 방식을 말합니다.
+그게 무슨 뜻?</description>
+    </item>
     
     <item>
       <title>OpenGL 삼각형 그리기 (3)Shader Program [OPENGL E08]</title>
