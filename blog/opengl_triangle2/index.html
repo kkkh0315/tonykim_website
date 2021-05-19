@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>OpenGL 삼각형 그리기 (2)Shaders [OPENGL E07]</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Vertax Shader와 Fragment Shader">
+  <meta name="author" content="Tony Kim">
+  <meta name="generator" content="Hugo 0.68.3" />
+  
+  
+  <meta property="og:image" content="https://kyoungwhankim.github.io/images/blog/opengl.svg" />
+  
+  <meta property="og:title" content="OpenGL 삼각형 그리기 (2)Shaders [OPENGL E07]" />
+<meta property="og:description" content="Vertax Shader와 Fragment Shader" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kyoungwhankim.github.io/blog/opengl_triangle2/" />
+<meta property="article:published_time" content="2021-05-17T21:00:00+09:00" />
+<meta property="article:modified_time" content="2021-05-17T21:00:00+09:00" />
+
+  
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/bootstrap/bootstrap.min.css" media='screen'>
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/Ionicons/css/ionicons.min.css" >
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/magnific-popup/magnific-popup.min.css" >
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/slick/slick.css" >
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://kyoungwhankim.github.io/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://kyoungwhankim.github.io/images/favicon.png" type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+  <img src="https://kyoungwhankim.github.io/images/preloader.gif " alt="preloader">
+  
+</div>
+<!-- preloader end -->
+
+<header class="navigation">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <nav class="navbar">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+              <img src="https://kyoungwhankim.github.io/images/tonykim_logo.png" alt="Tony Kim | Blog &amp; Portfolio" width="150px" class="img-responsive">
+            </a>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/">Home</a></li>
+              
+              
+              
+              <li><a href="/about">About</a></li>
+              
+              
+              
+              <li><a href="/project">Projects</a></li>
+              
+              
+              
+              <li><a href="/blog">Blog</a></li>
+              
+              
+              
+              <li><a href="/contact">Contact</a></li>
+              
+              
+
+              
+              <li>
+                <select id="select-language" onchange="location = this.value;">
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <option id="ko" value="https://kyoungwhankim.github.io/ko/blog/opengl_triangle2/">Ko
+                  </option>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <option id="en" value="https://kyoungwhankim.github.io/blog/opengl_triangle2/" selected>
+                    En
+                  </option>
+                  
+                  
+                  
+                  
+                </select>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-title bg-2" style="background-image: url('https://kyoungwhankim.github.io/images/default.png');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>OpenGL 삼각형 그리기 (2)Shaders [OPENGL E07]</h1>
+          <p>Vertax Shader와 Fragment Shader</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="post post-single">
+					<h2 class="post-title">OpenGL 삼각형 그리기 (2)Shaders [OPENGL E07]</h2>
+					<div class="post-meta">
+						<ul>
+              <li><i class="ion-calendar"></i> May 17, 2021</li>
+              <li><i class="ion-android-people"></i>
+                Posted By
+                
+                <a class="text-primary" href="/author/%EA%B9%80%EA%B2%BD%ED%99%98">김경환</a>
+                
+              </li>
+              <li><i class="ion-pricetags"></i> 
+                
+                <a href="/tags/opengl">Open g l</a>
+								
+                , <a href="/tags/computer%20graphics">Computer graphics</a>
+								
+                , <a href="/tags/graphics%20api">Graphics api</a>
+								
+              </li>
+            </ul>
+					</div>
+					<div class="post-thumb">
+						<img class="img-responsive" src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (2)Shaders [OPENGL E07]">
+					</div>
+					<div class="post-content post-excerpt">
+						<h2 id="shader셰이더">Shader(셰이더)</h2>
+<p>영어 발음 상 셰이더가 더 근접한데 쉐이더라고도 많이들 쓰는 것 같습니다.</p>
+<p>셰이더는 간단히 표현하자면  <strong>물체의 셰이딩을 할 때 GPU에서 돌리는 프로그램</strong>입니다.</p>
+<p>셰이딩이란 <strong>가상의 3D 공간에서 물체의 표면, 또는 물체를 구성하는 폴리곤들의 색(색조, 명도, 채도 등)을 빛, 카메라, 그리고 물체의 재질을 표현하기 위해 설정하는 다양한 설정값들을 바탕으로 표현하는 과정</strong>을 의미합니다.
+전통적인 셰이더는 위의 기능에만 충실했으나 현재는 블러 효과, 크로마키 등 다양한 특수 효과를 만들 때 셰이더를 쓰기도 합니다.</p>
+<p>GPU(Graphics Processing Unit, 그래픽 처리 장치)는 그래픽 출력을 위한 연산을 실행하는 연산 장치입니다. 따라서 셰이더는 연산 프로그램이라고 볼 수 있겠습니다.</p>
+<p>정리하자면 셰이더는 <strong>가상의 3D 공간에서 물체의 색을 포함한 다양한 효과를 표현하기 위해서 GPU에서 돌리는 연산 프로그램</strong>입니다. 그리고 우린 이 셰이더 프로그램들에게 명령을 전달하기 위해 셰이더 언어(GLSL, HLSL 등)로 작성된 코드를 전달해야하며 앞으로 우리가 할 작업이 바로 이 코드 작성입니다. OpenGL은 GLSL 언어로 작성된 셰이더 코드가 필요합니다.</p>
+<h3 id="vertex-shader와-fragment-shader">Vertex Shader와 Fragment Shader</h3>
+<p>삼각형을 그릴 때 필요한 셰이더는, 그리고 사실 가장 중요한 셰이더 두 개는 <strong>Vertex Shader</strong>와 <strong>Fragment Shader</strong>(또는 Pixel Shader라고도 함)입니다. 간단한 3D 도형을 그리는 데에도 이 두 셰이더면 충분하며 빛과 그림자, 특수 효과 등을 표현하기 시작하면서 Geometry Shader, Tessellation Shader 등이 추가됩니다.</p>
+<h4 id="vertex-shader">Vertex Shader</h4>
+<p>Vertex Shader는 <strong>가상의 3D 공간에 있는 꼭지점(vertex)들의 위치를 2차원 화면의 좌표로 변환하는 작업을 수행</strong>합니다. 더불어 꼭지점들(vertices)이 포함하고 있는 위치 이외의 다양한 정보들(UV좌표, Normal 정보)을 다음 셰이더 단계로 전달하기 위해 셰이더들이 사용 가능한 변수에 저장하여 내보내기도 합니다.</p>
+<p>이전 글에서 삼각형의 세 꼭지점 정보를 <strong>vertices라는 배열</strong>에 담았습니다. 그리고 glVertexAttribPointer 함수를 이용해 0번 Vertex Attribute에 vertices 배열을 읽어들이는 법을 저장하였으며 셰이더는 이 때의 번호 0을 location이라고 부른다고 했습니다.</p>
+<pre><code>void CreateTriangle()
+{
+	float vertices[] = {
+		-0.5f, -0.5f, 0.0f,
+		 0.5f, -0.5f, 0.0f,
+		 0.0f,  0.5f, 0.0f
+		};
+
+	glGenVertexArrays(1, &amp;VAO);
+	glBindVertexArray(VAO);
+
+	glGenBuffers(1, &amp;VBO);
+	glBindBuffer(GL_ARRAY_BUFFER, VBO);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GL_FLOAT), (void*)0);
+	glEnableVertexAttribArray(0);
+
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+	glBindVertexArray(0);
+}
+</code></pre><br>
+<p>자, 이렇게 잘 정리된 정보를 Vertex Shader에 전달하여 2차원 화면의 좌표로 변환하게 만들어보도록 하겠습니다.</p>
+<p>우선, 셰이더 코드는 별도의 파일에 작성합니다. <strong>shader.vert</strong>라는 파일을 만들어 줍니다. 위치는 cpp 파일과 동일한 폴더여도 상관 없고, shaders라는 폴더를 생성하여 관리하셔도 무방합니다. 다만 나중에 그 경로를 통해 파일을 읽어올 것이므로 파일의 경로를 복잡하게 만드실 필요는 없어보입니다.
+(이 때, 확장자는 파일의 속성에 아무런 영향이 없습니다. 다만 관습적으로 vertex shader의 확장자는 vert라고 씁니다. 즉, shader.ver, vertex.shader 등 마음대로 파일을 만드셔도 되지만 관습을 따르는 것이 좋겠죠?)</p>
+<p>그리고 아래와 같은 GLSL 코드를 작성합니다.</p>
+<pre><code>#version 460
+
+layout (location = 0) in vec3 pos;
+
+void main()
+{
+	gl_Position = vec4(pos, 1.0);
+}
+</code></pre><br>
+<ol>
+<li>
+<p><strong>#version 460</strong><br>
+<strong>GLSL의 버전</strong>을 세자리 숫자로 명시합니다. <strong>GLSL</strong>은 OpenGL API와 함께 사용할 <strong>C언어 기반 셰이더 언어</strong>입니다. OpenGL 3.3 버전 이후 OpenGL과 GLSL은 버전의 첫번째 숫자(major number)와 두번째 숫자(minor number)이 같습니다. 저는 OpenGL 4.6 버전을 사용하고 있으므로 <strong>GLSL 4.6 버전(정확히는 4.60.5버전)으로 코드를 작성하며 명시할 때는 460</strong>이라고 씁니다. 예컨대, GLSL 4.5 버전은 460 대신 450이라고 쓰시면 됩니다. GLSL 3.3 버전 이상을 쓰시고 계시다면, 즉 OpenGL 3.3 버전 이상을 사용하고 계시다면 어떤 버전이든지 큰 상관이 없으니 걱정마시고 자신의 GLSL 버전에 따라 작성하시면 됩니다.<br>
+<br>
+OpenGL의 버전 확인법은 <a href="https://kyoungwhankim.github.io/ko/blog/opengl_version/">OpenGL 버전 확인법</a>을 참고하시길 바랍니다.<br>
+<br>
+GLSL 언어는 C를 기반으로 하기 때문에 C/C++을 쓰실 줄 아신다면 큰 문제 없이 쓰실 수 있습니다. GLSL 문법에 대해선 저도 더 공부하여 별도의 글로 정리하겠습니다.</p>
+</li>
+<li>
+<p><strong>layout (location = 0) in vec3 pos;</strong><br>
+0번째 Vertex Attribute을 가져와 pos라는 이름의 vec3 자료형 변수에 담습니다. 즉, 삼각형을 이루는 꼭지점의 위치값을 vec3 변수에 담습니다.</p>
+</li>
+<li>
+<p><strong>void main()</strong><br>
+GLSL은 C 언어와 구조가 유사합니다. main 함수를 만드는 것도 똑같습니다.</p>
+</li>
+<li>
+<p><strong>gl_Position = vec4(pos, 1.0)</strong><br>
+<strong>gl_Position</strong>은 이미 정의되어있는 내장 변수로 vertax shader의 출력 변수(output variable)입니다. 이 변수에 저장된 값이 꼭지점의 좌표값(정확히는 clip-space coordinates)으로 출력되어 나머지 셰이더들에서 사용됩니다. vec4 변수이므로 위에서 불러온 pos에 마지막 w값을 1.0으로 지정해둡니다.</p>
+</li>
+</ol>
+<h4 id="fragment-shader">Fragment Shader</h4>
+<p>Fragment Shader는 <strong>Rasterization(래스터화)</strong> 작업으로 생성된 <strong>fragment에 색 정보와 깊이 정보를 담는 역할</strong>을 합니다. Vertex Shader와 Fragment Shader 사이에는 사실 여러 단계들이 내부적으로 존재하는데, 그 중 하나가 Rasterization입니다. Rasterization 단계에서 우리가 그리고자 하는 삼각형은 여러 개의 fragment 단위로 쪼개지게 되며, 우린 이 fragment 마다 색을 칠해 삼각형을 그려내는 것입니다. 삼각형을 모눈종이 위로 옮겼다고 보시면 될 것 같습니다.</p>
+<p>Fragment Shader를 작성할 셰이더 파일을 또 만들어줍니다. 이번엔 <strong>shader.frag</strong>라는 이름의 파일을 만들겠습니다. 파일의 위치는 shader.vert와 같이 두시면 됩니다.</p>
+<p>그리고 아래와 같은 GLSL 코드를 작성합니다.</p>
+<pre><code>#version 460
+
+out vec4 color;
+
+void main()
+{
+    color = vec4(1.0, 0.0, 0.0, 1.0);
+}
+</code></pre><br>
+<ol>
+<li>
+<p><strong>#version 460</strong><br>
+Vertax Shader와 마찬가지로 GLSL의 버전을 명시합니다.</p>
+</li>
+<li>
+<p><strong>out vec4 color;</strong><br>
+vec4 자료형의 출력 변수 color을 선언합니다. 이 출력 변수는 내장 변수가 아니기 때문에 이름은 마음대로 지으셔도 됩니다. main 함수에서 이 출력 변수를 정의하여 fragment의 색을 지정합니다.</p>
+</li>
+<li>
+<p><strong>void main()</strong><br>
+Vertax Shader와 마찬가지로 main 함수를 작성합니다.</p>
+</li>
+<li>
+<p><strong>color = vec4(1.0, 0.0, 0.0, 1.0);</strong><br>
+출력 변수 color을 정의합니다. 빨간색 삼각형을 만들어보겠습니다. color의 r, g, b, a값을 각각 1.0, 0.0, 0.0, 1.0으로 정의하였습니다.</p>
+</li>
+</ol>
+<h3 id="다음글-예고">다음글 예고</h3>
+<p>셰이더를 작성하였다면 이들을 컴파일해서 하나의 <strong>셰이더 프로그램</strong>을 만들어야 합니다. 그럼 삼각형 그리기가 완성됩니다! 다음 글에서는 셰이더 프로그램을 만들어 최종적으로 창에 빨간 삼각형이 드러나도록 만들어보겠습니다!</p>
+
+					</div>
+					<div class="post-comments">
+						<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-kyoungwhankim-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+					</div>
+				</div>
+			</div>
+      <div class="col-md-4">
+        <aside class="sidebar"><div class="widget widget-latest-post">
+    <h4 class="widget-title">Latest Posts</h4>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/opengl_triangle3/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (3)Shader Program [OPENGL E08]">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/opengl_triangle3/">OpenGL 삼각형 그리기 (3)Shader Program [OPENGL E08]</a></h4>
+        <p>Shader Program .cpp 파일들을 작성하여 프로그램을 만들고자 한다면 이 소스  …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/opengl_triangle2/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (2)Shaders [OPENGL E07]">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/opengl_triangle2/">OpenGL 삼각형 그리기 (2)Shaders [OPENGL E07]</a></h4>
+        <p>Shader(셰이더) 영어 발음 상 셰이더가 더 근접한데 쉐이더라고도 많이들 쓰는 것 같습 …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/opengl_triangle1_2/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (1)-2 코드 중간 정리 [OPENGL E06]">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/opengl_triangle1_2/">OpenGL 삼각형 그리기 (1)-2 코드 중간 정리 [OPENGL E06]</a></h4>
+        <p>지금까지의 전체 코드 #include &lt;GL/glew.h&gt; #include …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/maya_uvcopy/">
+        <img class="media-object" src="/images/blog/maya.png" alt="Copying a UV map to multiple objects in Maya">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/maya_uvcopy/">Copying a UV map to multiple objects in Maya</a></h4>
+        <p>How to copy a UV map to multiple duplicated …</p>
+      </div>
+    </div>
+    
+  </div><div class="widget widget-category">
+    <h4 class="widget-title">Categories</h4>
+    <ul class="widget-category-list">
+      <li><a href="/categories/color-management">Color management</a></li>
+      <li><a href="/categories/maya">Maya</a></li>
+      <li><a href="/categories/opengl">Opengl</a></li>
+      <li><a href="/categories/renderman">Renderman</a></li>
+    </ul>
+  </div><div class="widget widget-tag">
+    <h4 class="widget-title">Tags</h4>
+    <ul class="widget-tag-list">
+      <li><a href="/tags/aces">Aces</a></li>
+      <li><a href="/tags/chromaticity-diagram">Chromaticity diagram</a></li>
+      <li><a href="/tags/color-management">Color management</a></li>
+      <li><a href="/tags/color-space">Color space</a></li>
+      <li><a href="/tags/color-system">Color system</a></li>
+      <li><a href="/tags/computer-graphics">Computer graphics</a></li>
+      <li><a href="/tags/glew">Glew</a></li>
+      <li><a href="/tags/glfw">Glfw</a></li>
+      <li><a href="/tags/graphics-api">Graphics api</a></li>
+      <li><a href="/tags/linear-worflow">Linear worflow</a></li>
+      <li><a href="/tags/maya">Maya</a></li>
+      <li><a href="/tags/opengl">Opengl</a></li>
+      <li><a href="/tags/rendering">Rendering</a></li>
+      <li><a href="/tags/renderman">Renderman</a></li>
+      <li><a href="/tags/uv-mapping">Uv mapping</a></li>
+    </ul>
+  </div></aside>
+
+      </div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer-manu">
+					<ul>
+            
+            <li><a href="https://kyoungwhankim.github.io/about">About</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/project">Project</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/blog">Blog</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/contact">Contact</a></li>
+            
+					</ul>
+				</div>
+				<p class="copyright">Copyright © 2020 <a href="https://themefisher.com">Themefisher</a> All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+
+<script src="https://kyoungwhankim.github.io/plugins/jQuery/jquery.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/bootstrap/bootstrap.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/slick/slick.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/magnific-popup/magnific-popup.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/shuffle/shuffle.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/google-map/gmap.js" defer></script>
+
+
+
+
+<script src="https://kyoungwhankim.github.io/js/script.min.js"></script>
+
+
+</body>
+
+</html>

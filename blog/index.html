@@ -14,7 +14,7 @@
 <meta property="og:description" content="Tony Kim" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://kyoungwhankim.github.io/blog/" />
-<meta property="og:updated_time" content="2021-05-01T20:00:00+09:00" />
+<meta property="og:updated_time" content="2021-05-18T21:00:00+09:00" />
 
   
 
@@ -153,6 +153,107 @@
         
         <div class="post">
           <div class="post-media post-thumb">
+            <a href="https://kyoungwhankim.github.io/blog/opengl_triangle3/">
+              <img src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (3)Shader Program [OPENGL E08]">
+            </a>
+          </div>
+          <h3 class="post-title"><a href="https://kyoungwhankim.github.io/blog/opengl_triangle3/">OpenGL 삼각형 그리기 (3)Shader Program [OPENGL E08]</a></h3>
+          <div class="post-meta">
+            <ul>
+              <li><i class="ion-calendar"></i> May 18, 2021</li>
+              <li><i class="ion-android-people"></i>
+                Posted By
+                
+                <a class="text-primary" href="/author/%EA%B9%80%EA%B2%BD%ED%99%98">김경환</a>
+                
+              </li>
+              <li><i class="ion-pricetags"></i> 
+                
+                <a href="/tags/opengl">Open g l</a>
+								
+                , <a href="/tags/computer%20graphics">Computer graphics</a>
+								
+                , <a href="/tags/graphics%20api">Graphics api</a>
+								
+              </li>
+            </ul>
+          </div>
+          <div class="post-content">
+            <p>Shader Program .cpp 파일들을 작성하여 프로그램을 만들고자 한다면 이 소스 파일들을 컴파일, 링크 등의 절차를 거쳐 하나의 실행 파일로 만들어야합니다. 셰이더도 마찬가지입니다. 작성한 shader.vert와 shader.frag를 컴파일하여 하나의 실행 가능한 Shader Program으로 만들어봅시다.</p>
+            <a href="https://kyoungwhankim.github.io/blog/opengl_triangle3/" class="btn btn-main">Continue Reading</a>
+          </div>
+        </div>
+        
+        <div class="post">
+          <div class="post-media post-thumb">
+            <a href="https://kyoungwhankim.github.io/blog/opengl_triangle2/">
+              <img src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (2)Shaders [OPENGL E07]">
+            </a>
+          </div>
+          <h3 class="post-title"><a href="https://kyoungwhankim.github.io/blog/opengl_triangle2/">OpenGL 삼각형 그리기 (2)Shaders [OPENGL E07]</a></h3>
+          <div class="post-meta">
+            <ul>
+              <li><i class="ion-calendar"></i> May 17, 2021</li>
+              <li><i class="ion-android-people"></i>
+                Posted By
+                
+                <a class="text-primary" href="/author/%EA%B9%80%EA%B2%BD%ED%99%98">김경환</a>
+                
+              </li>
+              <li><i class="ion-pricetags"></i> 
+                
+                <a href="/tags/opengl">Open g l</a>
+								
+                , <a href="/tags/computer%20graphics">Computer graphics</a>
+								
+                , <a href="/tags/graphics%20api">Graphics api</a>
+								
+              </li>
+            </ul>
+          </div>
+          <div class="post-content">
+            <p>Shader(셰이더) 영어 발음 상 셰이더가 더 근접한데 쉐이더라고도 많이들 쓰는 것 같습니다.
+셰이더는 간단히 표현하자면 물체의 셰이딩을 할 때 GPU에서 돌리는 프로그램입니다.
+셰이딩이란 가상의 3D 공간에서 물체의 표면, 또는 물체를 구성하는 폴리곤들의 색(색조, 명도, 채도 등)을 빛, 카메라, 그리고 물체의 재질을 표현하기 위해 설정하는 다양한 설정값들을 바탕으로 표현하는 과정을 의미합니다.</p>
+            <a href="https://kyoungwhankim.github.io/blog/opengl_triangle2/" class="btn btn-main">Continue Reading</a>
+          </div>
+        </div>
+        
+        <div class="post">
+          <div class="post-media post-thumb">
+            <a href="https://kyoungwhankim.github.io/blog/opengl_triangle1_2/">
+              <img src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (1)-2 코드 중간 정리 [OPENGL E06]">
+            </a>
+          </div>
+          <h3 class="post-title"><a href="https://kyoungwhankim.github.io/blog/opengl_triangle1_2/">OpenGL 삼각형 그리기 (1)-2 코드 중간 정리 [OPENGL E06]</a></h3>
+          <div class="post-meta">
+            <ul>
+              <li><i class="ion-calendar"></i> May 14, 2021</li>
+              <li><i class="ion-android-people"></i>
+                Posted By
+                
+                <a class="text-primary" href="/author/%EA%B9%80%EA%B2%BD%ED%99%98">김경환</a>
+                
+              </li>
+              <li><i class="ion-pricetags"></i> 
+                
+                <a href="/tags/opengl">Open g l</a>
+								
+                , <a href="/tags/computer%20graphics">Computer graphics</a>
+								
+                , <a href="/tags/graphics%20api">Graphics api</a>
+								
+              </li>
+            </ul>
+          </div>
+          <div class="post-content">
+            <p>지금까지의 전체 코드 #include &lt;GL/glew.h&gt; #include &lt;GLFW/glfw3.h&gt; #include &lt;stdlib.h&gt; int main(void) { if (!glfwInit()) exit(EXIT_FAILURE); glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4); glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 5); glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE); glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); GLFWwindow* window = glfwCreateWindow(1080, 720, &quot;title&quot;, NULL, NULL); if (!</p>
+            <a href="https://kyoungwhankim.github.io/blog/opengl_triangle1_2/" class="btn btn-main">Continue Reading</a>
+          </div>
+        </div>
+        
+        <div class="post">
+          <div class="post-media post-thumb">
             <a href="https://kyoungwhankim.github.io/blog/maya_uvcopy/">
               <img src="/images/blog/maya.png" alt="Copying a UV map to multiple objects in Maya">
             </a>
@@ -180,115 +281,6 @@
             <p>How to copy a UV map to multiple duplicated objects at once with Python script in Maya When modeling objects, we duplicate an object multiple times and realize
 &lsquo;Oh, I forgot to unwrap the UV!</p>
             <a href="https://kyoungwhankim.github.io/blog/maya_uvcopy/" class="btn btn-main">Continue Reading</a>
-          </div>
-        </div>
-        
-        <div class="post">
-          <div class="post-media post-thumb">
-            <a href="https://kyoungwhankim.github.io/blog/color_space/">
-              <img src="/images/blog/rgb.png" alt="색 관리 (2)색 공간(Color Space)">
-            </a>
-          </div>
-          <h3 class="post-title"><a href="https://kyoungwhankim.github.io/blog/color_space/">색 관리 (2)색 공간(Color Space)</a></h3>
-          <div class="post-meta">
-            <ul>
-              <li><i class="ion-calendar"></i> April 10, 2021</li>
-              <li><i class="ion-android-people"></i>
-                Posted By
-                
-                <a class="text-primary" href="/author/%EA%B9%80%EA%B2%BD%ED%99%98">김경환</a>
-                
-              </li>
-              <li><i class="ion-pricetags"></i> 
-                
-                <a href="/tags/computer%20graphics">Computer graphics</a>
-								
-                , <a href="/tags/color%20management">Color management</a>
-								
-                , <a href="/tags/color%20space">Color space</a>
-								
-              </li>
-            </ul>
-          </div>
-          <div class="post-content">
-            <p>색 공간(Color Space) 색 공간(Color Space)은 색을 일정한 규칙으로 정리해둔 가상의 공간입니다. 색 마다 이름을 붙여서 정리할 수도 있고, 수학적 공간에 숫자로 정리할 수도 있습니다. 예컨대, 앞에서 살펴본 CIEXYZ 표색계에서 색을 X, Y, Z값으로 표현하면 CIEXYZ 색 공간이 됩니다.</p>
-            <a href="https://kyoungwhankim.github.io/blog/color_space/" class="btn btn-main">Continue Reading</a>
-          </div>
-        </div>
-        
-        <div class="post">
-          <div class="post-media post-thumb">
-            <a href="https://kyoungwhankim.github.io/blog/color_system/">
-              <img src="/images/blog/rgb.png" alt="색 관리 (1)표색계(Color System)와 색도도(Chromaticity Diagram)">
-            </a>
-          </div>
-          <h3 class="post-title"><a href="https://kyoungwhankim.github.io/blog/color_system/">색 관리 (1)표색계(Color System)와 색도도(Chromaticity Diagram)</a></h3>
-          <div class="post-meta">
-            <ul>
-              <li><i class="ion-calendar"></i> March 30, 2021</li>
-              <li><i class="ion-android-people"></i>
-                Posted By
-                
-                <a class="text-primary" href="/author/%EA%B9%80%EA%B2%BD%ED%99%98">김경환</a>
-                
-              </li>
-              <li><i class="ion-pricetags"></i> 
-                
-                <a href="/tags/computer%20graphics">Computer graphics</a>
-								
-                , <a href="/tags/color%20management">Color management</a>
-								
-                , <a href="/tags/color%20system">Color system</a>
-								
-                , <a href="/tags/chromaticity%20diagram">Chromaticity diagram</a>
-								
-              </li>
-            </ul>
-          </div>
-          <div class="post-content">
-            <p>RGB 컴퓨터 모니터 상의 색에 관해서 우리에게 가장 자주 노출되는 용어는 RGB입니다. 각각 Red, Green, Blue를 의미하는 RGB는 포토샵, Maya, 3DMax, 심지어 그림판에서도 볼 수 있습니다. 우리에게 당연히 빨간색은 RGB값이 (255, 0, 0)인 색입니다.</p>
-            <a href="https://kyoungwhankim.github.io/blog/color_system/" class="btn btn-main">Continue Reading</a>
-          </div>
-        </div>
-        
-        <div class="post">
-          <div class="post-media post-thumb">
-            <a href="https://kyoungwhankim.github.io/blog/color_start/">
-              <img src="/images/blog/rgb.png" alt="색 관리(Color Management) 시리즈">
-            </a>
-          </div>
-          <h3 class="post-title"><a href="https://kyoungwhankim.github.io/blog/color_start/">색 관리(Color Management) 시리즈</a></h3>
-          <div class="post-meta">
-            <ul>
-              <li><i class="ion-calendar"></i> March 30, 2021</li>
-              <li><i class="ion-android-people"></i>
-                Posted By
-                
-                <a class="text-primary" href="/author/%EA%B9%80%EA%B2%BD%ED%99%98">김경환</a>
-                
-              </li>
-              <li><i class="ion-pricetags"></i> 
-                
-                <a href="/tags/computer%20graphics">Computer graphics</a>
-								
-                , <a href="/tags/color%20management">Color management</a>
-								
-                , <a href="/tags/color%20system">Color system</a>
-								
-                , <a href="/tags/chromaticity%20diagram">Chromaticity diagram</a>
-								
-                , <a href="/tags/color%20space">Color space</a>
-								
-                , <a href="/tags/linear%20worflow">Linear worflow</a>
-								
-                , <a href="/tags/aces">A c e s</a>
-								
-              </li>
-            </ul>
-          </div>
-          <div class="post-content">
-            <p>ACES에서 시작된 색 공부 Renderman 공부를 하면서 ACES라는 새로운 시스템을 접하게 되었습니다. 특히, ACEScg에 대해 공부를 하려는데 관련해서 검색을 해보니 컴퓨터 그래픽스에서의 색에 관한 생경한 용어들이 마구 등장했습니다. &lsquo;아 기초가 부족하구나'하고 느꼈습니다.</p>
-            <a href="https://kyoungwhankim.github.io/blog/color_start/" class="btn btn-main">Continue Reading</a>
           </div>
         </div>
         
@@ -364,6 +356,20 @@
 						
 						
 						
+						
+						
+						
+						
+						
+						<li class="">
+							<a href="/blog/page/5/">
+								5
+							</a>
+						</li>
+						
+						
+						
+						
 						<li>
 							<a href="/blog/page/2/">Next</a>
 						</li>
@@ -377,42 +383,42 @@
     <h4 class="widget-title">Latest Posts</h4>
     
     <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/opengl_triangle3/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (3)Shader Program [OPENGL E08]">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/opengl_triangle3/">OpenGL 삼각형 그리기 (3)Shader Program [OPENGL E08]</a></h4>
+        <p>Shader Program .cpp 파일들을 작성하여 프로그램을 만들고자 한다면 이 소스  …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/opengl_triangle2/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (2)Shaders [OPENGL E07]">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/opengl_triangle2/">OpenGL 삼각형 그리기 (2)Shaders [OPENGL E07]</a></h4>
+        <p>Shader(셰이더) 영어 발음 상 셰이더가 더 근접한데 쉐이더라고도 많이들 쓰는 것 같습 …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/opengl_triangle1_2/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (1)-2 코드 중간 정리 [OPENGL E06]">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/opengl_triangle1_2/">OpenGL 삼각형 그리기 (1)-2 코드 중간 정리 [OPENGL E06]</a></h4>
+        <p>지금까지의 전체 코드 #include &lt;GL/glew.h&gt; #include …</p>
+      </div>
+    </div>
+    
+    <div class="media">
       <a class="pull-left" href="https://kyoungwhankim.github.io/blog/maya_uvcopy/">
         <img class="media-object" src="/images/blog/maya.png" alt="Copying a UV map to multiple objects in Maya">
       </a>
       <div class="media-body">
         <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/maya_uvcopy/">Copying a UV map to multiple objects in Maya</a></h4>
         <p>How to copy a UV map to multiple duplicated …</p>
-      </div>
-    </div>
-    
-    <div class="media">
-      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/color_space/">
-        <img class="media-object" src="/images/blog/rgb.png" alt="색 관리 (2)색 공간(Color Space)">
-      </a>
-      <div class="media-body">
-        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/color_space/">색 관리 (2)색 공간(Color Space)</a></h4>
-        <p>색 공간(Color Space) 색 공간(Color Space)은 색을 일정한 규칙으로 정 …</p>
-      </div>
-    </div>
-    
-    <div class="media">
-      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/color_system/">
-        <img class="media-object" src="/images/blog/rgb.png" alt="색 관리 (1)표색계(Color System)와 색도도(Chromaticity Diagram)">
-      </a>
-      <div class="media-body">
-        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/color_system/">색 관리 (1)표색계(Color System)와 색도도(Chromaticity Diagram)</a></h4>
-        <p>RGB 컴퓨터 모니터 상의 색에 관해서 우리에게 가장 자주 노출되는 용어는 RGB입니다.  …</p>
-      </div>
-    </div>
-    
-    <div class="media">
-      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/color_start/">
-        <img class="media-object" src="/images/blog/rgb.png" alt="색 관리(Color Management) 시리즈">
-      </a>
-      <div class="media-body">
-        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/color_start/">색 관리(Color Management) 시리즈</a></h4>
-        <p>ACES에서 시작된 색 공부 Renderman 공부를 하면서 ACES라는 새로운 시스템을  …</p>
       </div>
     </div>
     

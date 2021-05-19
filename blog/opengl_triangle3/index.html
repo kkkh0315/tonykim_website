@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>OpenGL 삼각형 그리기 (3)Shader Program [OPENGL E08]</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Vertax Shader와 Fragment Shader">
+  <meta name="author" content="Tony Kim">
+  <meta name="generator" content="Hugo 0.68.3" />
+  
+  
+  <meta property="og:image" content="https://kyoungwhankim.github.io/images/blog/opengl.svg" />
+  
+  <meta property="og:title" content="OpenGL 삼각형 그리기 (3)Shader Program [OPENGL E08]" />
+<meta property="og:description" content="Vertax Shader와 Fragment Shader" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kyoungwhankim.github.io/blog/opengl_triangle3/" />
+<meta property="article:published_time" content="2021-05-18T21:00:00+09:00" />
+<meta property="article:modified_time" content="2021-05-18T21:00:00+09:00" />
+
+  
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/bootstrap/bootstrap.min.css" media='screen'>
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/Ionicons/css/ionicons.min.css" >
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/magnific-popup/magnific-popup.min.css" >
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/slick/slick.css" >
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://kyoungwhankim.github.io/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://kyoungwhankim.github.io/images/favicon.png" type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+  <img src="https://kyoungwhankim.github.io/images/preloader.gif " alt="preloader">
+  
+</div>
+<!-- preloader end -->
+
+<header class="navigation">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <nav class="navbar">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+              <img src="https://kyoungwhankim.github.io/images/tonykim_logo.png" alt="Tony Kim | Blog &amp; Portfolio" width="150px" class="img-responsive">
+            </a>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/">Home</a></li>
+              
+              
+              
+              <li><a href="/about">About</a></li>
+              
+              
+              
+              <li><a href="/project">Projects</a></li>
+              
+              
+              
+              <li><a href="/blog">Blog</a></li>
+              
+              
+              
+              <li><a href="/contact">Contact</a></li>
+              
+              
+
+              
+              <li>
+                <select id="select-language" onchange="location = this.value;">
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <option id="ko" value="https://kyoungwhankim.github.io/ko/blog/opengl_triangle3/">Ko
+                  </option>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <option id="en" value="https://kyoungwhankim.github.io/blog/opengl_triangle3/" selected>
+                    En
+                  </option>
+                  
+                  
+                  
+                  
+                </select>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-title bg-2" style="background-image: url('https://kyoungwhankim.github.io/images/default.png');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>OpenGL 삼각형 그리기 (3)Shader Program [OPENGL E08]</h1>
+          <p>Vertax Shader와 Fragment Shader</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="post post-single">
+					<h2 class="post-title">OpenGL 삼각형 그리기 (3)Shader Program [OPENGL E08]</h2>
+					<div class="post-meta">
+						<ul>
+              <li><i class="ion-calendar"></i> May 18, 2021</li>
+              <li><i class="ion-android-people"></i>
+                Posted By
+                
+                <a class="text-primary" href="/author/%EA%B9%80%EA%B2%BD%ED%99%98">김경환</a>
+                
+              </li>
+              <li><i class="ion-pricetags"></i> 
+                
+                <a href="/tags/opengl">Open g l</a>
+								
+                , <a href="/tags/computer%20graphics">Computer graphics</a>
+								
+                , <a href="/tags/graphics%20api">Graphics api</a>
+								
+              </li>
+            </ul>
+					</div>
+					<div class="post-thumb">
+						<img class="img-responsive" src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (3)Shader Program [OPENGL E08]">
+					</div>
+					<div class="post-content post-excerpt">
+						<h2 id="shader-program">Shader Program</h2>
+<p>.cpp 파일들을 작성하여 프로그램을 만들고자 한다면 이 소스 파일들을 컴파일, 링크 등의 절차를 거쳐 하나의 실행 파일로 만들어야합니다. 셰이더도 마찬가지입니다. 작성한 shader.vert와 shader.frag를 컴파일하여 하나의 <strong>실행 가능한 Shader Program</strong>으로 만들어봅시다.</p>
+<h3 id="필요한-함수들">필요한 함수들</h3>
+<ol>
+<li>
+<p>우선, <strong>셰이더 파일들을 읽어올 함수</strong>가 필요합니다. 파일을 읽어와 스트링으로 저장하기 위해 string, fstream을 include 해주시고 에러 메세지 출력을 위해서 iostream 혹은 stdio.h도 include 해주세요.</p>
+</li>
+<li>
+<p>그리고 <strong>셰이더 프로그램을 구성하는 데에 필요한 함수들</strong>이 필요합니다. 이 함수들은 셰이더 파일들을 컴파일하고 링크할 것입니다.</p>
+</li>
+</ol>
+<h3 id="코드">코드</h3>
+<pre><code>GLuint shader;
+
+std::string	ReadFile(const char* filePath)
+{
+	std::string content;
+	std::ifstream fileStream(filePath, std::ios::in);
+
+	while (!fileStream.is_open())
+	{
+		printf(&quot;Failed to read %s file! The file doesn't exist.\n&quot;, filePath);
+		return &quot;&quot;;
+	}
+
+	std::string line = &quot;&quot;;
+	while (!fileStream.eof())
+	{
+		std::getline(fileStream, line);
+		content.append(line + &quot;\n&quot;);
+	}
+
+	fileStream.close();
+	return content;
+}
+
+GLuint	AddShader(const char* shaderCode, GLenum shaderType)
+{
+	GLuint new_shader = glCreateShader(shaderType);
+
+	const GLchar* code[1];
+	code[0] = shaderCode;
+
+	glShaderSource(new_shader, 1, code, NULL);
+
+	GLint result = 0;
+	GLchar err_log[1024] = { 0 };
+
+	glCompileShader(new_shader);
+	glGetShaderiv(new_shader, GL_COMPILE_STATUS, &amp;result);
+	if (!result)
+	{
+		glGetShaderInfoLog(new_shader, sizeof(err_log), NULL, err_log);
+		printf(&quot;Error compiling the %d shader: '%s'\n&quot;, shaderType, err_log);
+		return 0;
+	}
+	return new_shader;
+}
+
+void	CompileShader(const char* vsCode, const char* fsCode)
+{
+	GLuint vs, fs;
+
+	shader = glCreateProgram();
+
+	if (!shader)
+	{
+		printf(&quot;Error: Cannot create shader program.&quot;);
+		return;
+	}
+
+	vs = AddShader(vsCode, GL_VERTEX_SHADER);
+	fs = AddShader(fsCode, GL_FRAGMENT_SHADER);
+	glAttachShader(shader, vs);  // Attach shaders to the program for linking process.
+	glAttachShader(shader, fs);
+
+	GLint result = 0;
+	GLchar err_log[1024] = { 0 };
+
+	glLinkProgram(shader);  // Create executables from shader codes to run on corresponding processors.
+	glGetProgramiv(shader, GL_LINK_STATUS, &amp;result);
+	if (!result)
+	{
+		glGetProgramInfoLog(shader, sizeof(err_log), NULL, err_log);
+		printf(&quot;Error linking program: '%s'\n&quot;, err_log);
+		return;
+	}
+}
+
+void CreateShaderProgramFromFiles(const char* vsPath, const char* fsPath)
+{
+	std::string vsFile = ReadFile(vsPath);
+	std::string fsFile = ReadFile(fsPath);
+	const char* vsCode = vsFile.c_str();
+	const char* fsCode = fsFile.c_str();
+
+	CompileShader(vsCode, fsCode);
+}
+</code></pre><br>
+<ol>
+<li>
+<p><strong>GLuint shader;</strong><br>
+셰이더 프로그램은 ID 번호를 갖게 됩니다. ID 번호를 저장할 GLuint 변수를 전역 변수로 선언합니다.</p>
+</li>
+<li>
+<p><strong>ReadFile 함수</strong><br>
+셰이더 파일을 읽어오는 함수입니다. 인자로 읽어올 파일의 경로를 받습니다. 파일 관련 함수들은 여기서 개별적으로 설명하지 않겠습니다. <a href="https://blockdmask.tistory.com/322">참고 글</a>을 읽어보시면 도움이 될 것입니다.</p>
+</li>
+<li>
+<p><strong>CreateShaderProgramFromFiles 함수</strong><br>
+ReadFile로 파일을 읽어와 컴파일 단계로 넘겨주는 함수입니다. 인자로 Vertax Shader의 파일 경로와 Fragment Shader의 파일 경로를 순서대로 받습니다.</p>
+</li>
+<li>
+<p><strong>CompileShader 함수</strong><br>
+셰이더 파일들을 컴파일하고 하나의 실행 프로그램으로 만드는 함수입니다. 인자로 Vertax Shader 코드와 Fragment Shader 코드를 저장해둔 문자열을 순서대로 받습니다.<br>
+<br>
+<strong>glCreateProgram()</strong>: 셰이더 프로그램을 생성하고 그 ID를 반환하는 OpenGL 함수입니다.<br>
+<strong>AddShader()</strong>: 셰이더 프로그램에 연결할 셰이더 파일의 ID를 생성하고 셰이더 파일을 컴파일할 함수입니다.
+<strong>glAttachShader()</strong>: 링크 과정을 위해 작성한 셰이더를 프로그램에 연결해주는 OpenGL 함수입니다.<br>
+<strong>glLinkProgram()</strong>: 셰이더 파일들을 링크하고 GPU에서 실행할 실행 파일을 만드는 OpenGL 함수입니다.<br>
+<strong>glGetProgramiv()</strong>: 셰이더 프로그램의 상태를 마지막 인자인 포인터 변수를 통해 반환하는 함수입니다. 여기선 링크가 잘 됐는지 확인하기 위해서 GL_LINK_STATUS 정보를 반환하도록 하였으며 링크가 잘 되었으면 GL_TRUE를, 실패 시 GL_FALSE를 반환합니다.</p>
+</li>
+<li>
+<p><strong>AddShader 함수</strong><br>
+셰이더 파일을 컴파일하고 ID를 반환하는 함수입니다. 인자로 셰이더 코드와 GLenum 자료형의 셰이더 타입을 받습니다. 셰이더 타입은 GL_VERTAX_SHADER, GL_FRAGMENT_SHADER 등이 있습니다.<br>
+<br>
+<strong>glCreateShader()</strong>: 셰이더 프로그램과 연결할 셰이더를 생성하며 그 ID를 반환합니다.<br>
+<strong>glShaderSource()</strong>: 직접 작성한 셰이더 코드를 glCreateShader를 통해 만든 셰이더에 연결합니다.<br>
+<strong>glCompileShader()</strong>: 셰이더 코드를 컴파일합니다.<br>
+<strong>glGetShaderiv()</strong>: 셰이더 코드의 상태를 마지막 인자인 포인터 변수를 통해 반환하는 함수입니다. 여기선 컴파일이 잘 됐는지 확인하기 위해서 GL_COMPILE_STATUS 정보를 반환하도록 하였으며 컴파일이 잘 되었으면 GL_TRUE, 실패 시 GL_FALSE를 반환합니다.</p>
+</li>
+</ol>
+<h3 id="전체-코드">전체 코드</h3>
+<p>자, 이제 main 함수에서 CreateShaderProgramFromFiles 함수를 호출하고, while문 안의 glUseProgram 함수에 만든 셰이더 프로그램의 ID를 인자로 전달하면 됩니다. 아래 전체 코드로 확인해보시길 바랍니다.</p>
+<p>(참고로 저의 셰이더 코드 파일들은 cpp 파일과 동일한 경로에 위치해있으며, 파일 경로는 cpp 파일이 위치한 곳을 루트로 상대 경로를 작성해주시면 됩니다.)</p>
+<pre><code>#include &lt;GL/glew.h&gt;
+#include &lt;GLFW/glfw3.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;fstream&gt;
+#include &lt;string&gt;
+
+GLuint VBO, VAO, shader;
+
+std::string	ReadFile(const char* filePath)
+{
+	std::string content;
+	std::ifstream fileStream(filePath, std::ios::in);
+
+	while (!fileStream.is_open())
+	{
+		printf(&quot;Failed to read %s file! The file doesn't exist.\n&quot;, filePath);
+		return &quot;&quot;;
+	}
+
+	std::string line = &quot;&quot;;
+	while (!fileStream.eof())
+	{
+		std::getline(fileStream, line);
+		content.append(line + &quot;\n&quot;);
+	}
+
+	fileStream.close();
+	return content;
+}
+
+GLuint	AddShader(const char* shaderCode, GLenum shaderType)
+{
+	GLuint new_shader = glCreateShader(shaderType);
+
+	const GLchar* code[1];
+	code[0] = shaderCode;
+
+	glShaderSource(new_shader, 1, code, NULL);
+
+	GLint result = 0;
+	GLchar err_log[1024] = { 0 };
+
+	glCompileShader(new_shader);
+	glGetShaderiv(new_shader, GL_COMPILE_STATUS, &amp;result);
+	if (!result)
+	{
+		glGetShaderInfoLog(new_shader, sizeof(err_log), NULL, err_log);
+		printf(&quot;Error compiling the %d shader: '%s'\n&quot;, shaderType, err_log);
+		return 0;
+	}
+	return new_shader;
+}
+
+void	CompileShader(const char* vsCode, const char* fsCode)
+{
+	GLuint vs, fs;
+
+	shader = glCreateProgram();
+
+	if (!shader)
+	{
+		printf(&quot;Error: Cannot create shader program.&quot;);
+		return;
+	}
+
+	vs = AddShader(vsCode, GL_VERTEX_SHADER);
+	fs = AddShader(fsCode, GL_FRAGMENT_SHADER);
+	glAttachShader(shader, vs);  // Attach shaders to the program for linking process.
+	glAttachShader(shader, fs);
+
+	GLint result = 0;
+	GLchar err_log[1024] = { 0 };
+
+	glLinkProgram(shader);  // Create executables from shader codes to run on corresponding processors.
+	glGetProgramiv(shader, GL_LINK_STATUS, &amp;result);
+	if (!result)
+	{
+		glGetProgramInfoLog(shader, sizeof(err_log), NULL, err_log);
+		printf(&quot;Error linking program: '%s'\n&quot;, err_log);
+		return;
+	}
+}
+
+void CreateShaderProgramFromFiles(const char* vsPath, const char* fsPath)
+{
+	std::string vsFile = ReadFile(vsPath);
+	std::string fsFile = ReadFile(fsPath);
+	const char* vsCode = vsFile.c_str();
+	const char* fsCode = fsFile.c_str();
+
+	CompileShader(vsCode, fsCode);
+}
+
+void CreateTriangle()
+{
+	GLfloat vertices[] = {
+		-1.0f, -1.0f, 0.0f,
+		1.0f, -1.0f, 0.0f,
+		0.0f, 1.0f, 0.0f
+	};
+
+	glGenVertexArrays(1, &amp;VAO);
+	glBindVertexArray(VAO);
+
+	glGenBuffers(1, &amp;VBO);
+	glBindBuffer(GL_ARRAY_BUFFER, VBO);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);
+	glEnableVertexAttribArray(0);
+
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+	glBindVertexArray(0);
+}
+
+int main(void)
+{
+	if (!glfwInit())
+		exit(EXIT_FAILURE);
+
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 5);
+	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+
+	GLFWwindow* window = glfwCreateWindow(1080, 720, &quot;title&quot;, NULL, NULL);
+	if (!window)
+	{
+		glfwTerminate();
+		exit(EXIT_FAILURE);
+	}
+	
+	glfwMakeContextCurrent(window);
+
+	int framebuf_width, framebuf_height;
+	glfwGetFramebufferSize(window, &amp;framebuf_width, &amp;framebuf_height);
+	glViewport(0, 0, framebuf_width, framebuf_height);
+
+	if (glewInit() != GLEW_OK)
+	{
+		glfwTerminate();
+		exit(EXIT_FAILURE);
+	}
+
+	CreateTriangle();
+	CreateShaderProgramFromFiles(&quot;shader.vert&quot;,&quot;shader.frag&quot;);
+
+	while (!glfwWindowShouldClose(window))
+	{
+		glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+		glClear(GL_COLOR_BUFFER_BIT);
+
+		glUseProgram(shader);
+
+		glBindVertexArray(VAO);
+		glDrawArrays(GL_TRIANGLES, 0, 3);
+		glBindVertexArray(0);
+
+		glUseProgram(0);
+		
+		glfwSwapBuffers(window);
+		glfwPollEvents();
+	}
+
+	glfwTerminate();
+
+	return 0;
+}
+</code></pre><br>
+<h2 id="마무리">마무리</h2>
+<p>드디어 삼각형을 창에 출력할 수 있게 되었습니다.</p>
+<p><img src="https://user-images.githubusercontent.com/60923302/118768293-c9db8700-b8b9-11eb-9f67-a5792941cee0.png" alt="triangle"></p>
+<p>이로서 OpenGL의 기본 구조를 전부 살펴보았습니다. 하지만 이제 시작입니다. 앞으로 2D 삼각형이 아닌 3D 오브젝트를 그리는 법, 이미 모델링된 매쉬를 임포트 하는 법, 텍스쳐를 적용하는 법, 카메라 이동, 빛과 그림자 표현 등등 OpenGL로 할 수 있는 것들이 너무 많습니다.</p>
+<p>다음 글에선 3D 오브젝트를 그려내기 위해 알아야할 Indexed Drawing에 대해 알아보도록 하겠습니다.</p>
+
+					</div>
+					<div class="post-comments">
+						<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-kyoungwhankim-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+					</div>
+				</div>
+			</div>
+      <div class="col-md-4">
+        <aside class="sidebar"><div class="widget widget-latest-post">
+    <h4 class="widget-title">Latest Posts</h4>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/opengl_triangle3/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (3)Shader Program [OPENGL E08]">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/opengl_triangle3/">OpenGL 삼각형 그리기 (3)Shader Program [OPENGL E08]</a></h4>
+        <p>Shader Program .cpp 파일들을 작성하여 프로그램을 만들고자 한다면 이 소스  …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/opengl_triangle2/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (2)Shaders [OPENGL E07]">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/opengl_triangle2/">OpenGL 삼각형 그리기 (2)Shaders [OPENGL E07]</a></h4>
+        <p>Shader(셰이더) 영어 발음 상 셰이더가 더 근접한데 쉐이더라고도 많이들 쓰는 것 같습 …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/opengl_triangle1_2/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (1)-2 코드 중간 정리 [OPENGL E06]">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/opengl_triangle1_2/">OpenGL 삼각형 그리기 (1)-2 코드 중간 정리 [OPENGL E06]</a></h4>
+        <p>지금까지의 전체 코드 #include &lt;GL/glew.h&gt; #include …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/maya_uvcopy/">
+        <img class="media-object" src="/images/blog/maya.png" alt="Copying a UV map to multiple objects in Maya">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/maya_uvcopy/">Copying a UV map to multiple objects in Maya</a></h4>
+        <p>How to copy a UV map to multiple duplicated …</p>
+      </div>
+    </div>
+    
+  </div><div class="widget widget-category">
+    <h4 class="widget-title">Categories</h4>
+    <ul class="widget-category-list">
+      <li><a href="/categories/color-management">Color management</a></li>
+      <li><a href="/categories/maya">Maya</a></li>
+      <li><a href="/categories/opengl">Opengl</a></li>
+      <li><a href="/categories/renderman">Renderman</a></li>
+    </ul>
+  </div><div class="widget widget-tag">
+    <h4 class="widget-title">Tags</h4>
+    <ul class="widget-tag-list">
+      <li><a href="/tags/aces">Aces</a></li>
+      <li><a href="/tags/chromaticity-diagram">Chromaticity diagram</a></li>
+      <li><a href="/tags/color-management">Color management</a></li>
+      <li><a href="/tags/color-space">Color space</a></li>
+      <li><a href="/tags/color-system">Color system</a></li>
+      <li><a href="/tags/computer-graphics">Computer graphics</a></li>
+      <li><a href="/tags/glew">Glew</a></li>
+      <li><a href="/tags/glfw">Glfw</a></li>
+      <li><a href="/tags/graphics-api">Graphics api</a></li>
+      <li><a href="/tags/linear-worflow">Linear worflow</a></li>
+      <li><a href="/tags/maya">Maya</a></li>
+      <li><a href="/tags/opengl">Opengl</a></li>
+      <li><a href="/tags/rendering">Rendering</a></li>
+      <li><a href="/tags/renderman">Renderman</a></li>
+      <li><a href="/tags/uv-mapping">Uv mapping</a></li>
+    </ul>
+  </div></aside>
+
+      </div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer-manu">
+					<ul>
+            
+            <li><a href="https://kyoungwhankim.github.io/about">About</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/project">Project</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/blog">Blog</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/contact">Contact</a></li>
+            
+					</ul>
+				</div>
+				<p class="copyright">Copyright © 2020 <a href="https://themefisher.com">Themefisher</a> All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+
+<script src="https://kyoungwhankim.github.io/plugins/jQuery/jquery.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/bootstrap/bootstrap.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/slick/slick.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/magnific-popup/magnific-popup.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/shuffle/shuffle.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/google-map/gmap.js" defer></script>
+
+
+
+
+<script src="https://kyoungwhankim.github.io/js/script.min.js"></script>
+
+
+</body>
+
+</html>

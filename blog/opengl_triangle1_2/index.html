@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>OpenGL 삼각형 그리기 (1)-2 코드 중간 정리 [OPENGL E06]</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Create Triangle Function">
+  <meta name="author" content="Tony Kim">
+  <meta name="generator" content="Hugo 0.68.3" />
+  
+  
+  <meta property="og:image" content="https://kyoungwhankim.github.io/images/blog/opengl.svg" />
+  
+  <meta property="og:title" content="OpenGL 삼각형 그리기 (1)-2 코드 중간 정리 [OPENGL E06]" />
+<meta property="og:description" content="Create Triangle Function" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kyoungwhankim.github.io/blog/opengl_triangle1_2/" />
+<meta property="article:published_time" content="2021-05-14T21:00:00+09:00" />
+<meta property="article:modified_time" content="2021-05-14T21:00:00+09:00" />
+
+  
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/bootstrap/bootstrap.min.css" media='screen'>
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/Ionicons/css/ionicons.min.css" >
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/magnific-popup/magnific-popup.min.css" >
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/slick/slick.css" >
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://kyoungwhankim.github.io/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://kyoungwhankim.github.io/images/favicon.png" type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+  <img src="https://kyoungwhankim.github.io/images/preloader.gif " alt="preloader">
+  
+</div>
+<!-- preloader end -->
+
+<header class="navigation">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <nav class="navbar">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+              <img src="https://kyoungwhankim.github.io/images/tonykim_logo.png" alt="Tony Kim | Blog &amp; Portfolio" width="150px" class="img-responsive">
+            </a>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/">Home</a></li>
+              
+              
+              
+              <li><a href="/about">About</a></li>
+              
+              
+              
+              <li><a href="/project">Projects</a></li>
+              
+              
+              
+              <li><a href="/blog">Blog</a></li>
+              
+              
+              
+              <li><a href="/contact">Contact</a></li>
+              
+              
+
+              
+              <li>
+                <select id="select-language" onchange="location = this.value;">
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <option id="ko" value="https://kyoungwhankim.github.io/ko/blog/opengl_triangle1_2/">Ko
+                  </option>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <option id="en" value="https://kyoungwhankim.github.io/blog/opengl_triangle1_2/" selected>
+                    En
+                  </option>
+                  
+                  
+                  
+                  
+                </select>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-title bg-2" style="background-image: url('https://kyoungwhankim.github.io/images/default.png');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>OpenGL 삼각형 그리기 (1)-2 코드 중간 정리 [OPENGL E06]</h1>
+          <p>Create Triangle Function</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="post post-single">
+					<h2 class="post-title">OpenGL 삼각형 그리기 (1)-2 코드 중간 정리 [OPENGL E06]</h2>
+					<div class="post-meta">
+						<ul>
+              <li><i class="ion-calendar"></i> May 14, 2021</li>
+              <li><i class="ion-android-people"></i>
+                Posted By
+                
+                <a class="text-primary" href="/author/%EA%B9%80%EA%B2%BD%ED%99%98">김경환</a>
+                
+              </li>
+              <li><i class="ion-pricetags"></i> 
+                
+                <a href="/tags/opengl">Open g l</a>
+								
+                , <a href="/tags/computer%20graphics">Computer graphics</a>
+								
+                , <a href="/tags/graphics%20api">Graphics api</a>
+								
+              </li>
+            </ul>
+					</div>
+					<div class="post-thumb">
+						<img class="img-responsive" src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (1)-2 코드 중간 정리 [OPENGL E06]">
+					</div>
+					<div class="post-content post-excerpt">
+						<h3 id="지금까지의-전체-코드">지금까지의 전체 코드</h3>
+<pre><code>#include &lt;GL/glew.h&gt;
+#include &lt;GLFW/glfw3.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main(void)
+{
+	if (!glfwInit())
+		exit(EXIT_FAILURE);
+
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 5);
+	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+
+	GLFWwindow* window = glfwCreateWindow(1080, 720, &quot;title&quot;, NULL, NULL);
+	if (!window)
+	{
+		glfwTerminate();
+		exit(EXIT_FAILURE);
+	}
+	
+	glfwMakeContextCurrent(window);
+
+	int framebuf_width, framebuf_height;
+	glfwGetFramebufferSize(window, &amp;framebuf_width, &amp;framebuf_height);
+	glViewport(0, 0, framebuf_width, framebuf_height);
+
+	if (glewInit() != GLEW_OK)
+	{
+		glfwTerminate();
+		exit(EXIT_FAILURE);
+	}
+
+	float vertices[] = {
+	-0.5f, -0.5f, 0.0f,
+	 0.5f, -0.5f, 0.0f,
+	 0.0f,  0.5f, 0.0f
+	};
+
+	GLuint VAO;
+	GLuint VBO;
+
+	glGenVertexArrays(1, &amp;VAO); // VAO 생성
+	glBindVertexArray(VAO); // VAO를 OpenGL context에 연결(bind)
+
+	glGenBuffers(1, &amp;VBO);
+	glBindBuffer(GL_ARRAY_BUFFER, VBO);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GL_FLOAT), (void*)0);
+	glEnableVertexAttribArray(0);
+
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+	glBindVertexArray(0);
+	
+
+	while (!glfwWindowShouldClose(window))
+	{
+		glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
+		glClear(GL_COLOR_BUFFER_BIT);
+		glUseProgram(ShaderProgramThatWeWillMakeLater); // 아직 모르셔도 됩니다
+		glBindVertexArray(VAO);	// 한 줄로 끝!
+		glDrawArrays(GL_TRIANGLES, 0, 3); // 아직 모르셔도 됩니다
+		glfwSwapBuffers(window);
+		glfwPollEvents();
+	}
+
+	glfwTerminate();
+
+	return 0;
+}
+</code></pre><br>
+<h2 id="createtriangle-함수-만들기">CreateTriangle 함수 만들기</h2>
+<p>코드가 좀 길어졌습니다. 삼각형을 생성하는 코드를 밖으로 빼서 하나의 함수로 만들도록 하겠습니다. 전체 코드 중 아래 부분을 <strong>CreateTriangle</strong>이라는 이름의 함수로 빼도록 하겠습니다.</p>
+<pre><code>float vertices[] = {
+	-0.5f, -0.5f, 0.0f,
+	 0.5f, -0.5f, 0.0f,
+	 0.0f,  0.5f, 0.0f
+	};
+
+GLuint VAO;
+GLuint VBO;
+
+glGenVertexArrays(1, &amp;VAO);
+glBindVertexArray(VAO);
+
+glGenBuffers(1, &amp;VBO);
+glBindBuffer(GL_ARRAY_BUFFER, VBO);
+glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GL_FLOAT), (void*)0);
+glEnableVertexAttribArray(0);
+
+glBindBuffer(GL_ARRAY_BUFFER, 0);
+glBindVertexArray(0);
+</code></pre><br>
+<p>이 과정에서 <strong>VAO와 VBO는 전역 변수</strong>로 빼도록 하겠습니다.<br>
+그럼 다음과 같이 main 함수가 정리됩니다.</p>
+<pre><code>#include &lt;GL/glew.h&gt;
+#include &lt;GLFW/glfw3.h&gt;
+#include &lt;stdlib.h&gt;
+
+GLuint VAO, VBO;
+
+void CreateTriangle()
+{
+	float vertices[] = {
+	-0.5f, -0.5f, 0.0f,
+	 0.5f, -0.5f, 0.0f,
+	 0.0f,  0.5f, 0.0f
+	};
+
+	GLuint VAO;
+	GLuint VBO;
+
+	glGenVertexArrays(1, &amp;VAO);
+	glBindVertexArray(VAO);
+
+	glGenBuffers(1, &amp;VBO);
+	glBindBuffer(GL_ARRAY_BUFFER, VBO);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GL_FLOAT), (void*)0);
+	glEnableVertexAttribArray(0);
+
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+	glBindVertexArray(0);
+}
+
+int main(void)
+{
+	if (!glfwInit())
+		exit(EXIT_FAILURE);
+
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 5);
+	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+
+	GLFWwindow* window = glfwCreateWindow(1080, 720, &quot;title&quot;, NULL, NULL);
+	if (!window)
+	{
+		glfwTerminate();
+		exit(EXIT_FAILURE);
+	}
+	
+	glfwMakeContextCurrent(window);
+
+	int framebuf_width, framebuf_height;
+	glfwGetFramebufferSize(window, &amp;framebuf_width, &amp;framebuf_height);
+	glViewport(0, 0, framebuf_width, framebuf_height);
+
+	if (glewInit() != GLEW_OK)
+	{
+		glfwTerminate();
+		exit(EXIT_FAILURE);
+	}
+
+	CreateTriangle();
+
+	while (!glfwWindowShouldClose(window))
+	{
+		glClearColor(1.0f, 0.0f, 0.0f, 1.0f);
+		glClear(GL_COLOR_BUFFER_BIT);
+		glUseProgram(ShaderProgramThatWeWillMakeLater);
+		glBindVertexArray(VAO);
+		glDrawArrays(GL_TRIANGLES, 0, 3);
+		glfwSwapBuffers(window);
+		glfwPollEvents();
+	}
+
+	glfwTerminate();
+
+	return 0;
+}
+</code></pre><br>
+<p>main 함수가 조금 짧아졌습니다.
+다음 글에서 셰이더를 작성해보겠습니다.</p>
+
+					</div>
+					<div class="post-comments">
+						<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-kyoungwhankim-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+					</div>
+				</div>
+			</div>
+      <div class="col-md-4">
+        <aside class="sidebar"><div class="widget widget-latest-post">
+    <h4 class="widget-title">Latest Posts</h4>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/opengl_triangle3/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (3)Shader Program [OPENGL E08]">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/opengl_triangle3/">OpenGL 삼각형 그리기 (3)Shader Program [OPENGL E08]</a></h4>
+        <p>Shader Program .cpp 파일들을 작성하여 프로그램을 만들고자 한다면 이 소스  …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/opengl_triangle2/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (2)Shaders [OPENGL E07]">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/opengl_triangle2/">OpenGL 삼각형 그리기 (2)Shaders [OPENGL E07]</a></h4>
+        <p>Shader(셰이더) 영어 발음 상 셰이더가 더 근접한데 쉐이더라고도 많이들 쓰는 것 같습 …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/opengl_triangle1_2/">
+        <img class="media-object" src="/images/blog/opengl.svg" alt="OpenGL 삼각형 그리기 (1)-2 코드 중간 정리 [OPENGL E06]">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/opengl_triangle1_2/">OpenGL 삼각형 그리기 (1)-2 코드 중간 정리 [OPENGL E06]</a></h4>
+        <p>지금까지의 전체 코드 #include &lt;GL/glew.h&gt; #include …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/maya_uvcopy/">
+        <img class="media-object" src="/images/blog/maya.png" alt="Copying a UV map to multiple objects in Maya">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/maya_uvcopy/">Copying a UV map to multiple objects in Maya</a></h4>
+        <p>How to copy a UV map to multiple duplicated …</p>
+      </div>
+    </div>
+    
+  </div><div class="widget widget-category">
+    <h4 class="widget-title">Categories</h4>
+    <ul class="widget-category-list">
+      <li><a href="/categories/color-management">Color management</a></li>
+      <li><a href="/categories/maya">Maya</a></li>
+      <li><a href="/categories/opengl">Opengl</a></li>
+      <li><a href="/categories/renderman">Renderman</a></li>
+    </ul>
+  </div><div class="widget widget-tag">
+    <h4 class="widget-title">Tags</h4>
+    <ul class="widget-tag-list">
+      <li><a href="/tags/aces">Aces</a></li>
+      <li><a href="/tags/chromaticity-diagram">Chromaticity diagram</a></li>
+      <li><a href="/tags/color-management">Color management</a></li>
+      <li><a href="/tags/color-space">Color space</a></li>
+      <li><a href="/tags/color-system">Color system</a></li>
+      <li><a href="/tags/computer-graphics">Computer graphics</a></li>
+      <li><a href="/tags/glew">Glew</a></li>
+      <li><a href="/tags/glfw">Glfw</a></li>
+      <li><a href="/tags/graphics-api">Graphics api</a></li>
+      <li><a href="/tags/linear-worflow">Linear worflow</a></li>
+      <li><a href="/tags/maya">Maya</a></li>
+      <li><a href="/tags/opengl">Opengl</a></li>
+      <li><a href="/tags/rendering">Rendering</a></li>
+      <li><a href="/tags/renderman">Renderman</a></li>
+      <li><a href="/tags/uv-mapping">Uv mapping</a></li>
+    </ul>
+  </div></aside>
+
+      </div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer-manu">
+					<ul>
+            
+            <li><a href="https://kyoungwhankim.github.io/about">About</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/project">Project</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/blog">Blog</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/contact">Contact</a></li>
+            
+					</ul>
+				</div>
+				<p class="copyright">Copyright © 2020 <a href="https://themefisher.com">Themefisher</a> All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+
+<script src="https://kyoungwhankim.github.io/plugins/jQuery/jquery.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/bootstrap/bootstrap.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/slick/slick.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/magnific-popup/magnific-popup.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/shuffle/shuffle.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/google-map/gmap.js" defer></script>
+
+
+
+
+<script src="https://kyoungwhankim.github.io/js/script.min.js"></script>
+
+
+</body>
+
+</html>

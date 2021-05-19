@@ -7,10 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 23 Mar 2021 21:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 18 May 2021 21:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://kyoungwhankim.github.io/tags/opengl/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OpenGL 삼각형 그리기 (3)Shader Program [OPENGL E08]</title>
+      <link>https://kyoungwhankim.github.io/blog/opengl_triangle3/</link>
+      <pubDate>Tue, 18 May 2021 21:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/blog/opengl_triangle3/</guid>
+      <description>Shader Program .cpp 파일들을 작성하여 프로그램을 만들고자 한다면 이 소스 파일들을 컴파일, 링크 등의 절차를 거쳐 하나의 실행 파일로 만들어야합니다. 셰이더도 마찬가지입니다. 작성한 shader.vert와 shader.frag를 컴파일하여 하나의 실행 가능한 Shader Program으로 만들어봅시다.</description>
+    </item>
+    
+    <item>
+      <title>OpenGL 삼각형 그리기 (2)Shaders [OPENGL E07]</title>
+      <link>https://kyoungwhankim.github.io/blog/opengl_triangle2/</link>
+      <pubDate>Mon, 17 May 2021 21:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/blog/opengl_triangle2/</guid>
+      <description>Shader(셰이더) 영어 발음 상 셰이더가 더 근접한데 쉐이더라고도 많이들 쓰는 것 같습니다.
+셰이더는 간단히 표현하자면 물체의 셰이딩을 할 때 GPU에서 돌리는 프로그램입니다.
+셰이딩이란 가상의 3D 공간에서 물체의 표면, 또는 물체를 구성하는 폴리곤들의 색(색조, 명도, 채도 등)을 빛, 카메라, 그리고 물체의 재질을 표현하기 위해 설정하는 다양한 설정값들을 바탕으로 표현하는 과정을 의미합니다.</description>
+    </item>
+    
+    <item>
+      <title>OpenGL 삼각형 그리기 (1)-2 코드 중간 정리 [OPENGL E06]</title>
+      <link>https://kyoungwhankim.github.io/blog/opengl_triangle1_2/</link>
+      <pubDate>Fri, 14 May 2021 21:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/blog/opengl_triangle1_2/</guid>
+      <description>지금까지의 전체 코드 #include &amp;lt;GL/glew.h&amp;gt; #include &amp;lt;GLFW/glfw3.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; int main(void) { if (!glfwInit()) exit(EXIT_FAILURE); glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4); glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 5); glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE); glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); GLFWwindow* window = glfwCreateWindow(1080, 720, &amp;quot;title&amp;quot;, NULL, NULL); if (!</description>
+    </item>
     
     <item>
       <title>OpenGL 삼각형 그리기 (1)VBO, VAO [OPENGL E05]</title>
