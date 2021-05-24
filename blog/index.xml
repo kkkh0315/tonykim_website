@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 19 May 2021 10:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 22 May 2021 20:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://kyoungwhankim.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>처음 3D 모델링 포트폴리오를 만든 소감</title>
+      <link>https://kyoungwhankim.github.io/blog/first_portfolio/</link>
+      <pubDate>Sat, 22 May 2021 20:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/blog/first_portfolio/</guid>
+      <description>첫번째 3D 모델링 포트폴리오를 만들고&amp;hellip; 오토데스크의 Maya를 처음 다루기 시작한 지 딱 2년정도 되었습니다. 대학교 4학년 때 뒤늦게 영화 VFX를 해야겠다고 다짐하고 &amp;lsquo;Maya 학습 동아리&#39;도 꾸려서 운영하던 게 딱 2년 전 혜화동에서의 일입니다.</description>
+    </item>
     
     <item>
       <title>색 관리 (3)선형 워크플로우(Linear Workflow) 완벽 이해</title>

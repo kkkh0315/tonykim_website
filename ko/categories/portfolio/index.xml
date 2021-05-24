@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portfolio on Tony Kim | Blog &amp; Portfolio</title>
+    <link>https://kyoungwhankim.github.io/ko/categories/portfolio/</link>
+    <description>Recent content in Portfolio on Tony Kim | Blog &amp; Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-ko</language>
+    <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 22 May 2021 20:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://kyoungwhankim.github.io/ko/categories/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>처음 3D 모델링 포트폴리오를 만든 소감</title>
+      <link>https://kyoungwhankim.github.io/ko/blog/first_portfolio/</link>
+      <pubDate>Sat, 22 May 2021 20:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/ko/blog/first_portfolio/</guid>
+      <description>첫번째 3D 모델링 포트폴리오를 만들고&amp;hellip; 오토데스크의 Maya를 처음 다루기 시작한 지 딱 2년정도 되었습니다. 대학교 4학년 때 뒤늦게 영화 VFX를 해야겠다고 다짐하고 &amp;lsquo;Maya 학습 동아리&#39;도 꾸려서 운영하던 게 딱 2년 전 혜화동에서의 일입니다.</description>
+    </item>
+    
+  </channel>
+</rss>
