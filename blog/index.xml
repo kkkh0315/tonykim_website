@@ -27,8 +27,8 @@
       <pubDate>Wed, 19 May 2021 10:00:00 +0900</pubDate>
       
       <guid>https://kyoungwhankim.github.io/blog/color_linearworkflow/</guid>
-      <description>선형 워크플로우(Linear Workflow) 선형 워크플로우(Linear Workflow), 혹은 리니어 워크플로우는 그래픽 작업 시 매우 중요한 개념입니다. 선형 워크플로우란 모든 그래픽 작업이 선형 색 공간(Linear Color Space)에서 이루어지는 방식을 말합니다.
-그게 무슨 뜻?</description>
+      <description>색 관리 시리즈 링크 (1)표색계(COLOR SYSTEM)와 색도도(CHROMATICITY DIAGRAM) (2)색 공간(COLOR SPACE)
+선형 워크플로우(Linear Workflow) 선형 워크플로우(Linear Workflow), 혹은 리니어 워크플로우는 그래픽 작업 시 매우 중요한 개념입니다. 선형 워크플로우란 모든 그래픽 작업이 선형 색 공간(Linear Color Space)에서 이루어지는 방식을 말합니다.</description>
     </item>
     
     <item>
@@ -41,7 +41,7 @@
     </item>
     
     <item>
-      <title>OpenGL 삼각형 그리기 (2)Shaders [OPENGL E07]</title>
+      <title>OpenGL 삼각형 그리기 (2)Vertex Shader, Fragment Shader의 기초 [OPENGL E07]</title>
       <link>https://kyoungwhankim.github.io/blog/opengl_triangle2/</link>
       <pubDate>Mon, 17 May 2021 21:00:00 +0900</pubDate>
       
@@ -76,7 +76,8 @@
       <pubDate>Sat, 10 Apr 2021 20:00:00 +0900</pubDate>
       
       <guid>https://kyoungwhankim.github.io/blog/color_space/</guid>
-      <description>색 공간(Color Space) 색 공간(Color Space)은 색을 일정한 규칙으로 정리해둔 가상의 공간입니다. 색 마다 이름을 붙여서 정리할 수도 있고, 수학적 공간에 숫자로 정리할 수도 있습니다. 예컨대, 앞에서 살펴본 CIEXYZ 표색계에서 색을 X, Y, Z값으로 표현하면 CIEXYZ 색 공간이 됩니다.</description>
+      <description>색 관리 시리즈 링크 (1)표색계(COLOR SYSTEM)와 색도도(CHROMATICITY DIAGRAM) (3)선형 워크플로우(LINEAR WORKFLOW) 완벽 이해
+색 공간(Color Space) 색 공간(Color Space)은 색을 일정한 규칙으로 정리해둔 가상의 공간입니다. 색 마다 이름을 붙여서 정리할 수도 있고, 수학적 공간에 숫자로 정리할 수도 있습니다.</description>
     </item>
     
     <item>
@@ -85,7 +86,9 @@
       <pubDate>Tue, 30 Mar 2021 20:00:00 +0900</pubDate>
       
       <guid>https://kyoungwhankim.github.io/blog/color_system/</guid>
-      <description>RGB 컴퓨터 모니터 상의 색에 관해서 우리에게 가장 자주 노출되는 용어는 RGB입니다. 각각 Red, Green, Blue를 의미하는 RGB는 포토샵, Maya, 3DMax, 심지어 그림판에서도 볼 수 있습니다. 우리에게 당연히 빨간색은 RGB값이 (255, 0, 0)인 색입니다.</description>
+      <description>색 관리 시리즈 링크 (2)색 공간(COLOR SPACE)
+(3)선형 워크플로우(LINEAR WORKFLOW) 완벽 이해
+RGB 컴퓨터 모니터 상의 색에 관해서 우리에게 가장 자주 노출되는 용어는 RGB입니다. 각각 Red, Green, Blue를 의미하는 RGB는 포토샵, Maya, 3DMax, 심지어 그림판에서도 볼 수 있습니다.</description>
     </item>
     
     <item>
@@ -159,7 +162,7 @@ Maya와 Arnold만 쓰다가 다른 랜더링 프로그램으로 갈아타야겠�
     </item>
     
     <item>
-      <title>OpenGL 창 만들기 [OPENGL E04]</title>
+      <title>OpenGL 창 만들기: OpenGL 기초 세팅 [OPENGL E04]</title>
       <link>https://kyoungwhankim.github.io/blog/opengl_window/</link>
       <pubDate>Sat, 13 Mar 2021 21:00:00 +0900</pubDate>
       
@@ -172,7 +175,7 @@ GLFW Init Window를 만드는 역할은 GLFW가 합니다. 따라서 GLFW를 ini
     </item>
     
     <item>
-      <title>OpenGL 설치 [OpenGL E03]</title>
+      <title>OpenGL 설치: GLEW, GLFW 다운로드법과 Visual Studio에서 OpenGL 사용하기 [OpenGL E03]</title>
       <link>https://kyoungwhankim.github.io/blog/opengl_install/</link>
       <pubDate>Thu, 11 Mar 2021 20:16:00 +0900</pubDate>
       
@@ -183,7 +186,7 @@ Visual Studio 프로젝트 생성 우선, Visual Studio의 새 C++ 빈 프로젝
     </item>
     
     <item>
-      <title>OpenGL 소개 [OpenGL E02]</title>
+      <title>OpenGL 소개: OpenGL, GLFW, GLEW란? [OpenGL E02]</title>
       <link>https://kyoungwhankim.github.io/blog/opengl_intro/</link>
       <pubDate>Wed, 10 Mar 2021 20:16:00 +0900</pubDate>
       

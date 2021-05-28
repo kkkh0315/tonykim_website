@@ -13,7 +13,7 @@
     
     
     <item>
-      <title>OpenGL 설치 [OpenGL E03]</title>
+      <title>OpenGL 설치: GLEW, GLFW 다운로드법과 Visual Studio에서 OpenGL 사용하기 [OpenGL E03]</title>
       <link>https://kyoungwhankim.github.io/blog/opengl_install/</link>
       <pubDate>Thu, 11 Mar 2021 20:16:00 +0900</pubDate>
       
@@ -24,7 +24,7 @@ Visual Studio 프로젝트 생성 우선, Visual Studio의 새 C++ 빈 프로젝
     </item>
     
     <item>
-      <title>OpenGL 소개 [OpenGL E02]</title>
+      <title>OpenGL 소개: OpenGL, GLFW, GLEW란? [OpenGL E02]</title>
       <link>https://kyoungwhankim.github.io/blog/opengl_intro/</link>
       <pubDate>Wed, 10 Mar 2021 20:16:00 +0900</pubDate>
       

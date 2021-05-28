@@ -22,7 +22,7 @@
     </item>
     
     <item>
-      <title>OpenGL 삼각형 그리기 (2)Shaders [OPENGL E07]</title>
+      <title>OpenGL 삼각형 그리기 (2)Vertex Shader, Fragment Shader의 기초 [OPENGL E07]</title>
       <link>https://kyoungwhankim.github.io/blog/opengl_triangle2/</link>
       <pubDate>Mon, 17 May 2021 21:00:00 +0900</pubDate>
       
@@ -62,7 +62,7 @@
     </item>
     
     <item>
-      <title>OpenGL 창 만들기 [OPENGL E04]</title>
+      <title>OpenGL 창 만들기: OpenGL 기초 세팅 [OPENGL E04]</title>
       <link>https://kyoungwhankim.github.io/blog/opengl_window/</link>
       <pubDate>Sat, 13 Mar 2021 21:00:00 +0900</pubDate>
       
@@ -75,7 +75,7 @@ GLFW Init Window를 만드는 역할은 GLFW가 합니다. 따라서 GLFW를 ini
     </item>
     
     <item>
-      <title>OpenGL 설치 [OpenGL E03]</title>
+      <title>OpenGL 설치: GLEW, GLFW 다운로드법과 Visual Studio에서 OpenGL 사용하기 [OpenGL E03]</title>
       <link>https://kyoungwhankim.github.io/blog/opengl_install/</link>
       <pubDate>Thu, 11 Mar 2021 20:16:00 +0900</pubDate>
       
@@ -86,7 +86,7 @@ Visual Studio 프로젝트 생성 우선, Visual Studio의 새 C++ 빈 프로젝
     </item>
     
     <item>
-      <title>OpenGL 소개 [OpenGL E02]</title>
+      <title>OpenGL 소개: OpenGL, GLFW, GLEW란? [OpenGL E02]</title>
       <link>https://kyoungwhankim.github.io/blog/opengl_intro/</link>
       <pubDate>Wed, 10 Mar 2021 20:16:00 +0900</pubDate>
       
