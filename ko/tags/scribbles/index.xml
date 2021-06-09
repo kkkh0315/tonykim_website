@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-ko</language>
     <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 22 May 2021 20:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 09 Jun 2021 09:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://kyoungwhankim.github.io/ko/tags/scribbles/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>42Seoul(42서울)을 마치며 쓰는 후기</title>
+      <link>https://kyoungwhankim.github.io/ko/blog/42seoul/</link>
+      <pubDate>Wed, 09 Jun 2021 09:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/ko/blog/42seoul/</guid>
+      <description>42Seoul 후기 안녕하세요. 저는 42Seoul 1기 2차 본과정생(카뎃) 김경환입니다. 이제 곧 구(舊)카뎃이 되겠네요.
+42Seoul을 시작한 지 1여년만에 과정을 그만두기로 결정하였습니다. 42Seoul을 통해 프로그래밍을 접하고자 하는 분들에게 참고가 될 만한 내용과 제가 개인적으로 얻은 소중한 경험들을 공유하고자 간략하게 42Seoul 후기를 작성하고자 합니다.</description>
+    </item>
     
     <item>
       <title>처음 3D 모델링 포트폴리오를 만든 소감</title>
