@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>[3D 모델링] 모듈화를 통한 고딕 양식 건축물 만들기 (1) 프리 프로덕션</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Modular Design: Modeling a Gothic Architecture">
+  <meta name="author" content="Tony Kim">
+  <meta name="generator" content="Hugo 0.68.3" />
+  
+  
+  <meta property="og:image" content="https://kyoungwhankim.github.io/images/blog/Gothic/title.png" />
+  
+  <meta property="og:title" content="[3D 모델링] 모듈화를 통한 고딕 양식 건축물 만들기 (1) 프리 프로덕션" />
+<meta property="og:description" content="Modular Design: Modeling a Gothic Architecture" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kyoungwhankim.github.io/blog/gothic_architecture/" />
+<meta property="article:published_time" content="2021-06-15T20:00:00+09:00" />
+<meta property="article:modified_time" content="2021-06-15T20:00:00+09:00" />
+
+  
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/bootstrap/bootstrap.min.css" media='screen'>
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/Ionicons/css/ionicons.min.css" >
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/magnific-popup/magnific-popup.min.css" >
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/slick/slick.css" >
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://kyoungwhankim.github.io/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://kyoungwhankim.github.io/images/favicon.png" type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+  <img src="https://kyoungwhankim.github.io/images/preloader.gif " alt="preloader">
+  
+</div>
+<!-- preloader end -->
+
+<header class="navigation">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <nav class="navbar">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+              <img src="https://kyoungwhankim.github.io/images/tonykim_logo.png" alt="Tony Kim | Blog &amp; Portfolio" width="150px" class="img-responsive">
+            </a>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/">Home</a></li>
+              
+              
+              
+              <li><a href="/about">About</a></li>
+              
+              
+              
+              <li><a href="/project">Projects</a></li>
+              
+              
+              
+              <li><a href="/blog">Blog</a></li>
+              
+              
+              
+              <li><a href="/contact">Contact</a></li>
+              
+              
+
+              
+              <li>
+                <select id="select-language" onchange="location = this.value;">
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <option id="ko" value="https://kyoungwhankim.github.io/ko/blog/gothic_architecture/">Ko
+                  </option>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <option id="en" value="https://kyoungwhankim.github.io/blog/gothic_architecture/" selected>
+                    En
+                  </option>
+                  
+                  
+                  
+                  
+                </select>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-title bg-2" style="background-image: url('https://kyoungwhankim.github.io/images/default.png');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>[3D 모델링] 모듈화를 통한 고딕 양식 건축물 만들기 (1) 프리 프로덕션</h1>
+          <p>Modular Design: Modeling a Gothic Architecture</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="post post-single">
+					<h2 class="post-title">[3D 모델링] 모듈화를 통한 고딕 양식 건축물 만들기 (1) 프리 프로덕션</h2>
+					<div class="post-meta">
+						<ul>
+              <li><i class="ion-calendar"></i> June 15, 2021</li>
+              <li><i class="ion-android-people"></i>
+                Posted By
+                
+                <a class="text-primary" href="/author/%EA%B9%80%EA%B2%BD%ED%99%98">김경환</a>
+                
+              </li>
+              <li><i class="ion-pricetags"></i> 
+                
+                <a href="/tags/portfolio">Portfolio</a>
+								
+                , <a href="/tags/scribbles">Scribbles</a>
+								
+              </li>
+            </ul>
+					</div>
+					<div class="post-thumb">
+						<img class="img-responsive" src="/images/blog/Gothic/title.png" alt="[3D 모델링] 모듈화를 통한 고딕 양식 건축물 만들기 (1) 프리 프로덕션">
+					</div>
+					<div class="post-content post-excerpt">
+						<br>
+<br>
+<h3 id="모듈-디자인이란">모듈 디자인이란?</h3>
+<p><strong>모듈 디자인, 또는 모듈러 설계</strong>란 어떠한 시스템을 모듈이라는 <strong>작은 구성 요소로 세분(모듈화)</strong>하여 디자인 또는 설계하는 방식을 말합니다. 이러한 모듈들은 각각 개별적으로 제작되어 서로 교체되거나 추가, 생략되어 다양한 결과물을 만들어냅니다.</p>
+<p>예컨대, 건물을 세운다고 하면 단위 크기의 벽, 그에 맞는 문, 창문, 계단, 지붕, 바닥 등을 세밀하게 계획되고 통일된 규격에 맞춰 개별적으로 제작한 후 조립하여 하나의 건물을 만드는 방법이 모듈 디자인입니다. 레벨러에게 전달할 때는 배치에 편리하도록 1층, 중간층, 꼭대기층, 지붕, 주변 구조물 등으로 크게 크게 묶어서 미리 조립 후 전달하기도 합니다.</p>
+<p>모듈 디자인의 가장 큰 장점은 <strong>확장성</strong>에 있습니다. 벽을 다양한 방식으로 배치하여 건물의 모양을 변형할 수 있고, 문, 창문, 계단 등의 위치를 조정하여 고정된 에셋(asset) 모듈들로 다양한 스타일의 건물을 만들 수 있습니다. 더불어 벽도 시멘트벽, 황토벽, 벽돌벽, 통나무벽 등 다양하게 제작하고, 그 외 에셋들도 정해진 규격 내에서 다양하게 마련하면 더 확장성이 높은 건물 디자인이 가능합니다.</p>
+<p>처음 모듈 디자인을 공부하기 시작할 때 참고했던 안콜님의 영상을 첨부하도록 하겠습니다: <a href="https://www.youtube.com/watch?v=idBjKLTwc7g">안콜3D님의 &lsquo;모듈화의 모든것&rsquo;</a></p>
+<h3 id="모듈화를-통한-고딕-양식-건축물-제작-사전-작업">모듈화를 통한 고딕 양식 건축물 제작 사전 작업</h3>
+<p>모듈화를 통해 고딕 양식 건축물을 제작의 첫번째 과정은 <strong>프리 프로덕션(pre-production)</strong>입니다. 애니메이션, 영화, 게임 등을 제작할 때 프로덕션 전단계를 칭하는 용어지만 저는 모델링에 들어가기 전 사전 작업을 프리 프로덕션이라고 부릅니다.</p>
+<p><strong>사전 작업은 다음을 포함합니다.</strong><br></p>
+<ol>
+<li>현실 고증을 위한 자료 조사</li>
+<li>스케치</li>
+<li>표준화(규격화)</li>
+</ol>
+<br>
+<br>
+<h4 id="자료-조사-고딕-양식의-특징">자료 조사: 고딕 양식의 특징</h4>
+<p>아름다움도 중요하지만 현실 고증도 중요합니다. 모델링 시 적용할 고딕 양식의 특징들입니다. 수많은 특징들이 있겠지만 대표적인 몇 가지 특징들을 참고하여 모델링을 합니다.</p>
+<p>고딕 양식을 설명하는 많은 자료들이 있었지만 고딕 양식 성당의 외부, 내부를 모두 간략하게 잘 설명해놓은 페이지 하나를 첨부합니다.<br>
+<a href="http://www.culturaltravelguide.com/what-is-a-gothic-cathedral">What is a gothic cathedral?</a></p>
+<ol>
+<li><strong>Pointed gothic arch</strong><br>
+고딕 양식은 위가 뾰족한 아치가 특징입니다.</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/60923302/122208356-285a4c00-cede-11eb-80bf-2740a9cbd064.png" alt="gothic_arch"></p>
+<ol start="2">
+<li><strong>Rib vaults</strong><br>
+위가 뾰족한 아치의 연장선에 있는 늑재 궁륭(rib vault)입니다. 두, 세 개의 원통형 궁륭이 교차하여 만들어지는 궁륭입니다. 고딕 양식의 성당들이 얇은 기둥들만으로도 높은 내부를 가질 수 있었던 비결이었습니다.</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/60923302/122209577-a2d79b80-cedf-11eb-906a-96cbd35a007b.png" alt="rib_vaults"></p>
+<ol start="3">
+<li><strong>Flying buttresses</strong><br>
+얇고 높은 건물을 지탱하기 위해 건물을 둘러싸며 외벽에 덧댄 구조물인 버팀도리(flying buttress)입니다. 노트르담 대성당에서도 볼 수 있는 고딕 양식의 대표적인 특징입니다.</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/60923302/122210347-812ae400-cee0-11eb-99b8-d51079c89ac0.png" alt="flying_buttress"></p>
+<ol start="4">
+<li><strong>Stained Glass Rose Windows</strong><br>
+장미창에 스테인글라스가 특징입니다. 특히 건물 내로 햇빛을 들이기 위해 창문들이 크고 많았습니다.</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/60923302/122211123-5725f180-cee1-11eb-9a27-27a7510abbc3.png" alt="windows"></p>
+<p>그 외에도 <strong>층고가 높은 내부, 뾰족한 첨탑, 석조 건물</strong> 등이 고딕 건축 양식의 특징입니다.</p>
+<p>전체적인 구조는 다음 그림을 참고하였습니다.</p>
+<p><img src="https://user-images.githubusercontent.com/60923302/122628333-7d6dac00-d0f0-11eb-8fdc-fae425d31eaf.jpg" alt="reference_basic"></p>
+<h4 id="자료-조사-레퍼런스-확보">자료 조사: 레퍼런스 확보</h4>
+<p>고딕 양식을 대표하는 몇 개의 건축물을 레퍼런스로 참고하여 모듈화하여 제작합니다.</p>
+<ol>
+<li>
+<p>외관
+<img src="https://user-images.githubusercontent.com/60923302/122507724-ab44e900-d03b-11eb-91c1-095b3d27eeb2.png" alt="reference_exterior"></p>
+</li>
+<li>
+<p>내부
+<img src="https://user-images.githubusercontent.com/60923302/122507731-ae3fd980-d03b-11eb-8f5f-7fad6c6438ac.png" alt="reference_interior"></p>
+</li>
+</ol>
+<h4 id="스케치">스케치</h4>
+<p>개인 작업물은 모델링 할 대상의 스케치를 대략적으로 그리는 편입니다. <br>
+미술 전공이 아니라 컨셉 아트 수준까진 아니더라도 작업 방향을 정하는 느낌으로 스케치를 합니다.<br></p>
+<p><img src="https://user-images.githubusercontent.com/60923302/122786957-cccdfb00-d2ef-11eb-9e75-88b8e106b07f.png" alt="sketch"></p>
+<h4 id="표준화규격화">표준화(규격화)</h4>
+<p>모듈화된 에셋들은 특정 부분의 높이, 너비, 두께 등이 정확히 일치해야 깔끔하게 조립이 가능합니다.<br>
+<br>
+이번 프로젝트의 경우 단위 넓이를 설정하고 2, 4, 6 단위 너비의 기본 벽을 먼저 만들어 놓은 후 작업을 시작하였습니다. 더불어 벽들의 두께도 일치시키고, 특히나 연속성을 가져야하는 몰딩 따위의 두께나 나란히 놓일 창문들의 높이도 미리 설정해두고 모델링을 시작하였습니다.</p>
+<p><img src="https://user-images.githubusercontent.com/60923302/122792379-153be780-d2f5-11eb-8a29-6c8b27a2e389.png" alt="standardization"></p>
+<p><img src="https://user-images.githubusercontent.com/60923302/122792626-4e745780-d2f5-11eb-8a07-922c7f67f544.png" alt="standardization2"></p>
+
+					</div>
+					<div class="post-comments">
+						<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-kyoungwhankim-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+					</div>
+				</div>
+			</div>
+      <div class="col-md-4">
+        <aside class="sidebar"><div class="widget widget-latest-post">
+    <h4 class="widget-title">Latest Posts</h4>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/gothic_architecture/">
+        <img class="media-object" src="/images/blog/Gothic/title.png" alt="[3D 모델링] 모듈화를 통한 고딕 양식 건축물 만들기 (1) 프리 프로덕션">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/gothic_architecture/">[3D 모델링] 모듈화를 통한 고딕 양식 건축물 만들기 (1) 프리 프로덕션</a></h4>
+        <p>모듈 디자인이란? 모듈 디자인, 또는 모듈러 설계란 어떠한 시스템을 모듈이라는 작은 구성  …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/42seoul/">
+        <img class="media-object" src="/images/blog/42/42logo.jpg" alt="42Seoul(42서울)을 마치며 쓰는 후기">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/42seoul/">42Seoul(42서울)을 마치며 쓰는 후기</a></h4>
+        <p>42Seoul 후기 안녕하세요. 저는 42Seoul 1기 2차 본과정생(카뎃) 김경환입니 …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/first_portfolio/">
+        <img class="media-object" src="/images/blog/First_portfolio/title1.png" alt="처음 3D 모델링 포트폴리오를 만든 소감">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/first_portfolio/">처음 3D 모델링 포트폴리오를 만든 소감</a></h4>
+        <p>첫번째 3D 모델링 포트폴리오를 만들고&hellip; 오토데스크의 Maya를 처음 다루기  …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/blog/color_linearworkflow/">
+        <img class="media-object" src="/images/blog/rgb.png" alt="색 관리 (3)선형 워크플로우(Linear Workflow) 완벽 이해">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/blog/color_linearworkflow/">색 관리 (3)선형 워크플로우(Linear Workflow) 완벽 이해</a></h4>
+        <p>색 관리 시리즈 링크 (1)표색계(COLOR SYSTEM)와 색도도(CHROMATICITY …</p>
+      </div>
+    </div>
+    
+  </div><div class="widget widget-category">
+    <h4 class="widget-title">Categories</h4>
+    <ul class="widget-category-list">
+      <li><a href="/categories/42seoul">42seoul</a></li>
+      <li><a href="/categories/color-management">Color management</a></li>
+      <li><a href="/categories/maya">Maya</a></li>
+      <li><a href="/categories/opengl">Opengl</a></li>
+      <li><a href="/categories/portfolio">Portfolio</a></li>
+      <li><a href="/categories/renderman">Renderman</a></li>
+    </ul>
+  </div><div class="widget widget-tag">
+    <h4 class="widget-title">Tags</h4>
+    <ul class="widget-tag-list">
+      <li><a href="/tags/aces">Aces</a></li>
+      <li><a href="/tags/chromaticity-diagram">Chromaticity diagram</a></li>
+      <li><a href="/tags/color-management">Color management</a></li>
+      <li><a href="/tags/color-space">Color space</a></li>
+      <li><a href="/tags/color-system">Color system</a></li>
+      <li><a href="/tags/computer-graphics">Computer graphics</a></li>
+      <li><a href="/tags/glew">Glew</a></li>
+      <li><a href="/tags/glfw">Glfw</a></li>
+      <li><a href="/tags/graphics-api">Graphics api</a></li>
+      <li><a href="/tags/linear-worflow">Linear worflow</a></li>
+      <li><a href="/tags/linear-workflow">Linear workflow</a></li>
+      <li><a href="/tags/maya">Maya</a></li>
+      <li><a href="/tags/opengl">Opengl</a></li>
+      <li><a href="/tags/portfolio">Portfolio</a></li>
+      <li><a href="/tags/rendering">Rendering</a></li>
+      <li><a href="/tags/renderman">Renderman</a></li>
+      <li><a href="/tags/scribbles">Scribbles</a></li>
+      <li><a href="/tags/uv-mapping">Uv mapping</a></li>
+    </ul>
+  </div></aside>
+
+      </div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer-manu">
+					<ul>
+            
+            <li><a href="https://kyoungwhankim.github.io/about">About</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/project">Project</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/blog">Blog</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/contact">Contact</a></li>
+            
+					</ul>
+				</div>
+				<p class="copyright">Copyright © 2020 <a href="https://themefisher.com">Themefisher</a> All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+
+<script src="https://kyoungwhankim.github.io/plugins/jQuery/jquery.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/bootstrap/bootstrap.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/slick/slick.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/magnific-popup/magnific-popup.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/shuffle/shuffle.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/google-map/gmap.js" defer></script>
+
+
+
+
+<script src="https://kyoungwhankim.github.io/js/script.min.js"></script>
+
+
+</body>
+
+</html>
