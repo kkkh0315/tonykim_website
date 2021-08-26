@@ -7,10 +7,36 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-ko</language>
     <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 15 Jun 2021 20:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 25 Aug 2021 21:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://kyoungwhankim.github.io/ko/categories/portfolio/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[3D 모델링] 모듈화를 통한 고딕 양식 건축물 만들기 (3) 랜더링</title>
+      <link>https://kyoungwhankim.github.io/ko/blog/gothic_architecture_03/</link>
+      <pubDate>Wed, 25 Aug 2021 21:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/ko/blog/gothic_architecture_03/</guid>
+      <description>모듈화를 통한 고딕 양식 건축물 만들기 시리즈 링크 (1) 프리 프로덕션
+(2) 모델링 &amp;amp; 텍스쳐링
+랜더링 사용 툴 랜더링: Unreal Engine 4.26
+Unreal Engine 씬 세팅 STF3d사의 Landscape Pro 2.</description>
+    </item>
+    
+    <item>
+      <title>[3D 모델링] 모듈화를 통한 고딕 양식 건축물 만들기 (2) 모델링 &amp; 텍스쳐링</title>
+      <link>https://kyoungwhankim.github.io/ko/blog/gothic_architecture_02/</link>
+      <pubDate>Wed, 25 Aug 2021 20:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/ko/blog/gothic_architecture_02/</guid>
+      <description>모듈화를 통한 고딕 양식 건축물 만들기 시리즈 링크 (1) 프리 프로덕션
+(3) 렌더링
+모델링 &amp;amp; 텍스쳐링 사용 툴 모델링: 3ds Max
+텍스쳐링: Substance Painter
+스컬핑: ZBrush
+모듈 에셋 모델링 정해진 규격과 구상한 성당 디자인에 사용할 수 있는 모듈 에셋들을 모델링을 합니다.</description>
+    </item>
     
     <item>
       <title>[3D 모델링] 모듈화를 통한 고딕 양식 건축물 만들기 (1) 프리 프로덕션</title>
@@ -18,7 +44,9 @@
       <pubDate>Tue, 15 Jun 2021 20:00:00 +0900</pubDate>
       
       <guid>https://kyoungwhankim.github.io/ko/blog/gothic_architecture/</guid>
-      <description>모듈 디자인이란? 모듈 디자인, 또는 모듈러 설계란 어떠한 시스템을 모듈이라는 작은 구성 요소로 세분(모듈화)하여 디자인 또는 설계하는 방식을 말합니다. 이러한 모듈들은 각각 개별적으로 제작되어 서로 교체되거나 추가, 생략되어 다양한 결과물을 만들어냅니다.</description>
+      <description>모듈화를 통한 고딕 양식 건축물 만들기 시리즈 링크 (2) 모델링 &amp;amp; 텍스쳐링
+(3) 렌더링
+모듈 디자인이란? 모듈 디자인, 또는 모듈러 설계란 어떠한 시스템을 모듈이라는 작은 구성 요소로 세분(모듈화)하여 디자인 또는 설계하는 방식을 말합니다.</description>
     </item>
     
     <item>
