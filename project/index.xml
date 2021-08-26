@@ -19,9 +19,17 @@
       <guid>https://kyoungwhankim.github.io/project/coke_bottle/</guid>
       <description>Coke A plastic bottle of coke.
 Tools Modeling: Maya 2019
-Rendering: Renderman 23.5
-Download coke.fbx
-coke.obj</description>
+Rendering: Renderman 23.5</description>
+    </item>
+    
+    <item>
+      <title>Gothic Cathedral</title>
+      <link>https://kyoungwhankim.github.io/project/gothic_cathedral/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/project/gothic_cathedral/</guid>
+      <description>Gothic Cathedral Modular 3D gothic cathedral asset. How I made it is explained on my blog in Korean. How I made my modular 3D gothic cathedral
+Tools Modeling: 3ds Max 2022</description>
     </item>
     
     <item>
@@ -45,17 +53,6 @@ Rendering: Iray (Substance Painter builtin renderer)</description>
       <guid>https://kyoungwhankim.github.io/project/medieval_stall/</guid>
       <description>Medieval Stall A medieval stall with some fruit boxes.
  The roof cloth is created via nCloth in Maya. The apples and pears in the boxes are created via MASH library.</description>
-    </item>
-    
-    <item>
-      <title>PCDTBT</title>
-      <link>https://kyoungwhankim.github.io/project/pcdtbt/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kyoungwhankim.github.io/project/pcdtbt/</guid>
-      <description>PCDTBT These are virtual 3D models of PCDTBT and the other compositions. The images are to be printed on a journal article as visual materials.
-Tools Modeling: Maya 2019
-Rendering: Arnold for Maya 3.</description>
     </item>
     
     <item>

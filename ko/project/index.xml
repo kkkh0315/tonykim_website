@@ -19,9 +19,20 @@
       <guid>https://kyoungwhankim.github.io/ko/project/coke_bottle/</guid>
       <description>Coke 콜라가 담긴 패트병입니다.
 Tools 모델링: Maya 2019
-랜더링: Renderman 23.5
-Download coke.fbx
-coke.obj</description>
+랜더링: Renderman 23.5</description>
+    </item>
+    
+    <item>
+      <title>Gothic Cathedral</title>
+      <link>https://kyoungwhankim.github.io/ko/project/gothic_cathedral/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/ko/project/gothic_cathedral/</guid>
+      <description>Gothic Cathedral 고딕 양식의 성당입니다. 모듈화를 통해 제작하였고 제작기는 블로그를 참고해주세요. 고딕 양식 성당 제작기
+Tools 모델링: 3ds Max 2022
+텍스쳐링: Substance Painter 7.1.1
+스컬핑: ZBrush 2020.1.4
+랜더링: Unreal Engine 4.</description>
     </item>
     
     <item>
@@ -47,17 +58,6 @@ Rendered Shots Main Shots Different Angles Close-ups </description>
       <description>Medieval Stall 과일 상자와 중세 시장의 작은 가게입니다.
  가게의 지붕은 Maya의 nCloth를 이용하여 제작하였습니다. 상자 안의 쌓여있는 과일은 MASH 라이브러리를 이용하여 제작하였습니다.  Tools 모델링: Maya 2019
 텍스쳐링: Substance Painter7.</description>
-    </item>
-    
-    <item>
-      <title>PCDTBT</title>
-      <link>https://kyoungwhankim.github.io/ko/project/pcdtbt/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kyoungwhankim.github.io/ko/project/pcdtbt/</guid>
-      <description>PCDTBT PCDTBT를 포함한 주위 구성 요소들을 가상의 3D 모델로 제작한 결과물입니다. 학술지 논문의 시각 자료로 활용될 목적으로 외주 제작되었습니다.
-Tools 모델링: Maya 2019
-랜더링: Arnold for Maya 3.1.2 (aka MtoA 3.</description>
     </item>
     
     <item>
