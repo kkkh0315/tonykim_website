@@ -66,15 +66,15 @@ It is a brief program that simulates how phong reflection models work.</descript
     </item>
     
     <item>
-      <title>Viking Helmet</title>
+      <title>Viking&#39;s Helmet</title>
       <link>https://kyoungwhankim.github.io/project/viking_helmet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kyoungwhankim.github.io/project/viking_helmet/</guid>
-      <description>Viking Helmet This is viking helmet.
+      <description>Viking Helmet This is a viking&amp;rsquo;s helmet.
  The fur under the horns is created via XGen library.  Tools Modeling: Maya 2019
-Texturing: Substance Painter 7.1.1
-Rendering: Iray (Substance Painter builtin renderer)</description>
+Sculpting: ZBrush 2020.1.4
+Texturing: Substance Painter 7.1.1</description>
     </item>
     
   </channel>

@@ -76,11 +76,11 @@ Phong reflection model은 물체의 표면을 표현하기 위해서 phong light
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kyoungwhankim.github.io/ko/project/viking_helmet/</guid>
-      <description>Viking Helmet 바이킹 투구입니다.
+      <description>Viking&amp;rsquo;s Helmet 바이킹 투구입니다.
  뿔 아래 털은 XGen 라이브러리를 이용하여 제작하였습니다.  Tools 모델링: Maya 2019
+스컬핑: ZBrush 2020.1.4
 텍스쳐링: Substance Painter 7.1.1
-랜더링: Iray (Substance Painter builtin renderer)
-Rendered Shots Main Shots Different Angles Close-ups </description>
+씬 랜더링: Unreal Engine 4.26 개별 프랍 랜더링: Iray (Substance Painter builtin renderer)</description>
     </item>
     
   </channel>
