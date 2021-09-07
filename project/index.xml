@@ -12,16 +12,6 @@
     
     
     <item>
-      <title>A Medieval Grocery Store</title>
-      <link>https://kyoungwhankim.github.io/project/medieval_stall/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kyoungwhankim.github.io/project/medieval_stall/</guid>
-      <description>Medieval Stall A medieval stall with some fruit boxes.
- The roof cloth is created via nCloth in Maya. The apples and pears in the boxes are created via MASH library.</description>
-    </item>
-    
-    <item>
       <title>Coke</title>
       <link>https://kyoungwhankim.github.io/project/coke_bottle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -53,6 +43,16 @@ Product Info: link
 Tools Modeling: Maya 2019
 Texturing: Substance Painter 7.1.1
 Rendering: Iray (Substance Painter builtin renderer)</description>
+    </item>
+    
+    <item>
+      <title>Medieval Grocery Store</title>
+      <link>https://kyoungwhankim.github.io/project/medieval_stall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/project/medieval_stall/</guid>
+      <description>Medieval Grocery Store A medieval grocery store with some fruit boxes.
+ The roof cloth is created via nCloth in Maya. The apples and pears in the boxes are created via MASH library.</description>
     </item>
     
     <item>
