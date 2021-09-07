@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>A Medieval Grocery Store</title>
+      <link>https://kyoungwhankim.github.io/ko/project/medieval_stall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/ko/project/medieval_stall/</guid>
+      <description>Medieval Stall 중세 시장의 식료품점입니다.
+ 가게의 지붕은 Maya의 nCloth를 이용하여 제작하였습니다. 상자 안의 쌓여있는 과일은 MASH 라이브러리를 이용하여 제작하였습니다. 칼은 Dagger Project를 가지고 왔습니다. 그 외 프랍들은 ZBrush와 3ds Max를 사용하여 모델링 되었습니다.</description>
+    </item>
+    
+    <item>
       <title>Coke</title>
       <link>https://kyoungwhankim.github.io/ko/project/coke_bottle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -47,17 +57,6 @@ Tools 모델링: Maya 2019
 텍스쳐링: Substance Painter 7.1.1
 랜더링: Iray (Substance Painter builtin renderer)
 Rendered Shots Main Shots Different Angles Close-ups </description>
-    </item>
-    
-    <item>
-      <title>Medieval Stall</title>
-      <link>https://kyoungwhankim.github.io/ko/project/medieval_stall/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://kyoungwhankim.github.io/ko/project/medieval_stall/</guid>
-      <description>Medieval Stall 과일 상자와 중세 시장의 작은 가게입니다.
- 가게의 지붕은 Maya의 nCloth를 이용하여 제작하였습니다. 상자 안의 쌓여있는 과일은 MASH 라이브러리를 이용하여 제작하였습니다.  Tools 모델링: Maya 2019
-텍스쳐링: Substance Painter7.</description>
     </item>
     
     <item>
