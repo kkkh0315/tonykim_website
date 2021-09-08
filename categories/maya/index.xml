@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 01 May 2021 20:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 07 Sep 2021 20:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://kyoungwhankim.github.io/categories/maya/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Troubleshooting Broken UV: Transfer Vertex Order</title>
+      <link>https://kyoungwhankim.github.io/blog/transfer_vertex_order/</link>
+      <pubDate>Tue, 07 Sep 2021 20:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/blog/transfer_vertex_order/</guid>
+      <description>Broken UV I had an issue of broken UV when I copied a UV map of an object to another object, which in most cases is the duplicated object, with Transfer Attributes.</description>
+    </item>
     
     <item>
       <title>Copying a UV map to multiple objects in Maya</title>

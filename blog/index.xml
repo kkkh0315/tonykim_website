@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>Troubleshooting Broken UV: Transfer Vertex Order</title>
+      <link>https://kyoungwhankim.github.io/blog/transfer_vertex_order/</link>
+      <pubDate>Tue, 07 Sep 2021 20:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/blog/transfer_vertex_order/</guid>
+      <description>Broken UV I had an issue of broken UV when I copied a UV map of an object to another object, which in most cases is the duplicated object, with Transfer Attributes.</description>
+    </item>
+    
+    <item>
       <title>[3D 모델링] 모듈화를 통한 고딕 양식 건축물 만들기 (3) 랜더링</title>
       <link>https://kyoungwhankim.github.io/blog/gothic_architecture_03/</link>
       <pubDate>Wed, 25 Aug 2021 21:00:00 +0900</pubDate>

@@ -63,6 +63,36 @@
   </url>
   
   <url>
+    <loc>https://kyoungwhankim.github.io/tags/maya/</loc>
+    <lastmod>2021-09-07T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/tags/maya/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/tags/maya/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/categories/maya/</loc>
+    <lastmod>2021-09-07T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/categories/maya/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/categories/maya/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kyoungwhankim.github.io/tags/</loc>
     <lastmod>2021-09-07T20:00:00+09:00</lastmod>
     <xhtml:link
@@ -104,6 +134,36 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://kyoungwhankim.github.io/blog/triangulated_error/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/blog/transfer_vertex_order/</loc>
+    <lastmod>2021-09-07T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/blog/transfer_vertex_order/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/blog/transfer_vertex_order/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/tags/uv-mapping/</loc>
+    <lastmod>2021-09-07T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/tags/uv-mapping/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/tags/uv-mapping/"
                 />
   </url>
   
@@ -419,51 +479,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://kyoungwhankim.github.io/blog/maya_uvcopy/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/tags/maya/</loc>
-    <lastmod>2021-05-01T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/tags/maya/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/tags/maya/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/categories/maya/</loc>
-    <lastmod>2021-05-01T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/categories/maya/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/categories/maya/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/tags/uv-mapping/</loc>
-    <lastmod>2021-05-01T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/tags/uv-mapping/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/tags/uv-mapping/"
                 />
   </url>
   

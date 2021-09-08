@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko-ko"><head>
+  <meta charset="utf-8">
+  <title>UV 깨짐 현상 해결하기: Transfer Vertex Order</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Maya Tips: Transfer Vertex Order">
+  <meta name="author" content="Tony Kim">
+  <meta name="generator" content="Hugo 0.68.3" />
+  
+  
+  <meta property="og:image" content="https://kyoungwhankim.github.io/images/blog/maya.png" />
+  
+  <meta property="og:title" content="UV 깨짐 현상 해결하기: Transfer Vertex Order" />
+<meta property="og:description" content="Maya Tips: Transfer Vertex Order" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kyoungwhankim.github.io/ko/blog/transfer_vertex_order/" />
+<meta property="article:published_time" content="2021-09-07T20:00:00+09:00" />
+<meta property="article:modified_time" content="2021-09-07T20:00:00+09:00" />
+
+  
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/bootstrap/bootstrap.min.css" media='screen'>
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/Ionicons/css/ionicons.min.css" >
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/magnific-popup/magnific-popup.min.css" >
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/slick/slick.css" >
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://kyoungwhankim.github.io/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://kyoungwhankim.github.io/images/favicon.png" type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+  <img src="https://kyoungwhankim.github.io/images/preloader.gif " alt="preloader">
+  
+</div>
+<!-- preloader end -->
+
+<header class="navigation">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <nav class="navbar">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/ko">
+              <img src="https://kyoungwhankim.github.io/images/tonykim_logo.png" alt="Tony Kim | Blog &amp; Portfolio" width="150px" class="img-responsive">
+            </a>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/ko">홈</a></li>
+              
+              
+              
+              <li><a href="/ko/about">소개</a></li>
+              
+              
+              
+              <li><a href="/ko/project">프로젝트</a></li>
+              
+              
+              
+              <li><a href="/ko/blog">블로그</a></li>
+              
+              
+              
+              <li><a href="/ko/contact">문의</a></li>
+              
+              
+
+              
+              <li>
+                <select id="select-language" onchange="location = this.value;">
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <option id="ko" value="https://kyoungwhankim.github.io/ko/blog/transfer_vertex_order/" selected>
+                    Ko
+                  </option>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <option id="en" value="https://kyoungwhankim.github.io/blog/transfer_vertex_order/">En
+                  </option>
+                  
+                  
+                  
+                  
+                </select>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-title bg-2" style="background-image: url('https://kyoungwhankim.github.io/images/default.png');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>UV 깨짐 현상 해결하기: Transfer Vertex Order</h1>
+          <p>Maya Tips: Transfer Vertex Order</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="post post-single">
+					<h2 class="post-title">UV 깨짐 현상 해결하기: Transfer Vertex Order</h2>
+					<div class="post-meta">
+						<ul>
+              <li><i class="ion-calendar"></i> September 7, 2021</li>
+              <li><i class="ion-android-people"></i>
+                Posted By
+                
+                <a class="text-primary" href="/ko/author/%EA%B9%80%EA%B2%BD%ED%99%98">김경환</a>
+                
+              </li>
+              <li><i class="ion-pricetags"></i> 
+                
+                <a href="/ko/tags/maya">Maya</a>
+								
+                , <a href="/ko/tags/uv%20mapping">U v mapping</a>
+								
+              </li>
+            </ul>
+					</div>
+					<div class="post-thumb">
+						<img class="img-responsive" src="/images/blog/maya.png" alt="UV 깨짐 현상 해결하기: Transfer Vertex Order">
+					</div>
+					<div class="post-content post-excerpt">
+						<h3 id="uv-깨짐-현상">UV 깨짐 현상</h3>
+<p>Transfer Attributes를 이용하여 UV를 복사할 경우 UV가 복사되지만 조각 조각 나는 깨짐 현상이 발생했습니다. 이는 UV를 복사한(copy) 오브젝트와 복사된(pasted) 오브젝트의 Vertex Order에 관련된 문제일 가능성이 있습니다. 어떠한 이유에서 목적 오브젝트에 변형을 가했다면(예컨대 미러(mirror) 기능을 사용했다던가) Vertex Order이 변형되었을 수 있기 때문입니다.
+<br>
+<br>
+<img src="https://user-images.githubusercontent.com/60923302/132490355-ee6fa98f-d931-40b0-9bd1-20ba17e1cacf.png" alt="원래UV">
+<br>
+<br>
+<br>
+<br>
+<img src="https://user-images.githubusercontent.com/60923302/132490343-91b7b4d5-aee2-4320-b7d0-2f8a426ae72d.png" alt="uv깨짐">
+<br>
+<br>
+<img src="https://user-images.githubusercontent.com/60923302/132490705-ac52976f-16cc-43e3-8d7d-5d6af40807eb.png" alt="깨진 ue4">
+<br>
+<br></p>
+<h3 id="transfer-vertex-order">Transfer Vertex Order</h3>
+<p>이 때 Transfer Vertex Order을 사용하면 문제를 해결할 수 있습니다.
+<br>
+<br>
+<img src="https://user-images.githubusercontent.com/60923302/132492267-429824d9-7cf0-4bfd-a15c-68d8c4bad146.png" alt="transfervertexorder">
+<br>
+<br>
+이후엔 화면에 타나는 안내대로 실시하시면 됩니다.
+<br>
+<br>
+우선, vertex order를 복사할 오브젝트의 가까운 vertex 세 개를 차례로 선택해주고, vertex order이 복사될 오브젝트의 똑같은 위치의 vertex 세 개를 같은 순서로 선택해주시면 됩니다. 이 때, vertex 간의 거리가 최대한 가까운 세 쌍으로 선택해주시는 것이 성공 확률이 높습니다.
+<br>
+<br>
+그 후 다시 Transfer Attributes를 이용하여 UV를 복사하면 깨짐 없이 그대로 복사됩니다. 당연히 텍스쳐도 깨지지 않습니다.<br>
+<br>
+<img src="https://user-images.githubusercontent.com/60923302/132492896-b9dfc8b7-4f99-44ec-bd82-e54553edb0bc.png" alt="정상 복사된 UV"></p>
+
+					</div>
+					<div class="post-comments">
+						<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-kyoungwhankim-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+					</div>
+				</div>
+			</div>
+      <div class="col-md-4">
+        <aside class="sidebar"><div class="widget widget-latest-post">
+    <h4 class="widget-title">Latest Posts</h4>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/triangulated_error/">
+        <img class="media-object" src="/images/blog/max.png" alt="3ds Max에서 내보내기(export) 시 triangulated 되는 에러 해결법">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/triangulated_error/">3ds Max에서 내보내기(export) 시 triangulated 되는 에러 해결법</a></h4>
+        <p>3ds Max에서 내보내기(export) 시 triangulated …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/transfer_vertex_order/">
+        <img class="media-object" src="/images/blog/maya.png" alt="UV 깨짐 현상 해결하기: Transfer Vertex Order">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/transfer_vertex_order/">UV 깨짐 현상 해결하기: Transfer Vertex Order</a></h4>
+        <p>UV 깨짐 현상 Transfer Attributes를 이용하여 UV를 복사할 경우 UV가  …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/gothic_architecture_03/">
+        <img class="media-object" src="/images/blog/Gothic/title.png" alt="[3D 모델링] 모듈화를 통한 고딕 양식 건축물 만들기 (3) 랜더링">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/gothic_architecture_03/">[3D 모델링] 모듈화를 통한 고딕 양식 건축물 만들기 (3) 랜더링</a></h4>
+        <p>모듈화를 통한 고딕 양식 건축물 만들기 시리즈 링크 (1) 프리 프로덕션
+(2) …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/gothic_architecture_02/">
+        <img class="media-object" src="/images/blog/Gothic/title.png" alt="[3D 모델링] 모듈화를 통한 고딕 양식 건축물 만들기 (2) 모델링 &amp; 텍스쳐링">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/gothic_architecture_02/">[3D 모델링] 모듈화를 통한 고딕 양식 건축물 만들기 (2) 모델링 &amp; 텍스쳐링</a></h4>
+        <p>모듈화를 통한 고딕 양식 건축물 만들기 시리즈 링크 (1) 프리 프로덕션
+(3) 렌더링
+모 …</p>
+      </div>
+    </div>
+    
+  </div><div class="widget widget-category">
+    <h4 class="widget-title">Categories</h4>
+    <ul class="widget-category-list">
+      <li><a href="/ko/categories/3dsmax">3dsmax</a></li>
+      <li><a href="/ko/categories/42seoul">42seoul</a></li>
+      <li><a href="/ko/categories/color-management">Color management</a></li>
+      <li><a href="/ko/categories/maya">Maya</a></li>
+      <li><a href="/ko/categories/opengl">Opengl</a></li>
+      <li><a href="/ko/categories/portfolio">Portfolio</a></li>
+      <li><a href="/ko/categories/renderman">Renderman</a></li>
+    </ul>
+  </div><div class="widget widget-tag">
+    <h4 class="widget-title">Tags</h4>
+    <ul class="widget-tag-list">
+      <li><a href="/ko/tags/3dsmax">3dsmax</a></li>
+      <li><a href="/ko/tags/aces">Aces</a></li>
+      <li><a href="/ko/tags/chromaticity-diagram">Chromaticity diagram</a></li>
+      <li><a href="/ko/tags/color-management">Color management</a></li>
+      <li><a href="/ko/tags/color-space">Color space</a></li>
+      <li><a href="/ko/tags/color-system">Color system</a></li>
+      <li><a href="/ko/tags/computer-graphics">Computer graphics</a></li>
+      <li><a href="/ko/tags/glew">Glew</a></li>
+      <li><a href="/ko/tags/glfw">Glfw</a></li>
+      <li><a href="/ko/tags/graphics-api">Graphics api</a></li>
+      <li><a href="/ko/tags/linear-worflow">Linear worflow</a></li>
+      <li><a href="/ko/tags/linear-workflow">Linear workflow</a></li>
+      <li><a href="/ko/tags/maya">Maya</a></li>
+      <li><a href="/ko/tags/opengl">Opengl</a></li>
+      <li><a href="/ko/tags/portfolio">Portfolio</a></li>
+      <li><a href="/ko/tags/rendering">Rendering</a></li>
+      <li><a href="/ko/tags/renderman">Renderman</a></li>
+      <li><a href="/ko/tags/scribbles">Scribbles</a></li>
+      <li><a href="/ko/tags/uv-mapping">Uv mapping</a></li>
+    </ul>
+  </div></aside>
+
+      </div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer-manu">
+					<ul>
+            
+            <li><a href="https://kyoungwhankim.github.io/about">소개</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/project">프로젝트</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/blog">블로그</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/contact">문의</a></li>
+            
+					</ul>
+				</div>
+				<p class="copyright">Copyright © 2020 <a href="https://themefisher.com">Themefisher</a> All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+
+<script src="https://kyoungwhankim.github.io/plugins/jQuery/jquery.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/bootstrap/bootstrap.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/slick/slick.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/magnific-popup/magnific-popup.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/shuffle/shuffle.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/google-map/gmap.js" defer></script>
+
+
+
+
+<script src="https://kyoungwhankim.github.io/js/script.min.js"></script>
+
+
+</body>
+
+</html>
