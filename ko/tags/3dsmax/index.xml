@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3dsMax on Tony Kim | Blog &amp; Portfolio</title>
+    <link>https://kyoungwhankim.github.io/ko/tags/3dsmax/</link>
+    <description>Recent content in 3dsMax on Tony Kim | Blog &amp; Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-ko</language>
+    <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 07 Sep 2021 20:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://kyoungwhankim.github.io/ko/tags/3dsmax/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>3ds Max에서 내보내기(export) 시 triangulated 되는 에러 해결법</title>
+      <link>https://kyoungwhankim.github.io/ko/blog/triangulated_error/</link>
+      <pubDate>Tue, 07 Sep 2021 20:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/ko/blog/triangulated_error/</guid>
+      <description>3ds Max에서 내보내기(export) 시 triangulated 되는 에러 해결법 3ds Max에서 FBX로 내보내기 시 폴리곤들이 삼각형으로 변하는 현상이 나타납니다. 3ds Max로 다시 가져올 때나 Maya 등 기타 툴로 가져갈 때 모두 동일하게 발생합니다.</description>
+    </item>
+    
+  </channel>
+</rss>
