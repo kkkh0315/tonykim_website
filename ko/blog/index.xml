@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-ko</language>
     <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 07 Sep 2021 20:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 14 Nov 2021 20:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://kyoungwhankim.github.io/ko/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>UE5 루멘 활용하기: 루멘 세팅하기(고사양/저사양)</title>
+      <link>https://kyoungwhankim.github.io/ko/blog/lumen_init/</link>
+      <pubDate>Sun, 14 Nov 2021 20:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/ko/blog/lumen_init/</guid>
+      <description>UE5 루멘에 대해 저와 함께 공부하고 싶으신 분들은 우측 Categories에서 Lumen을 클릭해주세요!
+루멘 기본 기능 세팅 </description>
+    </item>
     
     <item>
       <title>3ds Max에서 내보내기(export) 시 triangulated 되는 에러 해결법</title>
