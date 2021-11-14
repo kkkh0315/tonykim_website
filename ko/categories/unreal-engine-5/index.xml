@@ -7,19 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-ko</language>
     <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 14 Nov 2021 20:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 10 Nov 2021 20:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://kyoungwhankim.github.io/ko/categories/unreal-engine-5/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>UE5 루멘 활용하기: 루멘 세팅하기(고사양/저사양)</title>
+      <title>UE5 루멘 활용하기: 기존 UE4 프로젝트에서 넘어왔을 때 주의사항</title>
       <link>https://kyoungwhankim.github.io/ko/blog/lumen_init/</link>
-      <pubDate>Sun, 14 Nov 2021 20:00:00 +0900</pubDate>
+      <pubDate>Wed, 10 Nov 2021 20:00:00 +0900</pubDate>
       
       <guid>https://kyoungwhankim.github.io/ko/blog/lumen_init/</guid>
       <description>UE5 루멘에 대해 저와 함께 공부하고 싶으신 분들은 우측 Categories에서 Lumen을 클릭해주세요!
-루멘 기본 기능 세팅 </description>
+UE4 프로젝트를 UE5에서 열었을 때 주의사항 언리얼 엔진 4 프로젝트를 언리얼 엔진 5 얼리 액세스로 업그레이드 하는 방법은 마이그레이션 가이드 | 언리얼 엔진 5 얼리 액세스 문서를 참고하세요!</description>
     </item>
     
   </channel>
