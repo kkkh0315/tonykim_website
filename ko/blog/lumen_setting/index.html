@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ko-ko"><head>
+  <meta charset="utf-8">
+  <title>UE5 루멘 활용하기: 이상적인 결과를 위해 루멘 세팅하기</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Lumen in Unreal Engine 5 Early Access">
+  <meta name="author" content="Tony Kim">
+  <meta name="generator" content="Hugo 0.68.3" />
+  
+  
+  <meta property="og:image" content="https://kyoungwhankim.github.io/images/blog/ue.png" />
+  
+  <meta property="og:title" content="UE5 루멘 활용하기: 이상적인 결과를 위해 루멘 세팅하기" />
+<meta property="og:description" content="Lumen in Unreal Engine 5 Early Access" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kyoungwhankim.github.io/ko/blog/lumen_setting/" />
+<meta property="article:published_time" content="2021-11-10T20:00:00+09:00" />
+<meta property="article:modified_time" content="2021-11-10T20:00:00+09:00" />
+
+  
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/bootstrap/bootstrap.min.css" media='screen'>
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/Ionicons/css/ionicons.min.css" >
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/magnific-popup/magnific-popup.min.css" >
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/plugins/slick/slick.css" >
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://kyoungwhankim.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://kyoungwhankim.github.io/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://kyoungwhankim.github.io/images/favicon.png" type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+  <img src="https://kyoungwhankim.github.io/images/preloader.gif " alt="preloader">
+  
+</div>
+<!-- preloader end -->
+
+<header class="navigation">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <nav class="navbar">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/ko">
+              <img src="https://kyoungwhankim.github.io/images/tonykim_logo.png" alt="Tony Kim | Blog &amp; Portfolio" width="150px" class="img-responsive">
+            </a>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+              
+              
+              <li><a href="/ko">홈</a></li>
+              
+              
+              
+              <li><a href="/ko/about">소개</a></li>
+              
+              
+              
+              <li><a href="/ko/project">프로젝트</a></li>
+              
+              
+              
+              <li><a href="/ko/blog">블로그</a></li>
+              
+              
+              
+              <li><a href="/ko/contact">문의</a></li>
+              
+              
+
+              
+              <li>
+                <select id="select-language" onchange="location = this.value;">
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <option id="ko" value="https://kyoungwhankim.github.io/ko/blog/lumen_setting/" selected>
+                    Ko
+                  </option>
+                  
+                  
+                  
+                  
+                  
+                  
+                </select>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-title bg-2" style="background-image: url('https://kyoungwhankim.github.io/images/default.png');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>UE5 루멘 활용하기: 이상적인 결과를 위해 루멘 세팅하기</h1>
+          <p>Lumen in Unreal Engine 5 Early Access</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="post post-single">
+					<h2 class="post-title">UE5 루멘 활용하기: 이상적인 결과를 위해 루멘 세팅하기</h2>
+					<div class="post-meta">
+						<ul>
+              <li><i class="ion-calendar"></i> November 10, 2021</li>
+              <li><i class="ion-android-people"></i>
+                Posted By
+                
+                <a class="text-primary" href="/ko/author/%EA%B9%80%EA%B2%BD%ED%99%98">김경환</a>
+                
+              </li>
+              <li><i class="ion-pricetags"></i> 
+                
+                <a href="/ko/tags/unreal%20engine">Unreal engine</a>
+								
+                , <a href="/ko/tags/unreal%20engine%205">Unreal engine 5</a>
+								
+                , <a href="/ko/tags/lumen">Lumen</a>
+								
+              </li>
+            </ul>
+					</div>
+					<div class="post-thumb">
+						<img class="img-responsive" src="/images/blog/ue.png" alt="UE5 루멘 활용하기: 이상적인 결과를 위해 루멘 세팅하기">
+					</div>
+					<div class="post-content post-excerpt">
+						<p><strong>UE5 루멘에 대해 저와 함께 공부하고 싶으신 분들은 우측 Categories에서 Lumen을 클릭해주세요!</strong></p>
+<h2 id="루멘-어떻게-써야할까">루멘, 어떻게 써야할까</h2>
+<ol>
+<li>
+<p>언리얼 엔진 4 프로젝트를 언리얼 엔진 5로 가져오신 분들은 <a href="https://kyoungwhankim.github.io/ko/blog/lumen_init/">기존 UE4 프로젝트에서 넘어왔을 때 주의사항</a>을 참고해주세요! <strong>Progect Settings(프로젝트 세팅)</strong>에서 루멘을 활성화 하셔야합니다! 언리얼 엔진 5에서 프로젝트를 생성하신 경우 루멘이 <strong>디폴트</strong>로 활성화 되어 있습니다.</p>
+</li>
+<li>
+<p><strong>Post Process Volume(포스트 프로세스 볼륨)</strong>에서 <strong>Global Illumination(글로벌 일루미네이션)</strong>과 <strong>Reflection(리플렉션)</strong>의 <strong>Method(메서드)</strong>가 <strong>Lumen</strong>으로 설정되어 있는지 확인해주세요. 프로젝트 세팅에서 Dynamic Global Illumination과 Reflection Mode가 Lumen으로 잘 설정되어 있다면 위 두 메서드도 Lumen이 디폴트로 설정되어 있을 것 입니다.<br><br>
+<img src="https://user-images.githubusercontent.com/60923302/141746373-dc7c0d9f-2256-4993-8307-0a47611b9011.png" alt="ue5_lumen_ppv">
+<br>
+<br>Global Illumination(글로벌 일루미네이션)의 경우 하위 메뉴 중 <strong>Lumen Global Illumination(루멘 글로벌 일루미네이션)</strong>에서 <strong>Final Gather Quality(최종 수집 퀄리티)</strong>를 활성화해주세요.
+<br>
+<br>Reflections(리플렉션)의 경우 하위 메뉴 중 <strong>Lumen Reflections(루멘 리플렉션)</strong>에서 <strong>Quality(퀄리티)</strong>을 활성화해주세요.</p>
+</li>
+<li>
+<p>루멘을 사용할 때는 스태틱 라이팅의 사전 연산된 라이팅이 제거됩니다. 프로젝트 세팅에서 <strong>Allow Static Lighting(스태틱 라이팅 허용)</strong>을 비활성화하셔서 셰이더 순열과 스태틱 라이팅 오버헤드를 절약하세요.<br>
+<br>
+<img src="https://user-images.githubusercontent.com/60923302/141746995-33789227-ca73-45f7-8e77-007fa29ae7d3.png" alt="ue5_allow_static_lighting">
+<em>이미지가 잘 안 보일 경우 우클릭 후 ‘새 탭에서 이미지 열기'로 봐주세요!</em>
+<br><br>
+더불어 <strong>Material Ambient Occlusion(머테리얼 앰비언트 오클루전)</strong>을 루멘과 함께 사용하실 수 있게 됩니다.
+<img src="https://user-images.githubusercontent.com/60923302/141744891-735963b7-0566-49b0-9196-c495e423ce06.png" alt="example">
+<em>예제 화면</em>
+<br>
+<br>
+<img src="https://user-images.githubusercontent.com/60923302/141745515-4453ac17-bebd-444e-a27c-0cd1fd5461c3.png" alt="example_1">
+<em>Allow Static Lighting이 활성화 되었을 때 Material Ambient Occulsion</em>
+<br>
+<br>
+<img src="https://user-images.githubusercontent.com/60923302/141745809-1dfd51cc-85db-489b-ad7d-58528545b66e.png" alt="example_2">
+<em>Allow Static Lighting이 비활성화 되었을 때 Material Ambient Occulsion</em></p>
+</li>
+</ol>
+<p>위와 같이 설정하셨다면 루멘을 위한 기초 세팅이 완료되었습니다. 루멘을 최대치로 사용하고 싶으시다면 몇 가지 세팅을 조금 더 조절할 필요가 있습니다.
+<br><Br><br></p>
+<h3 id="루멘의-작동-원리">루멘의 작동 원리</h3>
+<p>루멘을 최대치로 활용하기 위해서는 루멘의 원리를 어느정도 이해하는 것이 좋습니다. 필수는 아니지만 <a href="https://kyoungwhankim.github.io/ko/blog/lumen_how">루멘 원리 쉽게 이해하기</a> 글에 정리해두었으니 참고하시길 바랍니다.</p>
+<ol>
+<li><strong>Software Ray Tracing(소프트웨어 레이 트레이싱)</strong>을 사용할 경우
+<ol>
+<li><strong>Distance Field Resolution</strong><br>
+루멘 환경 아래 메쉬의 <strong>Mesh Distance Field</strong>가 깔끔하지 않을 땐 빛이 메쉬의 표면을 제대로 인식하지 못합니다. 따라서, 메쉬들의 Mesh Distance Field가 깔끔하게 계산되는지 확인해서 그렇지 않은 경우 Distance Field Resolution을 높여야합니다.
+Mesh Distance Field는 <strong>Show</strong>-&gt;<strong>Visualize</strong>-&gt;<strong>Mesh DistanceFields</strong>에서 확인할 수 있습니다.
+<img src="https://user-images.githubusercontent.com/60923302/141752725-dc2ef4ce-3701-4637-a36d-3f789859509e.png" alt="mesh_distance_field"><br><br>
+Mesh Distance Field가 깔끔하게 나오지 않는 메쉬는 스태틱 메쉬 에디터에서 <strong>Distance Field Resolution Scale</strong>값을 높입니다.
+<img src="https://user-images.githubusercontent.com/60923302/141753698-abe7fb12-042a-47de-bc59-672fce07a93e.png" alt="distance_field_res">
+<em>이미지가 잘 안 보일 경우 우클릭 후 ‘새 탭에서 이미지 열기'로 봐주세요!</em>
+<br>
+<br>
+<img src="https://user-images.githubusercontent.com/60923302/141755028-665af120-cb52-4f43-94f5-e99dcb1e39d4.png" alt="distance_field_scale_compare">
+<em>Distance Field Resolution Scale 1.0(left) / 2.0(right)</em>
+<br>
+<br></li>
+<li><strong>Distance Field Voxel Density</strong><br>
+전체적으로 Mesh Distance Field가 더 깔끔하길 바란다면 프로젝트 세팅에서 <strong>Distance Field Voxel Density</strong> 값을 올리면 됩니다. 하지만 프로젝트 크기가 커집니다.
+<img src="https://user-images.githubusercontent.com/60923302/141755752-a6efb398-47fc-49bc-b18e-28fa9e06fd08.png" alt="distance_field_voxel_density">
+<em>이미지가 잘 안 보일 경우 우클릭 후 ‘새 탭에서 이미지 열기'로 봐주세요!</em>
+<br>
+<br>
+<img src="https://user-images.githubusercontent.com/60923302/141757633-e279fd88-c939-44d8-9c31-7cde7969014e.png" alt="distance_field_voxel_compare">
+<em>Distance Field Voxel Density 0.2(left) / 0.3(right)</em></li>
+</ol>
+</li>
+</ol>
+
+					</div>
+					<div class="post-comments">
+						<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-kyoungwhankim-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+					</div>
+				</div>
+			</div>
+      <div class="col-md-4">
+        <aside class="sidebar"><div class="widget widget-latest-post">
+    <h4 class="widget-title">Latest Posts</h4>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/lumen_init/">
+        <img class="media-object" src="/images/blog/ue.png" alt="UE5 루멘 활용하기: 기존 UE4 프로젝트에서 넘어왔을 때 주의사항">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/lumen_init/">UE5 루멘 활용하기: 기존 UE4 프로젝트에서 넘어왔을 때 주의사항</a></h4>
+        <p>UE5 루멘에 대해 저와 함께 공부하고 싶으신 분들은 우측 Categories …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/lumen_how/">
+        <img class="media-object" src="/images/blog/ue.png" alt="UE5 루멘 활용하기: 루멘 세팅하기(고사양/저사양)">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/lumen_how/">UE5 루멘 활용하기: 루멘 세팅하기(고사양/저사양)</a></h4>
+        <p>UE5 루멘에 대해 저와 함께 공부하고 싶으신 분들은 우측 Categories …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/lumen_setting/">
+        <img class="media-object" src="/images/blog/ue.png" alt="UE5 루멘 활용하기: 이상적인 결과를 위해 루멘 세팅하기">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/lumen_setting/">UE5 루멘 활용하기: 이상적인 결과를 위해 루멘 세팅하기</a></h4>
+        <p>UE5 루멘에 대해 저와 함께 공부하고 싶으신 분들은 우측 Categories …</p>
+      </div>
+    </div>
+    
+    <div class="media">
+      <a class="pull-left" href="https://kyoungwhankim.github.io/ko/blog/triangulated_error/">
+        <img class="media-object" src="/images/blog/max.png" alt="3ds Max에서 내보내기(export) 시 triangulated 되는 에러 해결법">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><a href="https://kyoungwhankim.github.io/ko/blog/triangulated_error/">3ds Max에서 내보내기(export) 시 triangulated 되는 에러 해결법</a></h4>
+        <p>3ds Max에서 내보내기(export) 시 triangulated …</p>
+      </div>
+    </div>
+    
+  </div><div class="widget widget-category">
+    <h4 class="widget-title">Categories</h4>
+    <ul class="widget-category-list">
+      <li><a href="/ko/categories/3dsmax">3dsmax</a></li>
+      <li><a href="/ko/categories/42seoul">42seoul</a></li>
+      <li><a href="/ko/categories/color-management">Color management</a></li>
+      <li><a href="/ko/categories/maya">Maya</a></li>
+      <li><a href="/ko/categories/opengl">Opengl</a></li>
+      <li><a href="/ko/categories/portfolio">Portfolio</a></li>
+      <li><a href="/ko/categories/renderman">Renderman</a></li>
+      <li><a href="/ko/categories/unreal-engine-5">Unreal engine 5</a></li>
+    </ul>
+  </div><div class="widget widget-tag">
+    <h4 class="widget-title">Tags</h4>
+    <ul class="widget-tag-list">
+      <li><a href="/ko/tags/3dsmax">3dsmax</a></li>
+      <li><a href="/ko/tags/aces">Aces</a></li>
+      <li><a href="/ko/tags/chromaticity-diagram">Chromaticity diagram</a></li>
+      <li><a href="/ko/tags/color-management">Color management</a></li>
+      <li><a href="/ko/tags/color-space">Color space</a></li>
+      <li><a href="/ko/tags/color-system">Color system</a></li>
+      <li><a href="/ko/tags/computer-graphics">Computer graphics</a></li>
+      <li><a href="/ko/tags/glew">Glew</a></li>
+      <li><a href="/ko/tags/glfw">Glfw</a></li>
+      <li><a href="/ko/tags/graphics-api">Graphics api</a></li>
+      <li><a href="/ko/tags/linear-worflow">Linear worflow</a></li>
+      <li><a href="/ko/tags/linear-workflow">Linear workflow</a></li>
+      <li><a href="/ko/tags/lumen">Lumen</a></li>
+      <li><a href="/ko/tags/maya">Maya</a></li>
+      <li><a href="/ko/tags/opengl">Opengl</a></li>
+      <li><a href="/ko/tags/portfolio">Portfolio</a></li>
+      <li><a href="/ko/tags/rendering">Rendering</a></li>
+      <li><a href="/ko/tags/renderman">Renderman</a></li>
+      <li><a href="/ko/tags/scribbles">Scribbles</a></li>
+      <li><a href="/ko/tags/unreal-engine">Unreal engine</a></li>
+      <li><a href="/ko/tags/unreal-engine-5">Unreal engine 5</a></li>
+      <li><a href="/ko/tags/uv-mapping">Uv mapping</a></li>
+    </ul>
+  </div></aside>
+
+      </div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer-manu">
+					<ul>
+            
+            <li><a href="https://kyoungwhankim.github.io/about">소개</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/project">프로젝트</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/blog">블로그</a></li>
+            
+            <li><a href="https://kyoungwhankim.github.io/contact">문의</a></li>
+            
+					</ul>
+				</div>
+				<p class="copyright">Copyright © 2020 <a href="https://themefisher.com">Themefisher</a> All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+
+<script src="https://kyoungwhankim.github.io/plugins/jQuery/jquery.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/bootstrap/bootstrap.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/slick/slick.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/magnific-popup/magnific-popup.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/shuffle/shuffle.min.js" ></script>
+
+<script src="https://kyoungwhankim.github.io/plugins/google-map/gmap.js" defer></script>
+
+
+
+
+<script src="https://kyoungwhankim.github.io/js/script.min.js"></script>
+
+
+</body>
+
+</html>
