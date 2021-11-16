@@ -903,11 +903,6 @@
   </url>
   
   <url>
-    <loc>https://kyoungwhankim.github.io/resume/</loc>
-    <lastmod>2020-03-23T13:05:29+06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://kyoungwhankim.github.io/author/</loc>
     <xhtml:link
                 rel="alternate"
@@ -1031,6 +1026,10 @@
                 hreflang="en"
                 href="https://kyoungwhankim.github.io/project/viking_helmet/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/resume/</loc>
   </url>
   
 </urlset>
