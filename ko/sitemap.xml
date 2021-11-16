@@ -903,6 +903,20 @@
   </url>
   
   <url>
+    <loc>https://kyoungwhankim.github.io/ko/resume/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/resume/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/resume/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kyoungwhankim.github.io/ko/author/</loc>
     <xhtml:link
                 rel="alternate"
@@ -1015,20 +1029,6 @@
                 rel="alternate"
                 hreflang="ko"
                 href="https://kyoungwhankim.github.io/ko/about/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/ko/resume/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/resume/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/resume/"
                 />
   </url>
   
