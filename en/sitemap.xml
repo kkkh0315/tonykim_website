@@ -1015,6 +1015,20 @@
   </url>
   
   <url>
+    <loc>https://kyoungwhankim.github.io/resume/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/resume/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/resume/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kyoungwhankim.github.io/project/viking_helmet/</loc>
     <xhtml:link
                 rel="alternate"
@@ -1026,10 +1040,6 @@
                 hreflang="en"
                 href="https://kyoungwhankim.github.io/project/viking_helmet/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/resume/</loc>
   </url>
   
 </urlset>
