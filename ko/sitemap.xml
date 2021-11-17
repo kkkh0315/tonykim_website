@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://kyoungwhankim.github.io/ko/categories/</loc>
-    <lastmod>2021-11-10T20:00:00+09:00</lastmod>
+    <lastmod>2021-11-14T20:00:00+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -19,7 +19,7 @@
   
   <url>
     <loc>https://kyoungwhankim.github.io/ko/tags/lumen/</loc>
-    <lastmod>2021-11-10T20:00:00+09:00</lastmod>
+    <lastmod>2021-11-14T20:00:00+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -34,7 +34,7 @@
   
   <url>
     <loc>https://kyoungwhankim.github.io/ko/tags/</loc>
-    <lastmod>2021-11-10T20:00:00+09:00</lastmod>
+    <lastmod>2021-11-14T20:00:00+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -49,7 +49,7 @@
   
   <url>
     <loc>https://kyoungwhankim.github.io/ko/</loc>
-    <lastmod>2021-11-10T20:00:00+09:00</lastmod>
+    <lastmod>2021-11-14T20:00:00+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -59,6 +59,81 @@
                 rel="alternate"
                 hreflang="ko"
                 href="https://kyoungwhankim.github.io/ko/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/ko/blog/lumen_setting/</loc>
+    <lastmod>2021-11-14T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/blog/lumen_setting/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/blog/lumen_setting/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/ko/tags/unreal-engine/</loc>
+    <lastmod>2021-11-14T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/tags/unreal-engine/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/tags/unreal-engine/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/ko/tags/unreal-engine-5/</loc>
+    <lastmod>2021-11-14T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/tags/unreal-engine-5/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/tags/unreal-engine-5/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/ko/categories/unreal-engine-5/</loc>
+    <lastmod>2021-11-14T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/categories/unreal-engine-5/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/categories/unreal-engine-5/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://kyoungwhankim.github.io/ko/blog/</loc>
+    <lastmod>2021-11-14T20:00:00+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://kyoungwhankim.github.io/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://kyoungwhankim.github.io/ko/blog/"
                 />
   </url>
   
@@ -74,66 +149,6 @@
                 rel="alternate"
                 hreflang="ko"
                 href="https://kyoungwhankim.github.io/ko/blog/lumen_init/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/ko/tags/unreal-engine/</loc>
-    <lastmod>2021-11-10T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/tags/unreal-engine/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/tags/unreal-engine/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/ko/tags/unreal-engine-5/</loc>
-    <lastmod>2021-11-10T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/tags/unreal-engine-5/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/tags/unreal-engine-5/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/ko/categories/unreal-engine-5/</loc>
-    <lastmod>2021-11-10T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/categories/unreal-engine-5/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/categories/unreal-engine-5/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://kyoungwhankim.github.io/ko/blog/</loc>
-    <lastmod>2021-11-10T20:00:00+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://kyoungwhankim.github.io/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://kyoungwhankim.github.io/ko/blog/"
                 />
   </url>
   

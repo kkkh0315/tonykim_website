@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 10 Nov 2021 20:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 14 Nov 2021 20:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://kyoungwhankim.github.io/tags/unreal-engine-5/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>UE5 루멘 활용하기: 이상적인 결과를 위해 루멘 세팅하기 9가지</title>
+      <link>https://kyoungwhankim.github.io/blog/lumen_setting/</link>
+      <pubDate>Sun, 14 Nov 2021 20:00:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/blog/lumen_setting/</guid>
+      <description>UE5 루멘에 대해 저와 함께 공부하고 싶으신 분들은 우측 Categories에서 Lumen을 클릭해주세요!
+루멘, 어떻게 써야할까? 공식 문서에 있는 내용과 문서에는 없지만 개발자 토크에서 발표된 내용들을 정리하였습니다. 기본적으로 Software Ray Tracing 기준 설명드리겠습니다.</description>
+    </item>
     
     <item>
       <title>UE5 루멘 활용하기: 기존 UE4 프로젝트에서 넘어왔을 때 주의사항</title>
