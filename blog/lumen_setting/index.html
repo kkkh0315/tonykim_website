@@ -298,6 +298,11 @@ Lumen Scene은 <strong>Show</strong>-&gt;<strong>Visualize</strong>-&gt;<strong>
 <br>
 루멘은 하드웨어에 의존하는 고전적이고 무거운 레이 트레이싱 방식을 최적화한 소프트웨어 레이 트레이싱을 디폴트로 하여 구동됩니다. 퍼포먼스는 올라가지만 정확성은 떨어집니다. 하지만, 프로젝트 설정에서 <strong>Use Hardware Ray Tracing when available</strong>을 활성화하면 하드웨어 레이 트레이싱 모드로 루멘을 사용할 수도 있습니다.<br>
 <br>
+우선, 프로젝트 세팅에서 Platform -&gt; Windows로 진입 후 <strong>Default RHI</strong>를 <strong>DirectX 12</strong>로 설정합니다.
+<br><br>
+<img src="https://user-images.githubusercontent.com/60923302/145016002-10880716-f9e8-4121-8a89-d09a75d63131.png" alt="default rhi">
+<br>
+<br>
 프로젝트 세팅에서 Hardware Ray Tracing 메뉴 아래 <strong>Support Hardware Ray Tracing</strong>을 활성화한 후 엔진을 재시작하면 Lumen 메뉴 아래 <strong>Use Hardware Ray Tracing when available</strong>을 활성화할 수 있습니다.
 <br><br>
 <img src="https://user-images.githubusercontent.com/60923302/142179174-be44189d-67e0-476d-aa87-9eb9ac6f3293.png" alt="hardware_raytracing">
@@ -305,7 +310,7 @@ Lumen Scene은 <strong>Show</strong>-&gt;<strong>Visualize</strong>-&gt;<strong>
 <ol>
 <li>하드웨어 성능과 버전에 따라 하드웨어 레이 트레이싱 모드가 사용이 불가할 수 도 있습니다. 공식 문서를 참고하세요. <br><br></li>
 <li>나나이트 메시의 경우 나나이트 프록시 메시에 적용되기 때문에 원본의 완전한 디테일이 레이 트레이싱 되지 못합니다. 스크린 트레이스가 그 한계를 보완하지만 불일치가 큰 경우도 생깁니다. 이럴 땐 Proxy Triangle Percent(프록시 트라이앵글 퍼센트)를 높여서 원하는 효과를 도출해낼 수는 있습니다. <br><br></li>
-<li>포스트 프로세스의 Lumen Reflection 메뉴 아래 Quality를 4.0으로 설정하면 소프트웨어 레이 트레이싱에서는 불가능한 최상의 루멘 리플렉션을 경험할 수 있습니다. <br><br></li>
+<li><strong>포스트 프로세스의 Lumen Reflection 메뉴 아래 Quality를 4.0으로 설정</strong>하면 소프트웨어 레이 트레이싱에서는 불가능한 최상의 루멘 리플렉션을 경험할 수 있습니다. <br><br></li>
 <li>얼리 엑세스에서는 10,000 인스턴트 이상의 경우 하드웨어 레이 트레이싱이 제대로 작동하지 않습니다.</li>
 </ol>
 </li>
