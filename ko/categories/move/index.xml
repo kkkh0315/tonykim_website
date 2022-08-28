@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Move on Tony Kim | Blog &amp; Portfolio</title>
+    <link>https://kyoungwhankim.github.io/ko/categories/move/</link>
+    <description>Recent content in Move on Tony Kim | Blog &amp; Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-ko</language>
+    <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 28 Aug 2022 20:16:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://kyoungwhankim.github.io/ko/categories/move/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Velog로 이사갑니다</title>
+      <link>https://kyoungwhankim.github.io/ko/blog/move/</link>
+      <pubDate>Sun, 28 Aug 2022 20:16:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/ko/blog/move/</guid>
+      <description>Velog로 이사갑니다 오랜만에 글을 씁니다.
+제 블로그를 Velog로 옮기려고 합니다. 많은 이유가 있지만, 가장 큰 이유는 편리함 때문입니다.
+블로그 포스팅이 훨씬 편해질 것으로 기대됩니다.
+게다가 키워드로 포스트 검색도 편해질 것입니다.</description>
+    </item>
+    
+  </channel>
+</rss>

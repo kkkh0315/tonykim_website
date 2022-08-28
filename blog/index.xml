@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 14 Nov 2021 20:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 28 Aug 2022 20:16:00 +0900</lastBuildDate>
     
 	<atom:link href="https://kyoungwhankim.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Moving to Velog</title>
+      <link>https://kyoungwhankim.github.io/blog/move/</link>
+      <pubDate>Sun, 28 Aug 2022 20:16:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/blog/move/</guid>
+      <description>Moving to Velog It&amp;rsquo;s been a while.
+I am moving my blog to Velog. There are several reasons for this, but the biggest one is for convenience. Writing posts is going to be way easier for me there.</description>
+    </item>
     
     <item>
       <title>UE5 루멘 활용하기: 이상적인 결과를 위해 루멘 세팅하기 9가지</title>

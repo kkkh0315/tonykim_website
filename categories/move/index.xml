@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Move on Tony Kim | Blog &amp; Portfolio</title>
+    <link>https://kyoungwhankim.github.io/categories/move/</link>
+    <description>Recent content in Move on Tony Kim | Blog &amp; Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 28 Aug 2022 20:16:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://kyoungwhankim.github.io/categories/move/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Moving to Velog</title>
+      <link>https://kyoungwhankim.github.io/blog/move/</link>
+      <pubDate>Sun, 28 Aug 2022 20:16:00 +0900</pubDate>
+      
+      <guid>https://kyoungwhankim.github.io/blog/move/</guid>
+      <description>Moving to Velog It&amp;rsquo;s been a while.
+I am moving my blog to Velog. There are several reasons for this, but the biggest one is for convenience. Writing posts is going to be way easier for me there.</description>
+    </item>
+    
+  </channel>
+</rss>
